@@ -4,7 +4,12 @@ import './Navigation.css';
 const Navigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeMobileSubmenu, setActiveMobileSubmenu] = useState(null);
+  const [isNavHovered, setIsNavHovered] = useState(false);
   const navigationRef = useRef(null);
+
+  // Determine which logo to show
+  const shouldShowColoredLogo = isNavHovered || isMobileMenuOpen;
+  const logoSource = shouldShowColoredLogo ? "/images/radcon-logo.png" : "/images/radcon-logo-transparent.png";
 
   const navItems = [
     { 
@@ -153,18 +158,21 @@ const Navigation = () => {
     };
   }, []);
 
-    // Prevent body scroll when mobile menu is open
-    useEffect(() => {
-        if (isMobileMenuOpen) {
-          document.body.style.overflow = 'hidden';
-        } else {
-          document.body.style.overflow = '';
-        }
-    
-        return () => {
-          document.body.style.overflow = '';
-        };
-      }, [isMobileMenuOpen]);
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+      document.body.classList.add('mobile-menu-open');
+    } else {
+      document.body.style.overflow = '';
+      document.body.classList.remove('mobile-menu-open');
+    }
+
+    return () => {
+      document.body.style.overflow = '';
+      document.body.classList.remove('mobile-menu-open');
+    };
+  }, [isMobileMenuOpen]);
 
   // Close mobile menu on window resize
   useEffect(() => {
@@ -269,12 +277,18 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="nav-main-container" id="navMainContainer" ref={navigationRef}>
+    <nav 
+      className="nav-main-container" 
+      id="navMainContainer" 
+      ref={navigationRef}
+      onMouseEnter={() => setIsNavHovered(true)}
+      onMouseLeave={() => setIsNavHovered(false)}
+    >
       <div className="nav-wrapper" id="navWrapper">
         {/* Logo */}
         <div className="nav-logo-container" id="navLogoContainer">
           <a href="/" className="nav-logo-link" id="navLogoLink">
-            <img src="/images/radcon-logo.png" alt="RADCON" className="nav-logo-image" id="navLogoImage" />
+            <img src={logoSource} alt="RADCON" className="nav-logo-image" id="navLogoImage" />
           </a>
         </div>
 
@@ -348,7 +362,7 @@ const Navigation = () => {
                 <a href={item.href || "#"} className="nav-mobile-item-link" id={`navMobileItemLink${index}`}>
                   {item.name}
                 </a>
-                {item.hasDropdown && (
+                {item.hasDropdown ? (
                   <button 
                     className="nav-mobile-submenu-toggle"
                     onClick={() => toggleMobileSubmenu(item.name)}
@@ -356,6 +370,8 @@ const Navigation = () => {
                   >
                     {activeMobileSubmenu === item.name ? '−' : '+'}
                   </button>
+                ) : (
+                  <div className="nav-mobile-item-spacer"></div>
                 )}
               </div>
               
