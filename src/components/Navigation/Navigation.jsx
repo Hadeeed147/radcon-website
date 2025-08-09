@@ -199,6 +199,23 @@ const Navigation = () => {
   };
 
   const renderMegaMenu = (megaMenuData) => {
+    // Map submenu labels to dynamic expertise routes where available
+    const expertiseRouteMap = {
+      'Web & Application': { category: 'software', slug: 'web-application' },
+      'Mobile App Development': { category: 'software', slug: 'mobile-app-development' },
+      'Database Design And Development': { category: 'software', slug: 'database-design' },
+      'Power Solutions': { category: 'electronics', slug: 'power-systems' },
+      'RF/Microwave Solutions': { category: 'electronics', slug: 'rf-and-microwave' },
+      'Printed Circuit Board (PCB)': { category: 'electronics', slug: 'electronic-solutions' },
+      'Embedded Systems': { category: 'hardware', slug: 'embedded-systems' },
+      // Unmapped items will stay as placeholders
+    };
+
+    const getSubmenuHref = (label) => {
+      const entry = expertiseRouteMap[label];
+      return entry ? `/expertise/${entry.category}/${entry.slug}` : '#!';
+    };
+
     return (
       <div className="nav-mega-menu-container" id="megaMenuContainer">
         <div className="nav-mega-menu-content" id="megaMenuContent">
@@ -210,7 +227,7 @@ const Navigation = () => {
               <ul className="nav-mega-menu-list" id={`megaMenuList${index}`}>
                 {column.solutions.map((solution, solutionIndex) => (
                   <li key={solutionIndex} className="nav-mega-menu-item" id={`megaMenuItem${index}${solutionIndex}`}>
-                    <a href="#!" className="nav-mega-menu-link" id={`megaMenuLink${index}${solutionIndex}`}>
+                    <a href={getSubmenuHref(solution)} className="nav-mega-menu-link" id={`megaMenuLink${index}${solutionIndex}`}>
                       {solution}
                     </a>
                   </li>
@@ -242,6 +259,21 @@ const Navigation = () => {
   const renderMobileSubmenu = (item) => {
     if (!item.hasDropdown) return null;
 
+    const expertiseRouteMap = {
+      'Web & Application': { category: 'software', slug: 'web-application' },
+      'Mobile App Development': { category: 'software', slug: 'mobile-app-development' },
+      'Database Design And Development': { category: 'software', slug: 'database-design' },
+      'Power Solutions': { category: 'electronics', slug: 'power-systems' },
+      'RF/Microwave Solutions': { category: 'electronics', slug: 'rf-and-microwave' },
+      'Printed Circuit Board (PCB)': { category: 'electronics', slug: 'electronic-solutions' },
+      'Embedded Systems': { category: 'hardware', slug: 'embedded-systems' },
+    };
+
+    const getSubmenuHref = (label) => {
+      const entry = expertiseRouteMap[label];
+      return entry ? `/expertise/${entry.category}/${entry.slug}` : '#!';
+    };
+
     return (
       <div className="nav-mobile-submenu" id={`navMobileSubmenu${item.name}`}>
         {item.isMegaMenu ? (
@@ -253,7 +285,7 @@ const Navigation = () => {
               <ul className="nav-mobile-submenu-list" id={`navMobileSubmenuList${item.name}${columnIndex}`}>
                 {column.solutions.map((solution, solutionIndex) => (
                   <li key={solutionIndex} className="nav-mobile-submenu-item" id={`navMobileSubmenuItem${item.name}${columnIndex}${solutionIndex}`}>
-                    <a href="#!" className="nav-mobile-submenu-link" id={`navMobileSubmenuLink${item.name}${columnIndex}${solutionIndex}`}>
+                    <a href={getSubmenuHref(solution)} className="nav-mobile-submenu-link" id={`navMobileSubmenuLink${item.name}${columnIndex}${solutionIndex}`}>
                       {solution}
                     </a>
                   </li>
