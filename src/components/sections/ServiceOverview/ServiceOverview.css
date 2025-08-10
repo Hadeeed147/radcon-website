@@ -148,8 +148,13 @@
 /* Responsive Design */
 @media (max-width: 1024px) {
   .service-overview__container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
     gap: 3rem;
+    display: grid !important;
+  }
+  
+  .service-overview--image-left .service-overview__container {
+    grid-template-columns: 1fr !important;
   }
   
   .service-overview--image-left .service-overview__media {
@@ -164,14 +169,22 @@
     font-size: 1rem;
   }
 
-  /* Fix aspect ratio for specific problematic images in tablet view */
+  /* Ensure consistent aspect ratio for all images on tablet */
+  .service-overview__image {
+    max-height: 350px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* Force problematic images to have proper tablet aspect ratio */
   .service-overview__image[src*="mobile-development-image.webp"],
   .service-overview__image[src*="power-systems-image.webp"],
   .service-overview__image[src*="pcb-design-image.webp"],
   .service-overview__image[src*="diagnostic-services-image.webp"],
   .service-overview__image[src*="crm-image.webp"],
   .service-overview__image[src*="hr-services-image.webp"] {
-    height: 300px;
+    height: 250px !important;
+    width: 100%;
     object-fit: cover;
     object-position: center;
   }
@@ -180,6 +193,26 @@
 @media (max-width: 768px) {
   .service-overview {
     padding: 3rem 0;
+  }
+
+  /* Force single column layout on mobile for ALL containers */
+  .service-overview__container {
+    grid-template-columns: 1fr !important;
+    gap: 2rem;
+    display: grid !important;
+  }
+  
+  .service-overview--image-left .service-overview__container {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Reset order for mobile - text always first */
+  .service-overview--image-left .service-overview__media {
+    order: 1;
+  }
+  
+  .service-overview__text {
+    order: 0;
   }
   
   .service-overview__title {
@@ -200,14 +233,22 @@
     height: 16px;
   }
 
-  /* Fix aspect ratio for specific problematic images in mobile */
+  /* Ensure consistent aspect ratio for all images on mobile */
+  .service-overview__image {
+    max-height: 280px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* Force problematic images to have proper mobile aspect ratio */
   .service-overview__image[src*="mobile-development-image.webp"],
   .service-overview__image[src*="power-systems-image.webp"],
   .service-overview__image[src*="pcb-design-image.webp"],
   .service-overview__image[src*="diagnostic-services-image.webp"],
   .service-overview__image[src*="crm-image.webp"],
   .service-overview__image[src*="hr-services-image.webp"] {
-    height: 250px;
+    height: 200px !important;
+    width: 100%;
     object-fit: cover;
     object-position: center;
   }
