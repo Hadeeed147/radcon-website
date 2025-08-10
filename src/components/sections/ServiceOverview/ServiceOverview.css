@@ -163,6 +163,18 @@
   .service-overview__content {
     font-size: 1rem;
   }
+
+  /* Fix aspect ratio for specific problematic images in tablet view */
+  .service-overview__image[src*="mobile-development-image.webp"],
+  .service-overview__image[src*="power-systems-image.webp"],
+  .service-overview__image[src*="pcb-design-image.webp"],
+  .service-overview__image[src*="diagnostic-services-image.webp"],
+  .service-overview__image[src*="crm-image.webp"],
+  .service-overview__image[src*="hr-services-image.webp"] {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -186,5 +198,17 @@
   .service-overview__highlight-icon svg {
     width: 16px;
     height: 16px;
+  }
+
+  /* Fix aspect ratio for specific problematic images in mobile */
+  .service-overview__image[src*="mobile-development-image.webp"],
+  .service-overview__image[src*="power-systems-image.webp"],
+  .service-overview__image[src*="pcb-design-image.webp"],
+  .service-overview__image[src*="diagnostic-services-image.webp"],
+  .service-overview__image[src*="crm-image.webp"],
+  .service-overview__image[src*="hr-services-image.webp"] {
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
   }
 }
