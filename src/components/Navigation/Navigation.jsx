@@ -5,6 +5,8 @@ const Navigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeMobileSubmenu, setActiveMobileSubmenu] = useState(null);
   const [isNavHovered, setIsNavHovered] = useState(false);
+  const [isNavVisible, setIsNavVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
   const navigationRef = useRef(null);
 
   // Determine which logo to show
@@ -187,6 +189,32 @@ const Navigation = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  // Handle scroll for hide/show navigation
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      
+      // Don't hide navigation if mobile menu is open
+      if (isMobileMenuOpen) return;
+      
+      // Show navigation at top of page
+      if (currentScrollY < 10) {
+        setIsNavVisible(true);
+      } else if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        // Scrolling down and past threshold - hide nav
+        setIsNavVisible(false);
+      } else if (currentScrollY < lastScrollY) {
+        // Scrolling up - show nav
+        setIsNavVisible(true);
+      }
+      
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY, isMobileMenuOpen]);
+
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
     if (isMobileMenuOpen) {
@@ -206,9 +234,14 @@ const Navigation = () => {
       'Database Design And Development': { category: 'software', slug: 'database-design' },
       'Power Solutions': { category: 'electronics', slug: 'power-systems' },
       'RF/Microwave Solutions': { category: 'electronics', slug: 'rf-and-microwave' },
-      'Printed Circuit Board (PCB)': { category: 'electronics', slug: 'electronic-solutions' },
+      'Printed Circuit Board (PCB)': { category: 'electronics', slug: 'printed-circuit-board' },
       'Embedded Systems': { category: 'hardware', slug: 'embedded-systems' },
-      // Unmapped items will stay as placeholders
+      'Diagnostic Services': { category: 'hardware', slug: 'diagnostic-services' },
+      'Electro Mechanical Solutions': { category: 'hardware', slug: 'electro-mechanical-solutions' },
+      'Customer Relationship Management (CRM)': { category: 'lifecycle-support', slug: 'customer-relationship-management' },
+      'Hardware Lifecycle Support': { category: 'lifecycle-support', slug: 'hardware-lifecycle-support' },
+      'HR Services': { category: 'hr', slug: 'hr-services' },
+      'Engineering Services': { category: 'hr', slug: 'engineering-services' },
     };
 
     const getSubmenuHref = (label) => {
@@ -265,8 +298,14 @@ const Navigation = () => {
       'Database Design And Development': { category: 'software', slug: 'database-design' },
       'Power Solutions': { category: 'electronics', slug: 'power-systems' },
       'RF/Microwave Solutions': { category: 'electronics', slug: 'rf-and-microwave' },
-      'Printed Circuit Board (PCB)': { category: 'electronics', slug: 'electronic-solutions' },
+      'Printed Circuit Board (PCB)': { category: 'electronics', slug: 'printed-circuit-board' },
       'Embedded Systems': { category: 'hardware', slug: 'embedded-systems' },
+      'Diagnostic Services': { category: 'hardware', slug: 'diagnostic-services' },
+      'Electro Mechanical Solutions': { category: 'hardware', slug: 'electro-mechanical-solutions' },
+      'Customer Relationship Management (CRM)': { category: 'lifecycle-support', slug: 'customer-relationship-management' },
+      'Hardware Lifecycle Support': { category: 'lifecycle-support', slug: 'hardware-lifecycle-support' },
+      'HR Services': { category: 'hr', slug: 'hr-services' },
+      'Engineering Services': { category: 'hr', slug: 'engineering-services' },
     };
 
     const getSubmenuHref = (label) => {
@@ -310,7 +349,7 @@ const Navigation = () => {
 
   return (
     <nav 
-      className="nav-main-container" 
+      className={`nav-main-container ${isNavVisible ? 'nav-visible' : 'nav-hidden'}`}
       id="navMainContainer" 
       ref={navigationRef}
       onMouseEnter={() => setIsNavHovered(true)}

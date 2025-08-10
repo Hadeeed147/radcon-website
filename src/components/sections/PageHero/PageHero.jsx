@@ -37,8 +37,6 @@ const PageHero = ({ title, subtitle, backgroundImage, breadcrumbs, overlay = fal
             </ol>
           </nav>
         )}
-        <h1 className="page-hero__title">{title}</h1>
-        {subtitle && <p className="page-hero__subtitle">{subtitle}</p>}
       </div>
     </header>
   );

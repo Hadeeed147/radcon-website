@@ -3,4 +3,33 @@
   color: var(--text-primary);
 }
 
+.std-page .section-title {
+  color: #000000;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-top: 0;
+  padding-bottom: 20px;
+  display: block;
+  position: relative;
+  line-height: 60px;
+  font-family: popin-regular, var(--font-family-base);
+}
+.section-title__accent { color: var(--color-primary); font-weight: 800; }
+.section-title__rest { color: var(--text-primary); font-weight: 700; }
+
+.std-page .section-title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 80px;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+}
+
 

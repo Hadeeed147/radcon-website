@@ -12,6 +12,14 @@ const SimpleServicePage = ({ data }) => {
   return (
     <main className="simple-page" id="main-content">
       <PageHero {...hero} />
+      <section className="section">
+        <div className="container simple-page__title">
+          <h2 className="section-title">
+            <span className="section-title__accent">{data.meta?.title?.split(' ')[0] || 'Our'}</span>{' '}
+            <span className="section-title__rest">{data.meta?.title?.split(' ').slice(1).join(' ') || 'Expertise'}</span>
+          </h2>
+        </div>
+      </section>
       <ServiceOverview {...overview} />
       {benefits && benefits.length > 0 && (
         <BenefitsList benefits={benefits} />

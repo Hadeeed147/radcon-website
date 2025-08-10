@@ -1,43 +1,84 @@
+/* TechnologyPartners.css - Remove grayscale for colored logos */
+.tech-partners {
+  padding: 4rem 0;
+  background: white;
+}
+
+.tech-partners__heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.tech-partners__subtitle {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 1.125rem;
+  margin-bottom: 3rem;
+}
+
 .marquee {
   overflow: hidden;
   position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0;
 }
 
 .marquee__track {
   display: flex;
-  gap: 2rem;
+  gap: 4rem;
   align-items: center;
   animation: marquee var(--marquee-duration, 30s) linear infinite;
   will-change: transform;
+  width: max-content;
 }
-
-.marquee__track--second {
-  margin-top: 1rem;
-  animation-direction: reverse;
-}
-
-.marquee--reverse .marquee__track { animation-direction: reverse; }
-.marquee--pause-on-hover:hover .marquee__track { animation-play-state: paused; }
 
 @keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee__item {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
 }
 
 .marquee__item img {
-  height: 40px;
+  height: 60px;
   width: auto;
-  filter: grayscale(100%);
-  transition: filter var(--transition-fast), transform var(--transition-fast);
+  max-width: 140px;
+  object-fit: contain;
+  /* Removed grayscale filter - logos now show in color */
+  opacity: 0.8;
+  transition: all 0.3s ease;
 }
 
 .marquee__item img:hover {
-  filter: grayscale(0%);
-  transform: translateY(-2px);
+  opacity: 1;
+  transform: scale(1.15);
+}
+
+.marquee--pause-on-hover:hover .marquee__track {
+  animation-play-state: paused;
 }
 
 @media (max-width: 768px) {
-  .marquee__item img { height: 28px; }
+  .marquee__item img {
+    height: 40px;
+    max-width: 100px;
+  }
+  
+  .marquee__track {
+    gap: 3rem;
+  }
 }
-
-

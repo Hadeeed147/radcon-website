@@ -1,11 +1,27 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 import './ProcessFlow.css';
 
 const ProcessFlow = ({ steps = [], active = 1 }) => {
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container) return;
+    const items = container.querySelectorAll('.process-flow__step');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('is-visible'); });
+    }, { threshold: 0.2 });
+    items.forEach((i) => obs.observe(i));
+    return () => obs.disconnect();
+  }, []);
+
   return (
     <section className="process-flow section">
-      <div className="container process-flow__container">
+      <div className="container">
+        <h2 className="process-flow__heading">From Idea to Impact</h2>
+      </div>
+      <div className="container process-flow__container" ref={containerRef}>
         {steps.map((s, idx) => {
           const isActive = s.number === active;
           return (
@@ -18,6 +34,9 @@ const ProcessFlow = ({ steps = [], active = 1 }) => {
             </div>
           );
         })}
+        <div className="process-flow__progress" aria-hidden="true">
+          <div className="process-flow__progress-bar" />
+        </div>
       </div>
     </section>
   );

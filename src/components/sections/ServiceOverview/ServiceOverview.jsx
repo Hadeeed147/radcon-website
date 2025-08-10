@@ -20,7 +20,7 @@ const ServiceOverview = ({ title, content, highlights = [], image, imagePosition
   }, []);
 
   return (
-    <section className={`service-overview section service-overview--image-${imagePosition}`} ref={rootRef}>
+    <section className={`service-overview service-overview--image-${imagePosition}`} ref={rootRef}>
       <div className="container service-overview__container">
         <div className="service-overview__text">
           {title && <h2 className="service-overview__title">{title}</h2>}
@@ -29,7 +29,11 @@ const ServiceOverview = ({ title, content, highlights = [], image, imagePosition
             <ul className="service-overview__highlights" aria-label="Highlights">
               {highlights.map((h, idx) => (
                 <li key={idx} className="service-overview__highlight">
-                  <span className="service-overview__highlight-icon" aria-hidden="true">✓</span>
+                  <span className="service-overview__highlight-icon" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9 12l2 2 4-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </span>
                   <span className="service-overview__highlight-text">{h}</span>
                 </li>
               ))}

@@ -14,7 +14,15 @@ const StandardServicePage = ({ data }) => {
   const { hero, overview, capabilities, process, technologies, benefits, relatedServices } = data;
   return (
     <main className="std-page" id="main-content">
-      <PageHero {...hero} />
+      <PageHero {...{ ...hero, subtitle: undefined }} />
+      <section className="section">
+        <div className="container std-page__title">
+          <h2 className="section-title">
+            <span className="section-title__accent">{data.meta?.title?.split(' ')[0] || 'Our'}</span>{' '}
+            <span className="section-title__rest">{data.meta?.title?.split(' ').slice(1).join(' ') || 'Expertise'}</span>
+          </h2>
+        </div>
+      </section>
       <ServiceOverview {...overview} />
       {capabilities && capabilities.length > 0 && (
         <KeyCapabilities items={capabilities} columns={3} />

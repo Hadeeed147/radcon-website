@@ -14,6 +14,14 @@ const TechnicalServicePage = ({ data }) => {
   return (
     <main className="tech-page" id="main-content">
       <PageHero {...hero} />
+      <section className="section">
+        <div className="container tech-page__title">
+          <h2 className="section-title">
+            <span className="section-title__accent">{data.meta?.title?.split(' ')[0] || 'Our'}</span>{' '}
+            <span className="section-title__rest">{data.meta?.title?.split(' ').slice(1).join(' ') || 'Expertise'}</span>
+          </h2>
+        </div>
+      </section>
       <ServiceOverview {...overview} imagePosition="left" />
       {technologies && technologies.length > 0 && (
         <TechnologyPartners logos={technologies} />

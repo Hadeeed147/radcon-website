@@ -29,19 +29,28 @@
   }
   
   /* Main Navigation */
-  .nav-main-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: var(--nav-background-solid);
-    border-bottom: 1px solid var(--nav-border-color-solid);
-    z-index: var(--nav-z-index-base);
-    box-shadow: var(--nav-shadow);
-    backdrop-filter: blur(8px);
-    transition: background var(--nav-transition-medium), border-bottom var(--nav-transition-medium), box-shadow var(--nav-transition-medium), backdrop-filter var(--nav-transition-medium);
-    will-change: background, border-bottom, box-shadow, backdrop-filter;
-  }
+.nav-main-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--nav-background-solid);
+  border-bottom: 1px solid var(--nav-border-color-solid);
+  z-index: var(--nav-z-index-base);
+  box-shadow: var(--nav-shadow);
+  backdrop-filter: blur(8px);
+  transition: background var(--nav-transition-medium), border-bottom var(--nav-transition-medium), box-shadow var(--nav-transition-medium), backdrop-filter var(--nav-transition-medium), transform var(--nav-transition-medium);
+  will-change: background, border-bottom, box-shadow, backdrop-filter, transform;
+}
+
+/* Navigation visibility states */
+.nav-main-container.nav-visible {
+  transform: translateY(0);
+}
+
+.nav-main-container.nav-hidden {
+  transform: translateY(-100%);
+}
   
   .nav-main-container:hover {
     box-shadow: var(--nav-shadow-hover);
