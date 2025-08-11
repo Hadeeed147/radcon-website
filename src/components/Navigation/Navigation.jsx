@@ -10,7 +10,10 @@ const Navigation = () => {
   const navigationRef = useRef(null);
 
   // Determine which logo to show
-  const shouldShowColoredLogo = isNavHovered || isMobileMenuOpen;
+  // Use colored logo on template pages or when nav is hovered/mobile menu is open
+  const isTemplatePage = document.body.classList.contains('expertise-page') || 
+                         document.body.classList.contains('product-page');
+  const shouldShowColoredLogo = isTemplatePage || isNavHovered || isMobileMenuOpen;
   const logoSource = shouldShowColoredLogo ? "/images/radcon-logo.png" : "/images/radcon-logo-transparent.png";
 
   const navItems = [
@@ -99,7 +102,12 @@ const Navigation = () => {
           },
           {
             title: "Embedded Systems",
-            solutions: ["Details coming soon"]
+            solutions: [
+              "Microcontroller Solutions",
+              "IoT Development Boards", 
+              "Real-time Systems",
+              "Custom Embedded Hardware"
+            ]
           },
           {
             title: "Communication Equipment",
@@ -107,18 +115,27 @@ const Navigation = () => {
           },
           {
             title: "Optronics",
-            solutions: ["Details coming soon"]
+            solutions: [
+              "Laser Systems",
+              "Optical Sensors",
+              "Imaging Systems", 
+              "Fiber Optic Solutions"
+            ]
           },
           {
             title: "Navigation",
-            solutions: ["Details coming soon"]
+            solutions: [
+              "GPS Systems",
+              "Inertial Navigation",
+              "Marine Navigation",
+              "Aviation Navigation"
+            ]
           },
           {
             title: "Aviation Industry",
             solutions: [
               "Multi-Function Displays (MFD) for Helicopters",
-              "Radar Altimeters",
-              "Additional products available upon request"
+              "Radar Altimeters"
             ]
           },
           {
@@ -226,7 +243,7 @@ const Navigation = () => {
     setActiveMobileSubmenu(activeMobileSubmenu === itemName ? null : itemName);
   };
 
-  const renderMegaMenu = (megaMenuData) => {
+  const renderMegaMenu = (megaMenuData, menuName) => {
     // Map submenu labels to dynamic expertise routes where available
     const expertiseRouteMap = {
       'Web & Application': { category: 'software', slug: 'web-application' },
@@ -244,9 +261,32 @@ const Navigation = () => {
       'Engineering Services': { category: 'hr', slug: 'engineering-services' },
     };
 
-    const getSubmenuHref = (label) => {
-      const entry = expertiseRouteMap[label];
-      return entry ? `/expertise/${entry.category}/${entry.slug}` : '#!';
+    // Map product labels to product page routes
+    const productRouteMap = {
+      'Life-Saving Equipment': '/products/product-jammers',
+      'RF and Microwave': '/products/product-rf-amplifiers',
+      'Power Systems': '/products/product-power-supplies',
+      'Embedded Systems': '/products/product-embedded-boards',
+      'Communication Equipment': '/products/product-communication',
+      'Optronics': '/products/product-optronics',
+      'Navigation': '/products/product-navigation',
+      'Aviation Industry': '/products/product-aviation',
+      'Indigenous Development Of Radar Parts': '/products/product-radar-parts',
+    };
+
+    const getSubmenuHref = (label, columnTitle) => {
+      if (menuName === 'Products') {
+        // For products, check if this is a main category (column title)
+        if (productRouteMap[columnTitle]) {
+          return productRouteMap[columnTitle];
+        }
+        // For individual product items, still link to main category for now
+        return productRouteMap[columnTitle] || '#!';
+      } else {
+        // For expertise menu
+        const entry = expertiseRouteMap[label];
+        return entry ? `/expertise/${entry.category}/${entry.slug}` : '#!';
+      }
     };
 
     return (
@@ -260,7 +300,7 @@ const Navigation = () => {
               <ul className="nav-mega-menu-list" id={`megaMenuList${index}`}>
                 {column.solutions.map((solution, solutionIndex) => (
                   <li key={solutionIndex} className="nav-mega-menu-item" id={`megaMenuItem${index}${solutionIndex}`}>
-                    <a href={getSubmenuHref(solution)} className="nav-mega-menu-link" id={`megaMenuLink${index}${solutionIndex}`}>
+                    <a href={getSubmenuHref(solution, column.title)} className="nav-mega-menu-link" id={`megaMenuLink${index}${solutionIndex}`}>
                       {solution}
                     </a>
                   </li>
@@ -308,9 +348,32 @@ const Navigation = () => {
       'Engineering Services': { category: 'hr', slug: 'engineering-services' },
     };
 
-    const getSubmenuHref = (label) => {
-      const entry = expertiseRouteMap[label];
-      return entry ? `/expertise/${entry.category}/${entry.slug}` : '#!';
+    // Map product labels to product page routes
+    const productRouteMap = {
+      'Life-Saving Equipment': '/products/product-jammers',
+      'RF and Microwave': '/products/product-rf-amplifiers',
+      'Power Systems': '/products/product-power-supplies',
+      'Embedded Systems': '/products/product-embedded-boards',
+      'Communication Equipment': '/products/product-communication',
+      'Optronics': '/products/product-optronics',
+      'Navigation': '/products/product-navigation',
+      'Aviation Industry': '/products/product-aviation',
+      'Indigenous Development Of Radar Parts': '/products/product-radar-parts',
+    };
+
+    const getSubmenuHref = (label, columnTitle) => {
+      if (item.name === 'Products') {
+        // For products, check if this is a main category (column title)
+        if (productRouteMap[columnTitle]) {
+          return productRouteMap[columnTitle];
+        }
+        // For individual product items, still link to main category for now
+        return productRouteMap[columnTitle] || '#!';
+      } else {
+        // For expertise menu
+        const entry = expertiseRouteMap[label];
+        return entry ? `/expertise/${entry.category}/${entry.slug}` : '#!';
+      }
     };
 
     return (
@@ -324,7 +387,7 @@ const Navigation = () => {
               <ul className="nav-mobile-submenu-list" id={`navMobileSubmenuList${item.name}${columnIndex}`}>
                 {column.solutions.map((solution, solutionIndex) => (
                   <li key={solutionIndex} className="nav-mobile-submenu-item" id={`navMobileSubmenuItem${item.name}${columnIndex}${solutionIndex}`}>
-                    <a href={getSubmenuHref(solution)} className="nav-mobile-submenu-link" id={`navMobileSubmenuLink${item.name}${columnIndex}${solutionIndex}`}>
+                    <a href={getSubmenuHref(solution, column.title)} className="nav-mobile-submenu-link" id={`navMobileSubmenuLink${item.name}${columnIndex}${solutionIndex}`}>
                       {solution}
                     </a>
                   </li>
@@ -389,7 +452,7 @@ const Navigation = () => {
                     className="nav-mega-menu-wrapper" 
                     id={`navMegaMenuWrapper${index}`}
                   >
-                    {renderMegaMenu(item.megaMenuData)}
+                    {renderMegaMenu(item.megaMenuData, item.name)}
                   </div>
                 )}
 

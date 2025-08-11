@@ -1,0 +1,57 @@
+/* Global Mobile Performance Optimizations */
+
+/* Hardware acceleration for all interactive elements */
+@media (max-width: 768px) {
+  /* Apply to all card-like elements */
+  [class*="__card"],
+  [class*="__item"],
+  [class*="__advantage"],
+  [class*="__spec-item"],
+  [class*="__highlight-item"] {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    will-change: transform, opacity;
+  }
+
+  /* Enable touch interactions */
+  [class*="__card"]:active,
+  [class*="__item"]:active,
+  [class*="__advantage"]:active {
+    transition: transform 0.1s ease;
+  }
+
+  /* Reduce motion for users who prefer it */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* Optimize for low-end devices */
+  @media (max-width: 480px) {
+    [class*="__card"],
+    [class*="__item"],
+    [class*="__advantage"] {
+      transition-duration: 0.2s; /* Faster transitions */
+    }
+  }
+}
+
+/* iOS specific optimizations */
+@supports (-webkit-touch-callout: none) {
+  @media (max-width: 768px) {
+    [class*="__card"],
+    [class*="__item"],
+    [class*="__advantage"] {
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      -webkit-will-change: transform;
+      will-change: transform;
+    }
+  }
+}

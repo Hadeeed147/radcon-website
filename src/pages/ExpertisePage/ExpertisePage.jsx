@@ -17,10 +17,7 @@ const ExpertisePage = () => {
   const data = expertisePages[pageKey];
   const Template = templates[data?.template || 'standard'];
 
-  useEffect(() => {
-    document.body.classList.add('expertise-page');
-    return () => document.body.classList.remove('expertise-page');
-  }, []);
+  // Body class management is now handled centrally in App.js
 
   useEffect(() => {
     if (!data) return;

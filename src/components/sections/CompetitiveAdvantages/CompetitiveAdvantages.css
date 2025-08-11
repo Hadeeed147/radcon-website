@@ -1,0 +1,174 @@
+.competitive-advantages {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.competitive-advantages__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.competitive-advantages__title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 16px;
+}
+
+.competitive-advantages__title-accent {
+  color: #2c5282;
+}
+
+.competitive-advantages__subtitle {
+  font-size: 18px;
+  color: #718096;
+  margin: 0;
+}
+
+.competitive-advantages__content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.competitive-advantages__main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.competitive-advantages__item {
+  display: flex;
+  gap: 24px;
+  padding: 28px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.competitive-advantages__item:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-color: #cbd5e0;
+  transform: translateX(5px);
+}
+
+.competitive-advantages__item-number {
+  width: 48px;
+  height: 48px;
+  background: #2c5282;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.competitive-advantages__item-content {
+  flex: 1;
+}
+
+.competitive-advantages__item-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+
+.competitive-advantages__item-description {
+  font-size: 15px;
+  color: #718096;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.competitive-advantages__sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.competitive-advantages__card {
+  background: white;
+  border-radius: 12px;
+  padding: 32px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.competitive-advantages__card-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #2d3748;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #edf2f7;
+}
+
+.competitive-advantages__cert-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.competitive-advantages__cert-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  color: #4a5568;
+  font-size: 15px;
+  border-bottom: 1px solid #f7fafc;
+}
+
+.competitive-advantages__cert-item:last-child {
+  border-bottom: none;
+}
+
+.competitive-advantages__cert-icon {
+  width: 20px;
+  height: 20px;
+  background: #2c5282;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 992px) {
+  .competitive-advantages__content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .competitive-advantages {
+    padding: 60px 0;
+  }
+  
+  .competitive-advantages__title {
+    font-size: 32px;
+  }
+  
+  .competitive-advantages__item {
+    padding: 20px;
+    will-change: transform, opacity;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .competitive-advantages__item:hover,
+  .competitive-advantages__item:active {
+    transform: translateY(-4px) translateZ(0);
+  }
+}

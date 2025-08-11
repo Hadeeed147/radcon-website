@@ -73,6 +73,20 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
 
+  /* Solid Navigation for Template Pages */
+  body.expertise-page .nav-main-container,
+  body.product-page .nav-main-container {
+    background: var(--nav-background-solid);
+    border-bottom: 1px solid var(--nav-border-color-solid);
+    box-shadow: var(--nav-shadow);
+    backdrop-filter: blur(8px);
+  }
+
+  body.expertise-page .nav-main-container:hover,
+  body.product-page .nav-main-container:hover {
+    box-shadow: var(--nav-shadow-hover);
+  }
+
   /* Remove the broad transition rule and add specific transitions */
   /* body.hero-page .nav-item-link,
   body.hero-page .nav-dropdown-arrow,
@@ -116,6 +130,12 @@
   body.hero-page .nav-main-container:hover .nav-logo-image,
   body.mobile-menu-open .nav-logo-image {
     /* No filter needed since we're switching actual images */
+  }
+
+  /* Logo for template pages - ensure colored logo is used */
+  body.expertise-page .nav-logo-image,
+  body.product-page .nav-logo-image {
+    /* Logo switching is handled in JS component, no specific CSS needed */
   }
   
   /* Desktop Menu - Hidden on Mobile */
@@ -168,6 +188,13 @@
 
   body.hero-page .nav-main-container:hover .nav-hamburger-line,
   body.mobile-menu-open .nav-hamburger-line {
+    background: var(--nav-text-primary);
+    box-shadow: none;
+  }
+
+  /* Mobile toggle for template pages - use normal styling */
+  body.expertise-page .nav-hamburger-line,
+  body.product-page .nav-hamburger-line {
     background: var(--nav-text-primary);
     box-shadow: none;
   }
@@ -468,6 +495,19 @@
       color: var(--nav-primary-color);
       text-shadow: none;
     }
+
+    /* Template pages navigation text colors - use normal styling */
+    body.expertise-page .nav-item-link,
+    body.product-page .nav-item-link {
+      color: var(--nav-text-primary);
+      text-shadow: none;
+    }
+
+    body.expertise-page .nav-item-link:hover,
+    body.product-page .nav-item-link:hover {
+      color: var(--nav-primary-color);
+      text-shadow: none;
+    }
   
     .nav-item-link::before {
       content: '';
@@ -514,6 +554,13 @@
 
     body.hero-page .nav-main-container:hover .nav-dropdown-arrow,
     body.mobile-menu-open .nav-dropdown-arrow {
+      color: var(--nav-text-primary);
+      text-shadow: none;
+    }
+
+    /* Dropdown arrows for template pages - use normal styling */
+    body.expertise-page .nav-dropdown-arrow,
+    body.product-page .nav-dropdown-arrow {
       color: var(--nav-text-primary);
       text-shadow: none;
     }

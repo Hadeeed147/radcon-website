@@ -1,0 +1,182 @@
+/* ProductCTA.css - Matching Product Template Theme */
+.product-cta {
+  padding: 80px 0;
+  background: #f8f9fa;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle background pattern matching ProductTemplate */
+.product-cta::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 119, 48, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.product-cta__content { 
+  max-width: var(--max-narrow);
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  text-align: center;
+  background: white;
+  padding: 60px 40px;
+  border-radius: 12px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  border: 1px solid #e2e8f0;
+}
+
+.product-cta__text {
+  margin-bottom: 40px;
+}
+
+.product-cta__title {
+  margin: 0 0 20px 0;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #2d3748;
+  position: relative;
+}
+
+/* Accent line under title */
+.product-cta__title::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 60px;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #2c5282, #3182ce);
+}
+
+.product-cta__description {
+  margin: 0 auto;
+  color: #4a5568;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 65ch;
+  margin-top: 20px;
+}
+
+.product-cta__actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.product-cta__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+  background: #2c5282;
+  color: white;
+  box-shadow: 0 4px 14px rgba(44, 82, 130, 0.25);
+}
+
+/* Shimmer effect */
+.product-cta__btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.product-cta__btn:hover::before {
+  left: 100%;
+}
+
+.product-cta__btn:hover {
+  background: #2a4e7c;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(44, 82, 130, 0.35);
+}
+
+.product-cta__btn:active {
+  transform: translateY(0);
+}
+
+/* Icon styling */
+.product-cta__btn-icon {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.product-cta__btn:hover .product-cta__btn-icon {
+  transform: translateX(3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-cta {
+    padding: 60px 0;
+  }
+  
+  .product-cta__content {
+    padding: 40px 24px;
+    margin: 0 16px;
+  }
+  
+  .product-cta__title {
+    font-size: 28px;
+  }
+  
+  .product-cta__description {
+    font-size: 16px;
+  }
+  
+  .product-cta__btn {
+    width: 100%;
+    max-width: 280px;
+    padding: 14px 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-cta {
+    padding: 40px 0;
+  }
+  
+  .product-cta__content {
+    padding: 32px 20px;
+    margin: 0 12px;
+  }
+  
+  .product-cta__title {
+    font-size: 24px;
+  }
+  
+  .product-cta__description {
+    font-size: 15px;
+  }
+  
+  .product-cta__btn {
+    padding: 12px 24px;
+    font-size: 15px;
+  }
+}

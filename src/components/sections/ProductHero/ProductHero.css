@@ -1,0 +1,116 @@
+.product-hero {
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  padding: 80px 0 60px;
+  overflow: hidden;
+  background: #f8f9fa;
+}
+
+.product-hero__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 1; /* Changed from 0.3 to 1 - no overlay */
+}
+
+/* Removed overlay completely */
+
+.product-hero__content {
+  position: relative;
+  z-index: 2;
+  color: #2d3748; /* Changed from white to dark */
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.95); /* White background for text readability */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.product-hero__breadcrumbs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.product-hero__crumb-link {
+  color: #718096;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.product-hero__crumb-link:hover {
+  color: #2c5282;
+}
+
+.product-hero__crumb-current {
+  color: #2d3748;
+  font-weight: 500;
+}
+
+.product-hero__separator {
+  margin: 0 12px;
+  color: #cbd5e0;
+}
+
+.product-hero__category {
+  margin-bottom: 20px;
+}
+
+.product-hero__category-badge {
+  display: inline-block;
+  padding: 6px 16px;
+  background: #2c5282;
+  color: white;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.product-hero__title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.2;
+  color: #2d3748;
+}
+
+.product-hero__subtitle {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #718096;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .product-hero {
+    min-height: 350px;
+    padding: 60px 0 40px;
+  }
+  
+  .product-hero__content {
+    padding: 24px;
+    margin: 0 16px;
+  }
+  
+  .product-hero__title {
+    font-size: 32px;
+  }
+  
+  .product-hero__subtitle {
+    font-size: 18px;
+  }
+  
+  .product-hero__breadcrumbs {
+    font-size: 12px;
+  }
+}
