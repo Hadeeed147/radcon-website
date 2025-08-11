@@ -2,14 +2,11 @@ import React, { useEffect, useMemo } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { expertisePages } from '../../data/expertiseData';
 import StandardServicePage from '../../templates/StandardServicePage/StandardServicePage';
-import TechnicalServicePage from '../../templates/TechnicalServicePage/TechnicalServicePage';
-import SimpleServicePage from '../../templates/SimpleServicePage/SimpleServicePage';
+
 import './ExpertisePage.css';
 
 const templates = {
   standard: StandardServicePage,
-  technical: TechnicalServicePage,
-  simple: SimpleServicePage,
 };
 
 const ExpertisePage = () => {
