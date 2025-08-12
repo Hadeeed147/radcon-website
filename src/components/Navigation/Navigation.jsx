@@ -167,6 +167,10 @@ const Navigation = () => {
       }
     },
     { 
+      name: "Design House", 
+      href: "/design-house"
+    },
+    { 
       name: "Media Centre", 
       href: "/media-centre"
     },
