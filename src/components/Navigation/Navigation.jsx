@@ -167,12 +167,8 @@ const Navigation = () => {
       }
     },
     { 
-      name: "Media", 
-      hasDropdown: true,
-      dropdownItems: [
-        { name: "News & Updates", href: "/news" },
-        { name: "Image Gallery", href: "/gallery" }
-      ]
+      name: "Media Centre", 
+      href: "/media-centre"
     },
     { name: "Contact", href: "/contact" }
   ];
