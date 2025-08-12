@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Hero.css';
 
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const resumeTimeoutRef = useRef(null);
 
   const slides = [
     {
@@ -40,25 +41,38 @@ const Hero = () => {
 
   // Auto-advance slides
   useEffect(() => {
-    if (!isAutoPlaying) return;
+    let interval = null;
     
-    const interval = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 6000); // 6 seconds per slide
+    if (isAutoPlaying) {
+      interval = setInterval(() => {
+        setCurrentSlide((prev) => (prev + 1) % slides.length);
+      }, 6000); // 6 seconds per slide
+    }
 
-    return () => clearInterval(interval);
-  }, [isAutoPlaying, slides.length]);
+    return () => {
+      if (interval) {
+        clearInterval(interval);
+      }
+    };
+  }, [isAutoPlaying]);
 
-  // Pause auto-play on hover
-  const handleMouseEnter = () => setIsAutoPlaying(false);
-  const handleMouseLeave = () => setIsAutoPlaying(true);
+  // Note: Auto-play continues during hover - no pause functionality
 
   // Navigate to specific slide
   const goToSlide = (index) => {
     setCurrentSlide(index);
     setIsAutoPlaying(false);
+    
+    // Clear any existing timeout
+    if (resumeTimeoutRef.current) {
+      clearTimeout(resumeTimeoutRef.current);
+    }
+    
     // Resume auto-play after 10 seconds of manual interaction
-    setTimeout(() => setIsAutoPlaying(true), 10000);
+    resumeTimeoutRef.current = setTimeout(() => {
+      setIsAutoPlaying(true);
+      resumeTimeoutRef.current = null;
+    }, 10000);
   };
 
   // Navigate slides with keyboard
@@ -67,23 +81,52 @@ const Hero = () => {
       if (e.key === 'ArrowLeft') {
         setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
         setIsAutoPlaying(false);
+        
+        // Clear any existing timeout
+        if (resumeTimeoutRef.current) {
+          clearTimeout(resumeTimeoutRef.current);
+        }
+        
+        // Resume auto-play after 10 seconds
+        resumeTimeoutRef.current = setTimeout(() => {
+          setIsAutoPlaying(true);
+          resumeTimeoutRef.current = null;
+        }, 10000);
       } else if (e.key === 'ArrowRight') {
         setCurrentSlide((prev) => (prev + 1) % slides.length);
         setIsAutoPlaying(false);
+        
+        // Clear any existing timeout
+        if (resumeTimeoutRef.current) {
+          clearTimeout(resumeTimeoutRef.current);
+        }
+        
+        // Resume auto-play after 10 seconds
+        resumeTimeoutRef.current = setTimeout(() => {
+          setIsAutoPlaying(true);
+          resumeTimeoutRef.current = null;
+        }, 10000);
       }
     };
 
     window.addEventListener('keydown', handleKeyPress);
     return () => window.removeEventListener('keydown', handleKeyPress);
-  }, [slides.length]);
+  }, []);
+
+  // Cleanup timeout on component unmount
+  useEffect(() => {
+    return () => {
+      if (resumeTimeoutRef.current) {
+        clearTimeout(resumeTimeoutRef.current);
+      }
+    };
+  }, []);
 
   const currentSlideData = slides[currentSlide];
 
   return (
     <section 
       className="hero-container"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
       role="banner"
       aria-label="Hero slideshow"
     >

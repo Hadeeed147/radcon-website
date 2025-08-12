@@ -1,0 +1,574 @@
+/* MediaCentre.css */
+.media-centre-page {
+  background: var(--bg-primary);
+  min-height: 100vh;
+}
+
+/* Success Stories Section */
+.success-stories {
+  padding: 80px 0;
+  background: white;
+}
+
+.success-stories__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.success-stories__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.success-stories__highlight {
+  color: var(--color-primary);
+  background: linear-gradient(135deg, #2c5282 0%, #3182ce 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.success-stories__subtitle {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.success-stories__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+/* Success Story Card */
+.success-story-card {
+  background: var(--bg-alt);
+  border-radius: 12px;
+  padding: 30px;
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-medium);
+  position: relative;
+  overflow: hidden;
+}
+
+.success-story-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.success-story-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  border-color: var(--color-primary);
+}
+
+.success-story-card:hover::before {
+  opacity: 1;
+}
+
+.success-story-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.success-story-card__icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.success-story-card__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.success-story-card__category {
+  background: white;
+  color: var(--color-primary);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 1px solid var(--color-primary);
+}
+
+.success-story-card__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 10px 0;
+}
+
+.success-story-card__client {
+  font-size: 0.875rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  margin: 0 0 15px 0;
+}
+
+.success-story-card__description {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.success-story-card__achievements {
+  margin-bottom: 20px;
+}
+
+.success-story-card__achievements h4 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.success-story-card__achievements ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.success-story-card__achievements li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 8px;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.success-story-card__achievements li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--success);
+  font-weight: bold;
+}
+
+.success-story-card__link {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+  transition: all var(--transition-fast);
+}
+
+.success-story-card__link:hover {
+  color: var(--color-primary-hover);
+  transform: translateX(4px);
+}
+
+/* Milestones Timeline */
+.milestones {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.milestones__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.milestones__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.milestones__highlight {
+  color: var(--color-primary);
+  background: linear-gradient(135deg, #2c5282 0%, #3182ce 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.milestones__subtitle {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.milestones__timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding: 20px 0;
+}
+
+.milestones__timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--color-primary), var(--color-secondary));
+  transform: translateX(-50%);
+}
+
+.milestone {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.milestone:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.milestone__marker {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  background: white;
+  border: 3px solid var(--color-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  box-shadow: 0 4px 12px rgba(44, 82, 130, 0.2);
+}
+
+.milestone__year {
+  font-weight: 700;
+  color: var(--color-primary);
+  font-size: 1rem;
+}
+
+.milestone__content {
+  width: 45%;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-fast);
+}
+
+.milestone:nth-child(odd) .milestone__content {
+  margin-right: auto;
+}
+
+.milestone:nth-child(even) .milestone__content {
+  margin-left: auto;
+}
+
+.milestone__content:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  border-color: var(--color-primary);
+}
+
+.milestone__title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 8px 0;
+}
+
+.milestone__description {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Capabilities Overview */
+.capabilities-overview {
+  padding: 80px 0;
+  background: white;
+}
+
+.capabilities-overview__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.capabilities-overview__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.capabilities-overview__highlight {
+  color: var(--color-primary);
+  background: linear-gradient(135deg, #2c5282 0%, #3182ce 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.capabilities-overview__subtitle {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.capability-card {
+  text-align: center;
+  padding: 40px 30px;
+  background: linear-gradient(135deg, var(--bg-alt), white);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-medium);
+  position: relative;
+  overflow: hidden;
+}
+
+.capability-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(44, 82, 130, 0.05), transparent);
+  opacity: 0;
+  transition: opacity var(--transition-fast);
+}
+
+.capability-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  border-color: var(--color-primary);
+}
+
+.capability-card:hover::before {
+  opacity: 1;
+}
+
+.capability-card__icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.capability-card__icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.capability-card__title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 12px 0;
+}
+
+.capability-card__description {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Simple Contact Section */
+.media-contact-simple {
+  padding: 80px 0;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  position: relative;
+  overflow: hidden;
+}
+
+.media-contact-simple::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
+  border-radius: 50%;
+}
+
+.media-contact-simple__content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.media-contact-simple__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.media-contact-simple__description {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.media-contact-simple__buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.media-contact-simple .btn {
+  padding: 16px 32px;
+  font-size: 1rem;
+}
+
+.media-contact-simple .btn--primary {
+  background: white;
+  color: var(--color-primary);
+}
+
+.media-contact-simple .btn--primary:hover {
+  background: var(--bg-alt);
+  transform: translateY(-2px);
+}
+
+.media-contact-simple .btn--secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.media-contact-simple .btn--secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .success-stories__grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .milestone__marker {
+    left: 30px;
+    transform: translateX(0);
+  }
+
+  .milestones__timeline::before {
+    left: 30px;
+  }
+
+  .milestone {
+    flex-direction: row !important;
+  }
+
+  .milestone__content {
+    width: calc(100% - 100px);
+    margin-left: 100px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .success-stories__title,
+  .milestones__title,
+  .capabilities-overview__title,
+  .media-contact-simple__title {
+    font-size: 2rem;
+  }
+
+  .success-stories__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .capabilities-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .milestone__marker {
+    width: 60px;
+    height: 60px;
+    left: 20px;
+  }
+
+  .milestone__year {
+    font-size: 0.875rem;
+  }
+
+  .milestones__timeline::before {
+    left: 20px;
+  }
+
+  .milestone__content {
+    width: calc(100% - 80px);
+    margin-left: 80px !important;
+    padding: 15px;
+  }
+
+  .media-contact-simple__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .media-contact-simple .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .success-stories,
+  .milestones,
+  .capabilities-overview,
+  .media-contact-simple {
+    padding: 60px 0;
+  }
+
+  .success-story-card {
+    padding: 24px;
+  }
+
+  .media-contact-simple__title {
+    font-size: 1.75rem;
+  }
+
+  .media-contact-simple__description {
+    font-size: 1rem;
+  }
+}

@@ -32,8 +32,11 @@ const Navigation = () => {
   // Use colored logo on template pages or when nav is hovered/mobile menu is open
   const isTemplatePage = document.body.classList.contains('expertise-page') || 
                          document.body.classList.contains('product-page') ||
-                         document.body.classList.contains('about-page');
-  const shouldShowColoredLogo = isTemplatePage || isNavHovered || isMobileMenuOpen;
+                         document.body.classList.contains('about-page') ||
+                         document.body.classList.contains('contact-page') ||
+                         document.body.classList.contains('media-centre-page') ||
+                         document.body.classList.contains('design-house-page');
+  const shouldShowColoredLogo = isTemplatePage || isNavHovered || isMobileMenuOpen || location.pathname !== '/';
   const logoSource = shouldShowColoredLogo ? "/images/radcon-logo.png" : "/images/radcon-logo-transparent.png";
 
   const navItems = [
@@ -43,6 +46,7 @@ const Navigation = () => {
     },
     { 
       name: "Expertise", 
+      href: "/expertise",
       hasDropdown: true,
       isMegaMenu: true,
       megaMenuData: {
@@ -87,6 +91,7 @@ const Navigation = () => {
       name: "Products", 
       hasDropdown: true,
       isMegaMenu: true,
+      disabled: true,
       megaMenuData: {
         columns: [
           {
@@ -451,9 +456,10 @@ const Navigation = () => {
                 id={`navItem${index}`}
               >
                 <a 
-                  href={item.href || "#"} 
-                  className="nav-item-link" 
+                  href={item.disabled ? "#" : (item.href || "#")} 
+                  className={`nav-item-link ${item.disabled ? 'nav-item-link--disabled' : ''}`}
                   id={`navItemLink${index}`}
+                  onClick={item.disabled ? (e) => e.preventDefault() : undefined}
                 >
                   {item.name}
                   {item.hasDropdown && (
@@ -508,7 +514,12 @@ const Navigation = () => {
           {navItems.map((item, index) => (
             <li key={index} className="nav-mobile-item" id={`navMobileItem${index}`}>
               <div className="nav-mobile-item-header">
-                <a href={item.href || "#"} className="nav-mobile-item-link" id={`navMobileItemLink${index}`}>
+                <a 
+                  href={item.disabled ? "#" : (item.href || "#")} 
+                  className={`nav-mobile-item-link ${item.disabled ? 'nav-mobile-item-link--disabled' : ''}`}
+                  id={`navMobileItemLink${index}`}
+                  onClick={item.disabled ? (e) => e.preventDefault() : undefined}
+                >
                   {item.name}
                 </a>
                 {item.hasDropdown ? (

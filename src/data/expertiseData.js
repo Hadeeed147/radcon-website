@@ -221,7 +221,7 @@ Our development process emphasizes collaboration, agility, and quality. We work 
     breadcrumbs: [
       { label: 'Home', href: '/' }, 
       { label: 'Expertise', href: '/expertise' }, 
-      { label: 'Software', href: '/expertise/software' },
+      { label: 'Software' },
       { label: 'Mobile App Development' }
     ] 
   },
@@ -418,7 +418,7 @@ Our mobile solutions integrate seamlessly with existing enterprise systems, clou
     breadcrumbs: [
       { label: 'Home', href: '/' }, 
       { label: 'Expertise', href: '/expertise' }, 
-      { label: 'Software', href: '/expertise/software' },
+      { label: 'Software' },
       { label: 'Database Design & Development' }
     ] 
   },

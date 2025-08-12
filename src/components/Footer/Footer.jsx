@@ -5,9 +5,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const exploreLinks = [
-    { name: 'Expertise', href: '#!' },
-    { name: 'Products', href: '#!' },
-    { name: 'News & Updates', href: '/news' },
+    { name: 'Design House', href: '/design-house' },
+    { name: 'Media Centre', href: '/media-centre' },
     { name: 'About Us', href: '/about-us' }
   ];
 
