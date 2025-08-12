@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 import './Navigation.css';
 
 const Navigation = () => {
+  const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeMobileSubmenu, setActiveMobileSubmenu] = useState(null);
   const [isNavHovered, setIsNavHovered] = useState(false);
@@ -9,22 +11,35 @@ const Navigation = () => {
   const [lastScrollY, setLastScrollY] = useState(0);
   const navigationRef = useRef(null);
 
+  // Reset navigation state on page load/route change
+  useEffect(() => {
+    setIsNavHovered(false);
+    setIsMobileMenuOpen(false);
+    setActiveMobileSubmenu(null);
+    
+    // Add a class to prevent hover effects temporarily on route change
+    const navElement = navigationRef.current;
+    if (navElement) {
+      navElement.classList.add('nav-no-hover');
+      const timer = setTimeout(() => {
+        navElement.classList.remove('nav-no-hover');
+      }, 100);
+      return () => clearTimeout(timer);
+    }
+  }, [location.pathname]);
+
   // Determine which logo to show
   // Use colored logo on template pages or when nav is hovered/mobile menu is open
   const isTemplatePage = document.body.classList.contains('expertise-page') || 
-                         document.body.classList.contains('product-page');
+                         document.body.classList.contains('product-page') ||
+                         document.body.classList.contains('about-page');
   const shouldShowColoredLogo = isTemplatePage || isNavHovered || isMobileMenuOpen;
   const logoSource = shouldShowColoredLogo ? "/images/radcon-logo.png" : "/images/radcon-logo-transparent.png";
 
   const navItems = [
     { 
-      name: "Corporate", 
-      hasDropdown: true,
-      dropdownItems: [
-        { name: "About Us", href: "/about-us" },
-        { name: "Vision & Mission", href: "/vision-mission" },
-        { name: "RADCON Ethical Principles", href: "/ethics" }
-      ]
+      name: "About Us", 
+      href: "/about-us"
     },
     { 
       name: "Expertise", 

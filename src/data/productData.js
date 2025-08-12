@@ -18,7 +18,7 @@ export const productPages = {
         backgroundImage: '/images/products/jammers-hero.jpg', // Military convoy or security vehicle
         breadcrumbs: [
           { label: 'Home', href: '/' },
-          { label: 'Products', href: '/products' },
+          { label: 'Products' },
           { label: 'Life-Saving Equipment' }
         ]
       },
@@ -219,7 +219,7 @@ export const productPages = {
         backgroundImage: '/images/products/rf-components-hero.jpg', // RF lab or components
         breadcrumbs: [
           { label: 'Home', href: '/' },
-          { label: 'Products', href: '/products' },
+          { label: 'Products' },
           { label: 'RF & Microwave' }
         ]
       },
@@ -416,7 +416,7 @@ export const productPages = {
         backgroundImage: '/images/products/power-systems-hero.jpg',
         breadcrumbs: [
           { label: 'Home', href: '/' },
-          { label: 'Products', href: '/products' },
+          { label: 'Products' },
           { label: 'Power Systems' }
         ]
       },
@@ -626,7 +626,7 @@ export const productPages = {
         backgroundImage: '/images/products/embedded-boards-hero.jpg',
         breadcrumbs: [
           { label: 'Home', href: '/' },
-          { label: 'Products', href: '/products' },
+          { label: 'Products' },
           { label: 'Embedded Systems' }
         ]
       },
@@ -835,7 +835,7 @@ export const productPages = {
         backgroundImage: '/images/products/communication-hero.jpg',
         breadcrumbs: [
           { label: 'Home', href: '/' },
-          { label: 'Products', href: '/products' },
+          { label: 'Products' },
           { label: 'Communication Equipment' }
         ]
       },
@@ -1034,7 +1034,7 @@ export const productPages = {
         backgroundImage: '/images/products/optronics-hero.jpg',
         breadcrumbs: [
           { label: 'Home', href: '/' },
-          { label: 'Products', href: '/products' },
+          { label: 'Products' },
           { label: 'Optronics' }
         ]
       },
@@ -1231,7 +1231,7 @@ export const productPages = {
         backgroundImage: '/images/products/navigation-hero.jpg',
         breadcrumbs: [
           { label: 'Home', href: '/' },
-          { label: 'Products', href: '/products' },
+          { label: 'Products' },
           { label: 'Navigation' }
         ]
       },
@@ -1428,7 +1428,7 @@ export const productPages = {
         backgroundImage: '/images/products/aviation-hero.jpg',
         breadcrumbs: [
           { label: 'Home', href: '/' },
-          { label: 'Products', href: '/products' },
+          { label: 'Products' },
           { label: 'Aviation Industry' }
         ]
       },
@@ -1626,7 +1626,7 @@ export const productPages = {
         backgroundImage: '/images/products/radar-parts-hero.jpg',
         breadcrumbs: [
           { label: 'Home', href: '/' },
-          { label: 'Products', href: '/products' },
+          { label: 'Products' },
           { label: 'Radar Parts' }
         ]
       },

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Navigation from './components/Navigation/Navigation';
 import Footer from './components/Footer/Footer';
 import Hero from './components/Hero/Hero';
+import AboutUs from './pages/AboutUs.jsx';
 import ExpertisePage from './pages/ExpertisePage/ExpertisePage';
 import ProductPage from './pages/ProductPage/ProductPage';
 import ErrorBoundary from './components/ErrorBoundary';
@@ -15,11 +16,13 @@ function BodyClassManager() {
   
   useEffect(() => {
     // Remove all page-specific classes first
-    document.body.classList.remove('hero-page', 'expertise-page', 'product-page');
+    document.body.classList.remove('hero-page', 'expertise-page', 'product-page', 'about-page');
     
     // Add appropriate class based on current route
     if (location.pathname === '/') {
       document.body.classList.add('hero-page');
+    } else if (location.pathname === '/about-us') {
+      document.body.classList.add('about-page');
     } else if (location.pathname.startsWith('/expertise/')) {
       document.body.classList.add('expertise-page');
     } else if (location.pathname.startsWith('/products/')) {
@@ -28,7 +31,7 @@ function BodyClassManager() {
     
     // Cleanup function to remove classes when component unmounts
     return () => {
-      document.body.classList.remove('hero-page', 'expertise-page', 'product-page');
+      document.body.classList.remove('hero-page', 'expertise-page', 'product-page', 'about-page');
     };
   }, [location.pathname]);
   
@@ -45,6 +48,7 @@ function App() {
         <ErrorBoundary>
           <Routes>
             <Route path="/" element={<Hero />} />
+            <Route path="/about-us" element={<AboutUs />} />
             <Route path="/expertise/:category/:service" element={<ExpertisePage />} />
             <Route path="/products/:slug" element={<ProductPage />} />
           </Routes>

@@ -16,7 +16,7 @@ export const expertisePages = {
       breadcrumbs: [
         { label: 'Home', href: '/' }, 
         { label: 'Expertise', href: '/expertise' }, 
-        { label: 'Software', href: '/expertise/software' },
+        { label: 'Software' },
         { label: 'Web & Application Development' }
       ] 
     },
@@ -611,7 +611,7 @@ We implement best practices in database security, performance optimization, and 
     breadcrumbs: [
       { label: 'Home', href: '/' }, 
       { label: 'Expertise', href: '/expertise' }, 
-      { label: 'Hardware', href: '/expertise/hardware' },
+              { label: 'Hardware' },
       { label: 'Power Systems' }
     ] 
   },
@@ -789,7 +789,7 @@ From concept to production, we deliver power solutions that combine efficiency, 
     breadcrumbs: [
       { label: 'Home', href: '/' }, 
       { label: 'Expertise', href: '/expertise' }, 
-      { label: 'Hardware', href: '/expertise/hardware' },
+              { label: 'Hardware' },
       { label: 'RF & Microwave Solutions' }
     ] 
   },
@@ -967,7 +967,7 @@ Our team combines theoretical knowledge with practical experience to deliver RF 
     breadcrumbs: [
       { label: 'Home', href: '/' }, 
       { label: 'Expertise', href: '/expertise' }, 
-      { label: 'Hardware', href: '/expertise/hardware' },
+              { label: 'Hardware' },
       { label: 'Printed Circuit Board' }
     ] 
   },
@@ -1145,7 +1145,7 @@ Our designs incorporate thermal management, high-Tg materials for high-voltage a
     breadcrumbs: [
       { label: 'Home', href: '/' }, 
       { label: 'Expertise', href: '/expertise' }, 
-      { label: 'Hardware', href: '/expertise/hardware' },
+              { label: 'Hardware' },
       { label: 'Embedded Systems' }
     ] 
   },
@@ -1329,7 +1329,7 @@ Our embedded solutions integrate seamlessly with various interfaces and protocol
     breadcrumbs: [
       { label: 'Home', href: '/' }, 
       { label: 'Expertise', href: '/expertise' }, 
-      { label: 'Hardware', href: '/expertise/hardware' },
+              { label: 'Hardware' },
       { label: 'Diagnostic Services' }
     ] 
   },
@@ -1507,7 +1507,7 @@ With advanced diagnostic equipment and experienced engineers, we can quickly ide
     breadcrumbs: [
       { label: 'Home', href: '/' }, 
       { label: 'Expertise', href: '/expertise' }, 
-      { label: 'Hardware', href: '/expertise/hardware' },
+              { label: 'Hardware' },
       { label: 'Electromechanical Solutions' }
     ] 
   },
@@ -1685,7 +1685,7 @@ Quality is maintained throughout the engineering process with detailed design, p
     breadcrumbs: [
       { label: 'Home', href: '/' }, 
       { label: 'Expertise', href: '/expertise' }, 
-      { label: 'Lifecycle Support', href: '/expertise/lifecycle-support' },
+              { label: 'Lifecycle Support' },
       { label: 'Customer Relationship Management' }
     ] 
   },
@@ -1863,7 +1863,7 @@ Our CRM services integrate technical support, project management, and strategic 
     breadcrumbs: [
       { label: 'Home', href: '/' }, 
       { label: 'Expertise', href: '/expertise' }, 
-      { label: 'Lifecycle Support', href: '/expertise/lifecycle-support' },
+              { label: 'Lifecycle Support' },
       { label: 'Hardware Lifecycle Support' }
     ] 
   },
@@ -2041,7 +2041,7 @@ With deep technical expertise and strategic partnerships, we keep your hardware 
     breadcrumbs: [
       { label: 'Home', href: '/' }, 
       { label: 'Expertise', href: '/expertise' }, 
-      { label: 'HR & Engineering Services', href: '/expertise/services' },
+              { label: 'HR & Engineering Services' },
       { label: 'HR Services' }
     ] 
   },
@@ -2213,7 +2213,7 @@ We focus on creating work environments that attract top talent, foster innovatio
     breadcrumbs: [
       { label: 'Home', href: '/' }, 
       { label: 'Expertise', href: '/expertise' }, 
-      { label: 'HR & Engineering Services', href: '/expertise/services' },
+              { label: 'HR & Engineering Services' },
       { label: 'Engineering Services' }
     ] 
   },
