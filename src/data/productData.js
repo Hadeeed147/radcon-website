@@ -104,44 +104,44 @@ export const productPages = {
           examples: ['Border checkpoints', 'Sensitive zones', 'Restricted areas']
         }
       ],
-      features: [
-        {
-          icon: '🛡️',
-          title: 'Multi-Band Coverage',
-          description: 'Simultaneous jamming of multiple frequency bands for comprehensive protection',
-          highlights: ['VHF/UHF', 'Cellular', 'WiFi/GPS']
-        },
-        {
-          icon: '⚡',
-          title: 'Smart Power Management',
-          description: 'Adaptive power control optimizes jamming effectiveness while minimizing interference',
-          highlights: ['Auto-adjust', 'Band priority', 'Power saving']
-        },
-        {
-          icon: '🔄',
-          title: 'Modular Design',
-          description: 'Customizable modules allow configuration for specific threat scenarios',
-          highlights: ['Hot-swappable', 'Field upgradable', 'Scalable']
-        },
-        {
-          icon: '📡',
-          title: 'Remote Control',
-          description: 'Operate and monitor system remotely for enhanced operator safety',
-          highlights: ['Wireless control', 'Status monitoring', 'Alert system']
-        },
-        {
-          icon: '🌡️',
-          title: 'Thermal Management',
-          description: 'Advanced cooling ensures continuous operation in harsh environments',
-          highlights: ['Smart cooling', 'Temperature monitoring', 'Auto-shutdown']
-        },
-        {
-          icon: '🔒',
-          title: 'Selective Jamming',
-          description: 'Allows friendly communications while blocking threats',
-          highlights: ['Whitelist capability', 'Frequency windows', 'Smart filtering']
-        }
-      ],
+             features: [
+         {
+           icon: 'shield-check',
+           title: 'Multi-Band Coverage',
+           description: 'Simultaneous jamming of multiple frequency bands for comprehensive protection',
+           highlights: ['VHF/UHF', 'Cellular', 'WiFi/GPS']
+         },
+         {
+           icon: 'bolt',
+           title: 'Smart Power Management',
+           description: 'Adaptive power control optimizes jamming effectiveness while minimizing interference',
+           highlights: ['Auto-adjust', 'Band priority', 'Power saving']
+         },
+         {
+           icon: 'arrow-path',
+           title: 'Modular Design',
+           description: 'Customizable modules allow configuration for specific threat scenarios',
+           highlights: ['Hot-swappable', 'Field upgradable', 'Scalable']
+         },
+         {
+           icon: 'signal',
+           title: 'Remote Control',
+           description: 'Operate and monitor system remotely for enhanced operator safety',
+           highlights: ['Wireless control', 'Status monitoring', 'Alert system']
+         },
+         {
+           icon: 'fire',
+           title: 'Thermal Management',
+           description: 'Advanced cooling ensures continuous operation in harsh environments',
+           highlights: ['Smart cooling', 'Temperature monitoring', 'Auto-shutdown']
+         },
+         {
+           icon: 'no-symbol',
+           title: 'Selective Jamming',
+           description: 'Allows friendly communications while blocking threats',
+           highlights: ['Whitelist capability', 'Frequency windows', 'Smart filtering']
+         }
+       ],
       advantages: [
         {
           title: 'Proven Field Performance',
@@ -178,22 +178,44 @@ export const productPages = {
           caption: 'Vehicle-mounted convoy protection system'
         },
       ],
-      relatedProducts: [
-        {
-          slug: 'product-rf-amplifiers',
-          title: 'RF Power Amplifiers',
-          category: 'RF & Microwave',
-          description: 'High-power RF amplifiers for jamming applications',
-          href: '/products/product-rf-amplifiers'
-        },
-        {
-          slug: 'product-power-supplies',
-          title: 'Military Power Supplies',
-          category: 'Power Systems',
-          description: 'Ruggedized power systems for field deployment',
-          href: '/products/product-power-supplies'
-        }
-      ],
+             relatedProducts: [
+         {
+           slug: 'product-rf-amplifiers',
+           title: 'RF Power Amplifiers',
+           category: 'RF & Microwave',
+           description: 'High-power RF amplifiers for jamming applications',
+           href: '/products/product-rf-amplifiers'
+         },
+         {
+           slug: 'product-power-supplies',
+           title: 'Military Power Supplies',
+           category: 'Power Systems',
+           description: 'Ruggedized power systems for field deployment',
+           href: '/products/product-power-supplies'
+         }
+       ],
+       faq: [
+         {
+           question: 'What frequency bands do your jamming systems cover?',
+           answer: 'Our jamming systems cover frequencies from 20MHz to 6GHz, including VHF/UHF, cellular (GSM 900/1800), 3G/UMTS, 4G/LTE, WiFi/Bluetooth, and GPS L1 bands.'
+         },
+         {
+           question: 'Are your jamming systems vehicle-mounted or portable?',
+           answer: 'We offer both vehicle-mounted and portable jamming solutions. Vehicle-mounted systems provide higher power output and extended protection radius, while portable units offer flexibility for different operational scenarios.'
+         },
+         {
+           question: 'What is the protection radius of your jamming systems?',
+           answer: 'Our jamming systems provide protection radius from 100-500m depending on the configuration and power output. The range can be customized based on specific operational requirements.'
+         },
+         {
+           question: 'Do your jamming systems allow friendly communications?',
+           answer: 'Yes, our systems feature selective jamming capabilities with whitelist functionality, allowing friendly communications while blocking threats through smart filtering and frequency windows.'
+         },
+         {
+           question: 'What certifications do your jamming systems have?',
+           answer: 'Our jamming systems are certified to MIL-STD-810G Environmental, MIL-STD-461F EMC, IP65 Protection Rating, ISO 9001:2015, and CE Marking standards.'
+         }
+       ],
       cta: {
         title: 'Protect Your Assets with Advanced Jamming Technology',
         description: 'Contact our security experts to discuss your electronic countermeasure requirements',
@@ -303,44 +325,44 @@ export const productPages = {
           examples: ['EMC testing', 'Antenna ranges', 'R&D labs']
         }
       ],
-      features: [
-        {
-          icon: '📊',
-          title: 'Wide Bandwidth',
-          description: 'Multi-octave bandwidth coverage for versatile applications',
-          highlights: ['DC-9GHz', 'Low ripple', 'Flat response']
-        },
-        {
-          icon: '⚙️',
-          title: 'High Linearity',
-          description: 'Excellent linearity for minimal signal distortion',
-          highlights: ['High IP3', 'Low IMD', 'ACPR optimized']
-        },
-        {
-          icon: '🌡️',
-          title: 'Thermal Stability',
-          description: 'Temperature compensated designs for consistent performance',
-          highlights: ['Auto-bias', 'Heat sinks', 'Thermal shutdown']
-        },
-        {
-          icon: '🔧',
-          title: 'Customizable',
-          description: 'Tailored solutions to meet specific requirements',
-          highlights: ['Custom frequency', 'Power levels', 'Form factors']
-        },
-        {
-          icon: '📈',
-          title: 'High Efficiency',
-          description: 'Advanced matching networks for maximum efficiency',
-          highlights: ['>65% PAE', 'Low DC power', 'Green design']
-        },
-        {
-          icon: '🛡️',
-          title: 'Protection Features',
-          description: 'Built-in protection for reliable operation',
-          highlights: ['VSWR protection', 'Over-temp', 'Reverse power']
-        }
-      ],
+             features: [
+         {
+           icon: 'chart-bar',
+           title: 'Wide Bandwidth',
+           description: 'Multi-octave bandwidth coverage for versatile applications',
+           highlights: ['DC-9GHz', 'Low ripple', 'Flat response']
+         },
+         {
+           icon: 'adjustments-horizontal',
+           title: 'High Linearity',
+           description: 'Excellent linearity for minimal signal distortion',
+           highlights: ['High IP3', 'Low IMD', 'ACPR optimized']
+         },
+         {
+           icon: 'fire',
+           title: 'Thermal Stability',
+           description: 'Temperature compensated designs for consistent performance',
+           highlights: ['Auto-bias', 'Heat sinks', 'Thermal shutdown']
+         },
+         {
+           icon: 'wrench-screwdriver',
+           title: 'Customizable',
+           description: 'Tailored solutions to meet specific requirements',
+           highlights: ['Custom frequency', 'Power levels', 'Form factors']
+         },
+         {
+           icon: 'arrow-trending-up',
+           title: 'High Efficiency',
+           description: 'Advanced matching networks for maximum efficiency',
+           highlights: ['>65% PAE', 'Low DC power', 'Green design']
+         },
+         {
+           icon: 'shield-check',
+           title: 'Protection Features',
+           description: 'Built-in protection for reliable operation',
+           highlights: ['VSWR protection', 'Over-temp', 'Reverse power']
+         }
+       ],
       advantages: [
         {
           title: 'Local RF Expertise',
@@ -375,22 +397,44 @@ export const productPages = {
           caption: 'High-power GaN amplifier module'
         },
       ],
-      relatedProducts: [
-        {
-          slug: 'product-power-supplies',
-          title: 'RF Power Supplies',
-          category: 'Power Systems',
-          description: 'Specialized power supplies for RF amplifiers',
-          href: '/products/product-power-supplies'
-        },
-        {
-          slug: 'product-jammers',
-          title: 'Jamming Systems',
-          category: 'Life-Saving Equipment',
-          description: 'Complete jamming solutions using our RF modules',
-          href: '/products/product-jammers'
-        }
-      ],
+             relatedProducts: [
+         {
+           slug: 'product-power-supplies',
+           title: 'RF Power Supplies',
+           category: 'Power Systems',
+           description: 'Specialized power supplies for RF amplifiers',
+           href: '/products/product-power-supplies'
+         },
+         {
+           slug: 'product-jammers',
+           title: 'Jamming Systems',
+           category: 'Life-Saving Equipment',
+           description: 'Complete jamming solutions using our RF modules',
+           href: '/products/product-jammers'
+         }
+       ],
+       faq: [
+         {
+           question: 'What frequency range do your RF amplifiers cover?',
+           answer: 'Our RF amplifiers cover frequencies from DC to 9GHz, with specific models optimized for different frequency bands including VHF, UHF, L-band, S-band, C-band, and X-band applications.'
+         },
+         {
+           question: 'What power output levels are available?',
+           answer: 'We offer RF amplifiers with power outputs ranging from 1W to 2kW, depending on the application. Our high-power amplifiers use advanced GaN/LDMOS/GaAs technology for optimal performance.'
+         },
+         {
+           question: 'Do you provide custom RF solutions?',
+           answer: 'Yes, we specialize in custom RF design and can tailor amplifiers to meet specific frequency, power, and form factor requirements. Our local expertise enables rapid prototyping and delivery.'
+         },
+         {
+           question: 'What certifications do your RF products have?',
+           answer: 'Our RF products are certified to ISO 9001:2015, RoHS Compliant, CE Marked, and MIL-STD-883 Tested standards, ensuring quality and compliance for various applications.'
+         },
+         {
+           question: 'Can you provide impedance matching services?',
+           answer: 'Yes, we offer custom impedance matching networks and can design matching circuits to optimize amplifier performance for specific load conditions and frequency ranges.'
+         }
+       ],
       cta: {
         title: 'Need Custom RF Solutions?',
         description: 'Our RF engineers can design components tailored to your exact specifications',
@@ -512,44 +556,44 @@ export const productPages = {
           examples: ['Traction systems', 'Control electronics', 'Signaling']
         }
       ],
-      features: [
-        {
-          icon: '⚡',
-          title: 'High Efficiency',
-          description: 'Latest topology and components for maximum efficiency',
-          highlights: ['>95% peak', 'Low heat', 'Energy saving']
-        },
-        {
-          icon: '🔄',
-          title: 'Multiple Outputs',
-          description: 'Single input to multiple isolated outputs',
-          highlights: ['Up to 8 outputs', 'Independent regulation', 'Isolated']
-        },
-        {
-          icon: '🛡️',
-          title: 'Protection Suite',
-          description: 'Comprehensive protection features',
-          highlights: ['OVP/OCP/OTP', 'Short circuit', 'Reverse polarity']
-        },
-        {
-          icon: '📊',
-          title: 'Smart Monitoring',
-          description: 'Digital monitoring and control interfaces',
-          highlights: ['I2C/PMBus', 'Remote control', 'Telemetry']
-        },
-        {
-          icon: '🌍',
-          title: 'Universal Input',
-          description: 'Wide input range for global applications',
-          highlights: ['85-265VAC', '47-63Hz', 'PFC equipped']
-        },
-        {
-          icon: '🔧',
-          title: 'Modular Design',
-          description: 'Configurable and scalable architecture',
-          highlights: ['Hot-swap', 'N+1 redundancy', 'Parallel operation']
-        }
-      ],
+             features: [
+         {
+           icon: 'bolt',
+           title: 'High Efficiency',
+           description: 'Latest topology and components for maximum efficiency',
+           highlights: ['>95% peak', 'Low heat', 'Energy saving']
+         },
+         {
+           icon: 'arrow-path',
+           title: 'Multiple Outputs',
+           description: 'Single input to multiple isolated outputs',
+           highlights: ['Up to 8 outputs', 'Independent regulation', 'Isolated']
+         },
+         {
+           icon: 'shield-check',
+           title: 'Protection Suite',
+           description: 'Comprehensive protection features',
+           highlights: ['OVP/OCP/OTP', 'Short circuit', 'Reverse polarity']
+         },
+         {
+           icon: 'chart-bar',
+           title: 'Smart Monitoring',
+           description: 'Digital monitoring and control interfaces',
+           highlights: ['I2C/PMBus', 'Remote control', 'Telemetry']
+         },
+         {
+           icon: 'globe-alt',
+           title: 'Universal Input',
+           description: 'Wide input range for global applications',
+           highlights: ['85-265VAC', '47-63Hz', 'PFC equipped']
+         },
+         {
+           icon: 'wrench-screwdriver',
+           title: 'Modular Design',
+           description: 'Configurable and scalable architecture',
+           highlights: ['Hot-swap', 'N+1 redundancy', 'Parallel operation']
+         }
+       ],
       advantages: [
         {
           title: 'Custom Engineering',
@@ -585,22 +629,44 @@ export const productPages = {
           caption: 'Modular SMPS design for rack systems'
         },
       ],
-      relatedProducts: [
-        {
-          slug: 'product-embedded-boards',
-          title: 'Power Management Boards',
-          category: 'Embedded Systems',
-          description: 'Intelligent power management solutions',
-          href: '/products/product-embedded-boards'
-        },
-        {
-          slug: 'product-rf-amplifiers',
-          title: 'RF Power Amplifiers',
-          category: 'RF & Microwave',
-          description: 'High-efficiency RF power solutions',
-          href: '/products/product-rf-amplifiers'
-        }
-      ],
+             relatedProducts: [
+         {
+           slug: 'product-embedded-boards',
+           title: 'Power Management Boards',
+           category: 'Embedded Systems',
+           description: 'Intelligent power management solutions',
+           href: '/products/product-embedded-boards'
+         },
+         {
+           slug: 'product-rf-amplifiers',
+           title: 'RF Power Amplifiers',
+           category: 'RF & Microwave',
+           description: 'High-efficiency RF power solutions',
+           href: '/products/product-rf-amplifiers'
+         }
+       ],
+       faq: [
+         {
+           question: 'What power output ranges do you offer?',
+           answer: 'We offer power supplies with output power ranging from 1W to 5kW, covering a wide spectrum of applications from small embedded systems to industrial equipment and military systems.'
+         },
+         {
+           question: 'Do you provide high voltage power supplies?',
+           answer: 'Yes, we specialize in high voltage systems up to 30kV with high stability (±0.01%) and low ripple (<0.1%), suitable for specialized industrial and research applications.'
+         },
+         {
+           question: 'What efficiency levels can you achieve?',
+           answer: 'Our power supplies achieve efficiency levels up to 95%, using advanced topologies and components to minimize heat generation and energy consumption.'
+         },
+         {
+           question: 'Do you offer custom power supply design?',
+           answer: 'Yes, we provide custom engineering services to design power supplies tailored to specific voltage, current, form factor, and environmental requirements.'
+         },
+         {
+           question: 'What environmental specifications do you support?',
+           answer: 'Our power supplies operate in temperatures from -40°C to +85°C, with MIL-STD-810G compliance for shock and vibration, and IP65 protection ratings available.'
+         }
+       ],
       cta: {
         title: 'Power Your Innovation with Custom Solutions',
         description: 'Let our power systems experts design the perfect power solution for your application',
@@ -722,44 +788,44 @@ export const productPages = {
           examples: ['University labs', 'Prototyping', 'Proof of concept']
         }
       ],
-      features: [
-        {
-          icon: '🚀',
-          title: 'High Performance',
-          description: 'Powerful processors for demanding applications',
-          highlights: ['Multi-core', 'Hardware acceleration', 'Real-time capable']
-        },
-        {
-          icon: '🔌',
-          title: 'Rich Connectivity',
-          description: 'Multiple communication interfaces and protocols',
-          highlights: ['Wired & wireless', 'Industrial protocols', 'Cloud ready']
-        },
-        {
-          icon: '🔋',
-          title: 'Low Power Design',
-          description: 'Optimized for battery-powered applications',
-          highlights: ['Sleep modes', 'Dynamic scaling', 'Energy harvesting']
-        },
-        {
-          icon: '🛠️',
-          title: 'Development Support',
-          description: 'Comprehensive tools and documentation',
-          highlights: ['SDK/BSP', 'Examples', 'Technical support']
-        },
-        {
-          icon: '📐',
-          title: 'Flexible Form Factors',
-          description: 'Various sizes and configurations available',
-          highlights: ['SOM/COM', 'SBC', 'Custom layouts']
-        },
-        {
-          icon: '🔒',
-          title: 'Security Features',
-          description: 'Hardware-based security for critical applications',
-          highlights: ['Secure boot', 'Encryption', 'Tamper detection']
-        }
-      ],
+             features: [
+         {
+           icon: 'arrow-up-circle',
+           title: 'High Performance',
+           description: 'Powerful processors for demanding applications',
+           highlights: ['Multi-core', 'Hardware acceleration', 'Real-time capable']
+         },
+         {
+           icon: 'link',
+           title: 'Rich Connectivity',
+           description: 'Multiple communication interfaces and protocols',
+           highlights: ['Wired & wireless', 'Industrial protocols', 'Cloud ready']
+         },
+         {
+           icon: 'battery',
+           title: 'Low Power Design',
+           description: 'Optimized for battery-powered applications',
+           highlights: ['Sleep modes', 'Dynamic scaling', 'Energy harvesting']
+         },
+         {
+           icon: 'wrench-screwdriver',
+           title: 'Development Support',
+           description: 'Comprehensive tools and documentation',
+           highlights: ['SDK/BSP', 'Examples', 'Technical support']
+         },
+         {
+           icon: 'puzzle-piece',
+           title: 'Flexible Form Factors',
+           description: 'Various sizes and configurations available',
+           highlights: ['SOM/COM', 'SBC', 'Custom layouts']
+         },
+         {
+           icon: 'no-symbol',
+           title: 'Security Features',
+           description: 'Hardware-based security for critical applications',
+           highlights: ['Secure boot', 'Encryption', 'Tamper detection']
+         }
+       ],
       advantages: [
         {
           title: 'Local Design Expertise',
@@ -919,44 +985,44 @@ export const productPages = {
           examples: ['Power plants', 'Water treatment', 'Gas distribution']
         }
       ],
-      features: [
-        {
-          icon: '📡',
-          title: 'Wide Coverage',
-          description: 'Extended range with repeater capability',
-          highlights: ['50km range', 'Repeater mode', 'Network ready']
-        },
-        {
-          icon: '🔐',
-          title: 'Secure Communication',
-          description: 'Military-grade encryption options',
-          highlights: ['AES-256', 'Voice scrambling', 'Authentication']
-        },
-        {
-          icon: '💪',
-          title: 'Rugged Design',
-          description: 'Built for harsh environments',
-          highlights: ['IP67 rated', 'MIL-STD-810G', 'Shock resistant']
-        },
-        {
-          icon: '🔋',
-          title: 'Long Battery Life',
-          description: 'Extended operation time',
-          highlights: ['20+ hours', 'Quick charge', 'Battery save mode']
-        },
-        {
-          icon: '🎯',
-          title: 'GPS Tracking',
-          description: 'Real-time location services',
-          highlights: ['GPS/GLONASS', 'Geo-fencing', 'Route tracking']
-        },
-        {
-          icon: '⚡',
-          title: 'Emergency Features',
-          description: 'Critical safety functions',
-          highlights: ['Emergency button', 'Man-down', 'Lone worker']
-        }
-      ],
+             features: [
+         {
+           icon: 'signal',
+           title: 'Wide Coverage',
+           description: 'Extended range with repeater capability',
+           highlights: ['50km range', 'Repeater mode', 'Network ready']
+         },
+         {
+           icon: 'no-symbol',
+           title: 'Secure Communication',
+           description: 'Military-grade encryption options',
+           highlights: ['AES-256', 'Voice scrambling', 'Authentication']
+         },
+         {
+           icon: 'shield-check',
+           title: 'Rugged Design',
+           description: 'Built for harsh environments',
+           highlights: ['IP67 rated', 'MIL-STD-810G', 'Shock resistant']
+         },
+         {
+           icon: 'battery',
+           title: 'Long Battery Life',
+           description: 'Extended operation time',
+           highlights: ['20+ hours', 'Quick charge', 'Battery save mode']
+         },
+         {
+           icon: 'map',
+           title: 'GPS Tracking',
+           description: 'Real-time location services',
+           highlights: ['GPS/GLONASS', 'Geo-fencing', 'Route tracking']
+         },
+         {
+           icon: 'bolt',
+           title: 'Emergency Features',
+           description: 'Critical safety functions',
+           highlights: ['Emergency button', 'Man-down', 'Lone worker']
+         }
+       ],
       advantages: [
         {
           title: 'Professional Grade',
@@ -1007,6 +1073,28 @@ export const productPages = {
           category: 'Power Systems',
           description: 'Reliable power for communication equipment',
           href: '/products/product-power-supplies'
+        }
+      ],
+      faq: [
+        {
+          question: 'What frequency bands do your communication systems support?',
+          answer: 'Our communication systems support VHF (136-174MHz) and UHF (400-520MHz) frequency bands, providing reliable coverage for both short and long-range communication needs.'
+        },
+        {
+          question: 'Do you offer encrypted communication capabilities?',
+          answer: 'Yes, our communication systems feature AES-256 encryption for secure voice and data transmission, ensuring confidential communication for sensitive operations.'
+        },
+        {
+          question: 'What is the typical range of your radio systems?',
+          answer: 'Our portable radios provide ranges up to 50km depending on terrain and conditions, while base stations can extend coverage significantly with proper antenna systems.'
+        },
+        {
+          question: 'Do you support digital communication modes?',
+          answer: 'Yes, our systems support DMR Tier II/III digital modes with AMBE+2 vocoder, providing clear digital voice and data capabilities alongside traditional analog modes.'
+        },
+        {
+          question: 'What safety features are included in your communication systems?',
+          answer: 'Our systems include man-down detection, lone worker monitoring, emergency alerts, and GPS location services to ensure operator safety in critical environments.'
         }
       ],
       cta: {
@@ -1118,44 +1206,44 @@ export const productPages = {
           examples: ['Endoscopy', 'OCT systems', 'Laser therapy']
         }
       ],
-      features: [
-        {
-          icon: '🎯',
-          title: 'High Precision',
-          description: 'Sub-milliradian accuracy for critical applications',
-          highlights: ['Precise optics', 'Stable mounts', 'Calibrated']
-        },
-        {
-          icon: '🌙',
-          title: 'Day/Night Operation',
-          description: 'Multi-spectral capability for 24/7 operation',
-          highlights: ['Thermal imaging', 'Low light', 'NIR illumination']
-        },
-        {
-          icon: '🔬',
-          title: 'Advanced Optics',
-          description: 'Custom optical designs and coatings',
-          highlights: ['AR coatings', 'Filters', 'Custom lenses']
-        },
-        {
-          icon: '💾',
-          title: 'Digital Integration',
-          description: 'Modern interfaces for system integration',
-          highlights: ['GigE Vision', 'USB3', 'CoaXPress']
-        },
-        {
-          icon: '🌡️',
-          title: 'Environmental',
-          description: 'Ruggedized for harsh conditions',
-          highlights: ['Sealed optics', 'Thermal stable', 'Vibration resistant']
-        },
-        {
-          icon: '⚙️',
-          title: 'Modular Design',
-          description: 'Configurable systems for various applications',
-          highlights: ['Interchangeable', 'Upgradeable', 'Scalable']
-        }
-      ],
+             features: [
+         {
+           icon: 'map',
+           title: 'High Precision',
+           description: 'Sub-milliradian accuracy for critical applications',
+           highlights: ['Precise optics', 'Stable mounts', 'Calibrated']
+         },
+         {
+           icon: 'camera',
+           title: 'Day/Night Operation',
+           description: 'Multi-spectral capability for 24/7 operation',
+           highlights: ['Thermal imaging', 'Low light', 'NIR illumination']
+         },
+         {
+           icon: 'magnifying-glass',
+           title: 'Advanced Optics',
+           description: 'Custom optical designs and coatings',
+           highlights: ['AR coatings', 'Filters', 'Custom lenses']
+         },
+         {
+           icon: 'cpu-chip',
+           title: 'Digital Integration',
+           description: 'Modern interfaces for system integration',
+           highlights: ['GigE Vision', 'USB3', 'CoaXPress']
+         },
+         {
+           icon: 'fire',
+           title: 'Environmental',
+           description: 'Ruggedized for harsh conditions',
+           highlights: ['Sealed optics', 'Thermal stable', 'Vibration resistant']
+         },
+         {
+           icon: 'adjustments-horizontal',
+           title: 'Modular Design',
+           description: 'Configurable systems for various applications',
+           highlights: ['Interchangeable', 'Upgradeable', 'Scalable']
+         }
+       ],
       advantages: [
         {
           title: 'Optical Expertise',
@@ -1204,6 +1292,28 @@ export const productPages = {
           category: 'Power Systems',
           description: 'Precision power for laser systems',
           href: '/products/product-power-supplies'
+        }
+      ],
+      faq: [
+        {
+          question: 'What types of laser systems do you provide?',
+          answer: 'We provide laser rangefinders, target designators, and measurement systems operating at 905nm, 1064nm, and 1550nm wavelengths, with eye-safe options available for various applications.'
+        },
+        {
+          question: 'What is the typical range of your laser rangefinders?',
+          answer: 'Our laser rangefinders provide ranges up to 20km with accuracy of ±1m, featuring adjustable pulse rates from 1Hz to 10kHz and beam divergence of less than 0.5mrad.'
+        },
+        {
+          question: 'Do you offer thermal imaging solutions?',
+          answer: 'Yes, we provide thermal imaging cameras with high sensitivity (0.001 lux), multiple resolution options up to 4K, and frame rates from 30-1000fps for various surveillance and targeting applications.'
+        },
+        {
+          question: 'What fiber optic components do you manufacture?',
+          answer: 'We manufacture fiber optic components including connectors (FC/SC/LC/ST), couplers, and specialty fibers supporting wavelengths from 850nm to 1550nm with low insertion loss (<0.3dB) and high return loss (>50dB).'
+        },
+        {
+          question: 'Are your optical systems compatible with night vision equipment?',
+          answer: 'Yes, our optical systems are designed to be compatible with night vision equipment, featuring appropriate spectral ranges and sensitivity levels for low-light and night-time operations.'
         }
       ],
       cta: {
@@ -1317,37 +1427,37 @@ export const productPages = {
       ],
       features: [
         {
-          icon: '🛰️',
+          icon: 'map',
           title: 'Multi-GNSS',
           description: 'Support for all major satellite systems',
           highlights: ['GPS', 'GLONASS', 'Galileo', 'BeiDou']
         },
         {
-          icon: '🎯',
+          icon: 'map',
           title: 'High Accuracy',
           description: 'Centimeter-level positioning with RTK',
           highlights: ['RTK/PPP', 'SBAS', 'Dual antenna']
         },
         {
-          icon: '🔄',
+          icon: 'arrow-path',
           title: 'Sensor Fusion',
           description: 'INS/GPS integration for continuous navigation',
           highlights: ['Kalman filter', 'Dead reckoning', 'Smooth output']
         },
         {
-          icon: '🛡️',
+          icon: 'shield-check',
           title: 'Anti-Jamming',
           description: 'Protection against GPS interference',
           highlights: ['Multi-frequency', 'Null steering', 'Detection']
         },
         {
-          icon: '📊',
+          icon: 'chart-bar',
           title: 'Data Logging',
           description: 'Comprehensive data recording capabilities',
           highlights: ['Raw data', 'Post-processing', 'Analysis tools']
         },
         {
-          icon: '🌐',
+          icon: 'link',
           title: 'Integration',
           description: 'Standard interfaces for easy integration',
           highlights: ['Serial/Ethernet', 'CAN bus', 'APIs']
@@ -1403,6 +1513,28 @@ export const productPages = {
           href: '/products/product-embedded-boards'
         }
       ],
+      faq: [
+        {
+          question: 'What GNSS constellations do your navigation systems support?',
+          answer: 'Our navigation systems support multiple GNSS constellations including GPS, GLONASS, Galileo, and BeiDou, providing enhanced accuracy and reliability through multi-constellation positioning.'
+        },
+        {
+          question: 'What accuracy levels can you achieve with your navigation systems?',
+          answer: 'Our systems provide 1.5m CEP accuracy in standard mode and 1cm accuracy in RTK mode, with velocity accuracy of 0.05m/s RMS for precise positioning and navigation applications.'
+        },
+        {
+          question: 'Do you offer inertial navigation systems?',
+          answer: 'Yes, we provide inertial navigation systems using MEMS and FOG technologies with gyro bias stability of less than 0.5°/hr, accelerometer ranges up to ±40g, and data rates up to 1000Hz.'
+        },
+        {
+          question: 'What marine navigation solutions do you provide?',
+          answer: 'We provide AIS Class A and B systems compliant with IMO standards, offering vessel tracking, collision avoidance, and maritime safety features for commercial and recreational marine applications.'
+        },
+        {
+          question: 'Are your navigation systems certified for aviation use?',
+          answer: 'Yes, our navigation systems are certified for aviation applications, meeting the stringent requirements for aircraft navigation, including accuracy, reliability, and safety standards.'
+        }
+      ],
       cta: {
         title: 'Navigate with Confidence',
         description: 'Precision navigation solutions for air, land, and sea applications',
@@ -1419,11 +1551,11 @@ export const productPages = {
       template: 'product',
       meta: {
         title: 'Aviation Systems | RADCON Technologies',
-        description: 'Multi-function displays, radar altimeters, and avionics systems for helicopters and aircraft. Certified aviation electronics and instruments.'
+        description: 'Specialized avionics, power systems, and aircraft components for military helicopters including Puma, Bell-412, MI-17, AH-1F, and AW-139 platforms.'
       },
       hero: {
-        title: 'Aviation Industry Solutions',
-        subtitle: 'Advanced Avionics for Modern Aircraft',
+        title: 'Military Aviation Solutions',
+        subtitle: 'Specialized Aircraft Systems & Components',
         category: 'Aviation Systems',
         backgroundImage: '/images/products/aviation-hero.jpg',
         breadcrumbs: [
@@ -1434,179 +1566,201 @@ export const productPages = {
       },
       showcase: {
         image: '/images/products/mfd-display.jpg',
-        title: 'Certified Avionics Systems',
+        title: 'Military Aircraft Capabilities',
         highlights: [
-          'Multi-function displays',
-          'Radar altimeters',
-          'Glass cockpit solutions',
-          'Night vision compatible',
-          'DO-178C certified'
+          'Multi-function displays (MFD)',
+          'Power supply systems',
+          'Navigation equipment',
+          'Communication systems',
+          'Ground support equipment'
         ],
         specifications: {
-          'Display Size': '10.4" - 15"',
-          'Resolution': '1024x768 - 4K',
-          'Brightness': '1500 cd/m²',
-          'MTBF': '>30,000 hrs'
+          'Frequency Range': 'Puma, Bell-412, MI-17, AH-1F, AW-139',
+          'Output Power': '41+ certified parts',
+          'Gain': '28V/115V compatible',
+          'Efficiency': 'Military standards'
         },
         primaryButton: { text: 'Aviation Inquiry', href: '/contact' },
-        secondaryButton: { text: 'Product Details', href: '/downloads/aviation.pdf' }
+        secondaryButton: { text: 'Capability List', href: '/downloads/aviation-capabilities.pdf' }
       },
       specifications: [
         {
           title: 'Multi-Function Displays',
           specs: [
-            { label: 'Screen Size', value: '10.4" / 12.1" / 15"', note: 'Multiple options' },
-            { label: 'Resolution', value: '1024x768 to 1920x1080', note: 'HD available' },
-            { label: 'Brightness', value: '1500 cd/m²', note: 'Sunlight readable' },
-            { label: 'Touch Screen', value: 'Resistive/Capacitive', note: 'Glove compatible' },
-            { label: 'Interfaces', value: 'ARINC 429/MIL-1553', note: 'Avionics bus' },
-            { label: 'NVG Compatible', value: 'NVIS A/B', note: 'Night vision' }
+            { label: 'MFD-5 4/15', value: 'Puma SMV9519353SPS', note: 'Display system' },
+            { label: 'MDF-255FF', value: 'Puma SM597-2212-501', note: 'Multi-function display' },
+            { label: 'MFD KMD 550', value: 'Multi-platform', note: 'Navigation display' },
+            { label: 'Display Unit', value: 'MI-17A813-0409', note: 'Multi-function display' },
+            { label: 'NAV Indicator', value: 'Ecrl/Fennec', note: 'Pictorial navigation' },
+            { label: 'HIS Indicator', value: 'AH-1F6605-01-160-4442', note: 'Horizontal situation' }
           ]
         },
         {
-          title: 'Radar Altimeters',
+          title: 'Power & Control Systems',
           specs: [
-            { label: 'Frequency', value: '4.2-4.4 GHz', note: 'C-band' },
-            { label: 'Range', value: '0-2500 ft', note: 'AGL' },
-            { label: 'Accuracy', value: '±2 ft or 2%', note: 'Whichever greater' },
-            { label: 'Update Rate', value: '40Hz', note: 'Fast response' },
-            { label: 'Output', value: 'ARINC 429/Analog', note: 'Dual output' },
-            { label: 'Power', value: '28VDC / 115VAC', note: 'Aircraft power' }
+            { label: 'Unit Power Supply', value: 'Puma L740150', note: 'Aircraft power' },
+            { label: 'Emergency Power', value: 'B-300501-1228-04', note: 'Backup power system' },
+            { label: 'DC Control Box', value: 'Puma L330A62-0142-05', note: 'Control assembly' },
+            { label: 'ARCU Control Box', value: 'Puma SM330K61-0121-00', note: 'Control unit' },
+            { label: 'Master Control Box', value: 'Multi-platform', note: 'System control' },
+            { label: 'Static Inverter', value: 'Puma SM 28V/115V', note: 'Power conversion' }
           ]
         },
         {
-          title: 'Environmental Specifications',
+          title: 'Navigation & Communication',
           specs: [
-            { label: 'Operating Temp', value: '-55°C to +70°C', note: 'DO-160G' },
-            { label: 'Altitude', value: 'Up to 55,000 ft', note: 'Unpressurized' },
-            { label: 'Vibration', value: 'DO-160G Cat A', note: 'Helicopter' },
-            { label: 'EMI/EMC', value: 'DO-160G', note: 'Level 3' },
-            { label: 'Lightning', value: 'DO-160G Level 3', note: 'Protected' },
-            { label: 'MTBF', value: '>30,000 hours', note: 'High reliability' }
+            { label: 'GPS Converter', value: 'Bell-412934000-14A', note: 'GPS synchro converter' },
+            { label: 'KSN-765 Navigator', value: 'Puma L066-01213-1101', note: 'Safety navigator' },
+            { label: 'Transponder', value: 'MI-17KT 76C', note: 'Aircraft transponder' },
+            { label: 'ERT-160 Transceiver', value: 'Puma SM310', note: 'Communication system' },
+            { label: 'KRA-405B Receiver', value: 'Multi-platform S3100-404', note: 'Transceiver system' },
+            { label: 'KNS-81 Transceiver', value: 'Multi-platform', note: 'Comm/Nav system' }
           ]
         }
       ],
-      applications: [
-        {
-          icon: 'aerospace',
-          title: 'Helicopters',
-          description: 'Rotorcraft avionics and displays',
-          examples: ['Military helicopters', 'EMS aircraft', 'Utility helicopters']
-        },
-        {
-          icon: 'commercial',
-          title: 'Fixed-Wing',
-          description: 'Aircraft instrumentation systems',
-          examples: ['Business jets', 'Transport aircraft', 'Training aircraft']
-        },
-        {
-          icon: 'defense',
-          title: 'Military Aviation',
-          description: 'Combat aircraft systems',
-          examples: ['Fighter jets', 'Transport aircraft', 'UAVs']
-        },
-        {
-          icon: 'commercial',
-          title: 'General Aviation',
-          description: 'Light aircraft upgrades',
-          examples: ['Glass cockpit', 'Retrofit solutions', 'Experimental']
-        }
-      ],
+             applications: [
+         {
+           icon: 'aerospace',
+           title: 'Puma Helicopters',
+           description: 'Comprehensive Puma SM/L platform support',
+           examples: ['MFD systems', 'Power supplies', 'Control boxes', 'Navigation equipment']
+         },
+         {
+           icon: 'aerospace',
+           title: 'Bell-412',
+           description: 'Bell-412 helicopter systems',
+           examples: ['GPS converters', 'ITT actuators', 'Avionics integration']
+         },
+         {
+           icon: 'aerospace',
+           title: 'MI-17 Helicopters',
+           description: 'MI-17 platform components',
+           examples: ['Multi-function displays', 'Transponders', 'Avionics systems']
+         },
+         {
+           icon: 'defense',
+           title: 'Combat Aircraft',
+           description: 'AH-1F Cobra and combat platforms',
+           examples: ['Radar altimeters', 'HIS indicators', 'Combat systems']
+         }
+       ],
       features: [
         {
-          icon: '🖥️',
-          title: 'Glass Cockpit',
-          description: 'Modern digital display technology',
-          highlights: ['Synthetic vision', 'Moving maps', 'Engine monitoring']
+          icon: 'computer-desktop',
+          title: 'Multi-Function Displays',
+          description: 'Advanced display systems for military aircraft',
+          highlights: ['MFD-5 4/15', 'MDF-255FF', 'KMD 550', 'Navigation displays']
         },
         {
-          icon: '🌙',
-          title: 'NVG Compatible',
-          description: 'Night vision goggle compatibility',
-          highlights: ['NVIS filtering', 'Dimming control', 'IR suppression']
+          icon: 'bolt',
+          title: 'Power Systems',
+          description: 'Comprehensive power solutions',
+          highlights: ['Unit power supplies', 'Emergency power', 'Static inverters', 'Battery systems']
         },
         {
-          icon: '📡',
-          title: 'Data Integration',
-          description: 'Multiple data source integration',
-          highlights: ['GPS/INS', 'Weather radar', 'TCAS/TAWS']
+          icon: 'map',
+          title: 'Navigation Equipment',
+          description: 'Precision navigation systems',
+          highlights: ['GPS converters', 'KSN-765 navigator', 'Safety navigation', 'HIS indicators']
         },
         {
-          icon: '✈️',
-          title: 'Certified Design',
-          description: 'Meets aviation standards',
-          highlights: ['DO-178C', 'DO-254', 'TSO approved']
+          icon: 'signal',
+          title: 'Communication Systems',
+          description: 'Military communication equipment',
+          highlights: ['ERT-160 transceivers', 'KRA-405B receivers', 'KNS-81 systems', 'AIFF transceivers']
         },
         {
-          icon: '🔄',
-          title: 'Redundancy',
-          description: 'Built-in backup systems',
-          highlights: ['Dual processors', 'Backup displays', 'Failover']
+          icon: 'wrench-screwdriver',
+          title: 'Ground Support',
+          description: 'Ground support and testing equipment',
+          highlights: ['Battery chargers', 'Air data testers', 'Scorby testers', 'Balancer analyzers']
         },
         {
-          icon: '🛠️',
-          title: 'Easy Integration',
-          description: 'Standard avionics interfaces',
-          highlights: ['ARINC 429', 'MIL-STD-1553', 'Ethernet']
+          icon: 'cpu-chip',
+          title: 'PCB Engineering',
+          description: 'Reverse and forward engineering capabilities',
+          highlights: ['PCB design', 'Component analysis', 'System integration', 'Custom solutions']
         }
       ],
       advantages: [
         {
-          title: 'Aviation Expertise',
-          description: 'Experienced in military and civilian aviation systems'
+          title: 'Platform Expertise',
+          description: 'Deep knowledge of Puma, Bell-412, MI-17, AH-1F, and AW-139 platforms'
         },
         {
-          title: 'Certification Support',
-          description: 'Assistance with aviation certification processes'
+          title: 'Comprehensive Support',
+          description: '41+ certified components across multiple aircraft systems'
         },
         {
-          title: 'Custom Solutions',
-          description: 'Tailored avionics for specific aircraft'
+          title: 'Military Standards',
+          description: 'Compliance with military aviation standards and specifications'
         },
         {
           title: 'Lifecycle Support',
-          description: 'Long-term maintenance and upgrades'
+          description: 'Complete support from design to maintenance and upgrades'
         }
       ],
       certifications: [
-        'DO-178C Software',
-        'DO-254 Hardware',
-        'DO-160G Environmental',
-        'TSO Authorization',
-        'EASA/FAA Approved'
+        'Military Aviation Standards',
+        'Platform-Specific Certifications',
+        'Quality Assurance Systems',
+        'Safety Standards Compliance',
+        'Technical Airworthiness'
       ],
       warranty: {
-        years: '3',
-        description: 'Aviation-grade warranty with AOG support'
+        years: '2',
+        description: 'Military-grade warranty with technical support'
       },
       gallery: [
         {
           url: '/images/products/radar-altimeter.jpg',
-          caption: 'Compact radar altimeter unit'
+          caption: 'Military radar altimeter system'
         }
       ],
-      relatedProducts: [
-        {
-          slug: 'product-navigation',
-          title: 'Aviation GPS',
-          category: 'Navigation',
-          description: 'GPS systems for aviation',
-          href: '/products/product-navigation'
-        },
-        {
-          slug: 'product-power-supplies',
-          title: 'Aircraft Power',
-          category: 'Power Systems',
-          description: 'Aviation power converters',
-          href: '/products/product-power-supplies'
-        }
-      ],
+             relatedProducts: [
+         {
+           slug: 'product-power-supplies',
+           title: 'Aircraft Power Systems',
+           category: 'Power Systems',
+           description: 'Military aircraft power solutions',
+           href: '/products/product-power-supplies'
+         },
+         {
+           slug: 'product-communication',
+           title: 'Communication Systems',
+           category: 'Communication',
+           description: 'Military communication equipment',
+           href: '/products/product-communication'
+         }
+       ],
+       faq: [
+         {
+           question: 'What military helicopter platforms do you support?',
+           answer: 'We provide comprehensive support for Puma, Bell-412, MI-17, AH-1F, and AW-139 platforms with 41+ certified components across multiple aircraft systems.'
+         },
+         {
+           question: 'Are your aviation components certified for military use?',
+           answer: 'Yes, all our aviation components meet military aviation standards and specifications, ensuring compliance with safety and technical airworthiness requirements.'
+         },
+         {
+           question: 'Do you provide lifecycle support for aircraft components?',
+           answer: 'We offer complete lifecycle support from design to maintenance and upgrades, including technical support, spare parts, and system integration services.'
+         },
+         {
+           question: 'Can you customize components for specific aircraft requirements?',
+           answer: 'Yes, we specialize in platform-specific customization and can modify components to meet exact aircraft specifications and operational requirements.'
+         },
+         {
+           question: 'What types of avionics systems do you manufacture?',
+           answer: 'We manufacture multi-function displays, power supply systems, navigation equipment, communication systems, and ground support equipment for military aircraft.'
+         }
+       ],
       cta: {
-        title: 'Elevate Your Aircraft Capabilities',
-        description: 'Modern avionics solutions for enhanced safety and performance',
+        title: 'Trusted Military Aviation Partner',
+        description: 'Proven capabilities across multiple military helicopter platforms with 41+ certified components',
         primaryButton: { text: 'Contact Aviation Team', href: '/contact' },
-        secondaryButton: { text: 'Download Specifications', href: '/downloads/aviation-specs.pdf' },
-        tertiaryButton: { text: 'Request Certification Info', href: '/certifications' }
+        secondaryButton: { text: 'Download Capability List', href: '/downloads/aviation-capabilities.pdf' },
+        tertiaryButton: { text: 'Request Platform Support', href: '/support' }
       }
     },
   
@@ -1712,37 +1866,37 @@ export const productPages = {
       ],
       features: [
         {
-          icon: '🏭',
+          icon: 'cube',
           title: 'Local Manufacturing',
           description: 'Indigenous development and production',
           highlights: ['Import substitution', 'Quick delivery', 'Cost effective']
         },
         {
-          icon: '⚡',
+          icon: 'bolt',
           title: 'Real-Time Processing',
           description: 'High-speed signal processing capabilities',
           highlights: ['Low latency', 'Parallel processing', 'Pipeline architecture']
         },
         {
-          icon: '🔧',
+          icon: 'wrench-screwdriver',
           title: 'Modular Design',
           description: 'Interchangeable and upgradeable components',
           highlights: ['Standard interfaces', 'Plug and play', 'Scalable']
         },
         {
-          icon: '🎯',
+          icon: 'map',
           title: 'Radar Optimized',
           description: 'Designed specifically for radar applications',
           highlights: ['Synchronized', 'Low noise', 'High dynamic range']
         },
         {
-          icon: '🛡️',
+          icon: 'shield-check',
           title: 'Military Grade',
           description: 'Ruggedized for defense applications',
           highlights: ['MIL-STD', 'EMI/EMC', 'Environmental']
         },
         {
-          icon: '🔄',
+          icon: 'arrow-path',
           title: 'Backward Compatible',
           description: 'Upgrade existing radar systems',
           highlights: ['Legacy support', 'Form fit function', 'Easy integration']
@@ -1796,6 +1950,28 @@ export const productPages = {
           category: 'Power Systems',
           description: 'Power supplies for radar equipment',
           href: '/products/product-power-supplies'
+        }
+      ],
+      faq: [
+        {
+          question: 'What types of radar components do you develop?',
+          answer: 'We develop indigenous radar components including signal processing cards, display systems, control units, and specialized radar electronics, providing cost-effective alternatives to imported solutions.'
+        },
+        {
+          question: 'Do you provide reverse engineering services for radar systems?',
+          answer: 'Yes, we specialize in reverse engineering of radar components and systems, enabling modernization of legacy radar equipment with locally developed, compatible replacement parts.'
+        },
+        {
+          question: 'What certifications do your radar components have?',
+          answer: 'Our radar components are certified to MIL-STD-810G environmental standards, MIL-STD-461F EMC requirements, ISO 9001:2015 quality management, and IPC Class 3 manufacturing standards.'
+        },
+        {
+          question: 'Can you customize radar components for specific applications?',
+          answer: 'Yes, we provide custom design and development services for radar components, tailoring solutions to meet specific frequency, power, and form factor requirements for various radar applications.'
+        },
+        {
+          question: 'What support services do you offer for radar systems?',
+          answer: 'We provide comprehensive support including technical consultation, system integration, maintenance services, and rapid delivery of spare parts, ensuring minimal downtime for radar operations.'
         }
       ],
       cta: {

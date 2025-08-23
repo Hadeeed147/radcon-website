@@ -7,11 +7,12 @@ import ProcessFlow from '../../components/sections/ProcessFlow/ProcessFlow';
 import TechnologyPartners from '../../components/sections/TechnologyPartners/TechnologyPartners';
 import BenefitsList from '../../components/sections/BenefitsList/BenefitsList';
 import RelatedServices from '../../components/sections/RelatedServices/RelatedServices';
+import ProductFAQ from '../../components/sections/ProductFAQ/ProductFAQ';
 import CTASection from '../../components/sections/CTASection/CTASection';
 import './StandardServicePage.css';
 
 const StandardServicePage = ({ data }) => {
-  const { hero, overview, capabilities, process, technologies, benefits, relatedServices } = data;
+  const { hero, overview, capabilities, process, technologies, benefits, relatedServices, faq } = data;
   return (
     <main className="std-page" id="main-content">
       <PageHero {...{ ...hero, subtitle: undefined }} />
@@ -38,6 +39,9 @@ const StandardServicePage = ({ data }) => {
       )}
       {relatedServices && relatedServices.length > 0 && (
         <RelatedServices services={relatedServices} />
+      )}
+      {faq && faq.items && faq.items.length > 0 && (
+        <ProductFAQ title={faq.title} subtitle={faq.subtitle} faqs={faq.items} />
       )}
       <CTASection title="Ready to discuss your project?" description="Speak with our team for a no-obligation consultation." primaryButton={{ text: 'Contact Us', href: '/contact' }} secondaryButton={{ text: 'Our Expertise', href: '/expertise' }} />
     </main>

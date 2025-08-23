@@ -24,10 +24,10 @@ const DesignHouse = () => {
       <section className="design-intro">
         <div className="container">
           <div className="design-intro__content">
-            <h2 className="design-intro__title">
+            <h1 className="design-intro__title">
               We turn <span className="highlight-blue">your ideas</span> into{' '}
               <span className="highlight-green">incredible products</span>
-            </h2>
+            </h1>
             <p className="design-intro__description">
               RADCON provides all the services that a state-of-the-art design house provides. Bring us your innovative ideas, and 
               we will use our technology and expertise to turn them into products that are guaranteed to make waves in the 

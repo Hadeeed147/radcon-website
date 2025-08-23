@@ -8,6 +8,7 @@ import FeaturesGrid from '../../components/sections/FeaturesGrid/FeaturesGrid';
 import CompetitiveAdvantages from '../../components/sections/CompetitiveAdvantages/CompetitiveAdvantages';
 import ProductGallery from '../../components/sections/ProductGallery/ProductGallery';
 import RelatedProducts from '../../components/sections/RelatedProducts/RelatedProducts';
+import ProductFAQ from '../../components/sections/ProductFAQ/ProductFAQ';
 import ProductCTA from '../../components/sections/ProductCTA/ProductCTA';
 import './ProductTemplate.css';
 import '../../styles/mobile-performance.css';
@@ -24,6 +25,7 @@ const ProductTemplate = ({ data }) => {
     warranty, 
     gallery, 
     relatedProducts, 
+    faq,
     cta 
   } = data;
 
@@ -74,6 +76,15 @@ const ProductTemplate = ({ data }) => {
       {/* Related products */}
       {relatedProducts && relatedProducts.length > 0 && (
         <RelatedProducts products={relatedProducts} />
+      )}
+
+      {/* FAQ Section */}
+      {faq && faq.length > 0 && (
+        <ProductFAQ 
+          title="Frequently Asked Questions"
+          subtitle="Common questions about our products and services"
+          faqs={faq} 
+        />
       )}
 
       {/* Product-specific CTAs */}
@@ -149,6 +160,10 @@ ProductTemplate.propTypes = {
       category: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
       href: PropTypes.string.isRequired
+    })),
+    faq: PropTypes.arrayOf(PropTypes.shape({
+      question: PropTypes.string.isRequired,
+      answer: PropTypes.string.isRequired
     })),
     cta: PropTypes.shape({
       title: PropTypes.string.isRequired,

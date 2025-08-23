@@ -5,8 +5,6 @@
     overflow: hidden;
   }
   
-
-  
   .company-intro__content {
     max-width: 1200px;
     margin: 0 auto;
@@ -29,6 +27,9 @@
     letter-spacing: -0.02em;
     text-shadow: 0 2px 10px rgba(255, 255, 255, 0.8);
     position: relative;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .company-intro__title::after {
@@ -63,9 +64,25 @@
     margin: 0 auto;
     text-shadow: 0 1px 3px rgba(255, 255, 255, 0.6);
     font-weight: 400;
+    text-align: justify;
+    text-align-last: center;
+    hyphens: auto;
+    word-spacing: 0.05em;
   }
   
   /* Responsive Design */
+  @media (max-width: 1200px) {
+    .company-intro__title {
+      font-size: 3rem;
+      max-width: 900px;
+    }
+    
+    .company-intro__description {
+      font-size: 1.2rem;
+      max-width: 850px;
+    }
+  }
+  
   @media (max-width: 768px) {
     .company-intro {
       padding: 6rem 0;
@@ -80,11 +97,15 @@
     .company-intro__title {
       font-size: 2.5rem;
       margin-bottom: 2rem;
+      max-width: 100%;
     }
     
     .company-intro__description {
       font-size: 1.125rem;
       line-height: 1.7;
+      text-align: left;
+      text-align-last: left;
+      max-width: 100%;
     }
   }
   
@@ -111,5 +132,6 @@
     
     .company-intro__description {
       font-size: 1rem;
+      line-height: 1.6;
     }
   }

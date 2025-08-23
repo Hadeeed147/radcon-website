@@ -1,0 +1,141 @@
+.product-faq {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.product-faq__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.product-faq__title {
+  font-size: 42px;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.product-faq__subtitle {
+  font-size: 18px;
+  color: #718096;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.product-faq__content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.product-faq__item {
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.product-faq__item:hover {
+  border-color: #2c5282;
+  box-shadow: 0 4px 12px rgba(44, 82, 130, 0.1);
+}
+
+.product-faq__item--open {
+  border-color: #2c5282;
+  box-shadow: 0 8px 25px rgba(44, 82, 130, 0.15);
+}
+
+.product-faq__question {
+  width: 100%;
+  padding: 24px 32px;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
+}
+
+.product-faq__question:hover {
+  background-color: #f7fafc;
+}
+
+.product-faq__question-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0;
+  line-height: 1.4;
+  flex: 1;
+  padding-right: 20px;
+}
+
+.product-faq__icon {
+  font-size: 24px;
+  font-weight: 300;
+  color: #2c5282;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.product-faq__item--open .product-faq__icon {
+  transform: rotate(180deg);
+}
+
+.product-faq__answer {
+  padding: 0 32px 24px;
+  animation: slideDown 0.3s ease;
+}
+
+.product-faq__answer-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #4a5568;
+  margin: 0;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .product-faq {
+    padding: 60px 0;
+  }
+  
+  .product-faq__title {
+    font-size: 32px;
+  }
+  
+  .product-faq__subtitle {
+    font-size: 16px;
+  }
+  
+  .product-faq__question {
+    padding: 20px 24px;
+  }
+  
+  .product-faq__question-text {
+    font-size: 16px;
+  }
+  
+  .product-faq__answer {
+    padding: 0 24px 20px;
+  }
+  
+  .product-faq__answer-text {
+    font-size: 15px;
+  }
+}

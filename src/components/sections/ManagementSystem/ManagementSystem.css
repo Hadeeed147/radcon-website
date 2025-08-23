@@ -41,6 +41,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    max-width: 100%;
   }
   
   .management-system__highlight {
@@ -58,6 +59,8 @@
     margin: 0 auto;
     line-height: 1.7;
     font-weight: 400;
+    text-align: center;
+    word-spacing: 0.02em;
   }
   
   .management-system__grid {
@@ -140,6 +143,21 @@
   }
   
   /* Responsive Design */
+  @media (max-width: 1200px) {
+    .management-system__title {
+      font-size: 2.5rem;
+    }
+    
+    .management-system__description {
+      font-size: 1.15rem;
+      max-width: 550px;
+    }
+    
+    .management-system__grid {
+      gap: 3rem;
+    }
+  }
+  
   @media (max-width: 768px) {
     .management-system {
       padding: 4rem 0;
@@ -158,6 +176,7 @@
     .management-system__description {
       font-size: 1.1rem;
       line-height: 1.6;
+      max-width: 100%;
     }
     
     .management-system__grid {

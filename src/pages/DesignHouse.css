@@ -2,7 +2,7 @@
 
    /* Main Intro Section */
    .design-intro {
-     padding: 100px 0;
+     padding: 120px 0;
      background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
      position: relative;
    }
@@ -19,7 +19,7 @@
    }
   
      .design-intro__content {
-     max-width: 900px;
+     max-width: 1000px;
      margin: 0 auto;
      text-align: center;
      position: relative;
@@ -27,11 +27,12 @@
    }
   
   .design-intro__title {
-    font-size: 2.75rem;
-    font-weight: 700;
-    line-height: 1.3;
-    margin-bottom: 30px;
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 40px;
     color: var(--text-primary);
+    letter-spacing: -0.02em;
   }
   
   .highlight-blue {
@@ -51,16 +52,17 @@
   }
   
   .design-intro__description {
-    font-size: 1.125rem;
-    line-height: 1.8;
+    font-size: 1.25rem;
+    line-height: 1.7;
     color: var(--text-secondary);
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
+    font-weight: 400;
   }
   
      /* Service Sections (ODM, OEM, R&D) */
    .service-section {
-     padding: 120px 0;
+     padding: 140px 0;
      position: relative;
    }
    
@@ -79,7 +81,7 @@
   .service-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    gap: 100px;
     align-items: center;
   }
   
@@ -96,61 +98,65 @@
   }
   
      .service-content {
-     max-width: 600px;
+     max-width: 650px;
      position: relative;
    }
    
    .service-content::before {
      content: '';
      position: absolute;
-     left: -40px;
+     left: -50px;
      top: 0;
      bottom: 0;
-     width: 4px;
+     width: 5px;
      background: linear-gradient(180deg, var(--color-primary), var(--color-secondary));
-     border-radius: 2px;
+     border-radius: 3px;
    }
   
   .service-title {
-    font-size: 2.25rem;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 800;
     color: var(--text-primary);
-    margin-bottom: 20px;
-    line-height: 1.2;
+    margin-bottom: 25px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
   }
   
   .service-subtitle {
     color: var(--color-primary);
-    font-weight: 400;
-    font-size: 1.75rem;
+    font-weight: 600;
+    font-size: 2rem;
+    letter-spacing: -0.01em;
   }
   
   .service-description {
-    font-size: 1.125rem;
+    font-size: 1.375rem;
     color: var(--text-primary);
-    margin-bottom: 25px;
-    font-weight: 500;
-    line-height: 1.6;
+    margin-bottom: 30px;
+    font-weight: 600;
+    line-height: 1.5;
   }
   
   .service-text {
-    font-size: 1rem;
+    font-size: 1.125rem;
     color: var(--text-secondary);
-    line-height: 1.8;
-    margin-bottom: 20px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    font-weight: 400;
   }
   
   .service-capabilities {
-    margin-top: 30px;
-    padding-top: 30px;
+    margin-top: 40px;
+    padding-top: 35px;
     border-top: 2px solid var(--border-color);
   }
   
   .service-capabilities h3 {
-    font-size: 1.125rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 700;
     color: var(--text-primary);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    letter-spacing: -0.01em;
   }
   
   .service-list {
@@ -161,10 +167,12 @@
   
   .service-list li {
     position: relative;
-    padding-left: 28px;
-    margin-bottom: 12px;
+    padding-left: 35px;
+    margin-bottom: 15px;
     color: var(--text-secondary);
     line-height: 1.6;
+    font-size: 1.0625rem;
+    font-weight: 400;
   }
   
   .service-list li::before {
@@ -173,26 +181,26 @@
     left: 0;
     color: var(--color-primary);
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
   
      /* Service Image */
    .service-image {
      position: relative;
      overflow: hidden;
-     border-radius: 16px;
-     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+     border-radius: 20px;
+     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
      transition: all var(--transition-medium);
    }
    
    .service-image:hover {
-     transform: translateY(-8px);
-     box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+     transform: translateY(-10px);
+     box-shadow: 0 35px 70px rgba(0, 0, 0, 0.18);
    }
    
    .service-image__img {
      width: 100%;
-     height: 450px;
+     height: 500px;
      object-fit: cover;
      object-position: center;
      transition: transform var(--transition-medium);
@@ -204,36 +212,37 @@
   
   /* Core Technologies Section */
   .core-technologies {
-    padding: 80px 0;
+    padding: 100px 0;
     background: white;
   }
   
   .core-technologies__title {
     text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 3.25rem;
+    font-weight: 800;
     color: var(--text-primary);
-    margin-bottom: 60px;
+    margin-bottom: 80px;
+    letter-spacing: -0.02em;
   }
   
   .technology-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    max-width: 1400px;
     margin: 0 auto;
   }
   
      .technology-card {
      background: white;
-     padding: 40px 30px;
-     border-radius: 16px;
+     padding: 50px 35px;
+     border-radius: 20px;
      text-align: center;
      transition: all var(--transition-medium);
      border: 1px solid var(--border-color);
      position: relative;
      overflow: hidden;
-     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
    }
   
   .technology-card::before {
@@ -242,7 +251,7 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
+    height: 5px;
     background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
     transform: scaleX(0);
     transition: transform var(--transition-fast);
@@ -250,8 +259,8 @@
   }
   
   .technology-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
     border-color: var(--color-primary);
   }
   
@@ -260,60 +269,63 @@
   }
   
      .technology-card__icon {
-     width: 60px;
-     height: 60px;
-     margin: 0 auto 20px;
+     width: 70px;
+     height: 70px;
+     margin: 0 auto 25px;
      display: flex;
      align-items: center;
      justify-content: center;
      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-     border-radius: 12px;
+     border-radius: 15px;
      transition: all var(--transition-fast);
    }
    
    .technology-card__icon img {
-     width: 32px;
-     height: 32px;
+     width: 36px;
+     height: 36px;
      filter: brightness(0) invert(1);
    }
    
    .technology-card:hover .technology-card__icon {
      transform: scale(1.1) rotate(5deg);
-     box-shadow: 0 8px 20px rgba(44, 82, 130, 0.3);
+     box-shadow: 0 10px 25px rgba(44, 82, 130, 0.35);
    }
   
   .technology-card__title {
-    font-size: 1.25rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 700;
     color: var(--text-primary);
-    margin-bottom: 15px;
+    margin-bottom: 18px;
+    letter-spacing: -0.01em;
   }
   
   .technology-card__description {
-    font-size: 0.95rem;
+    font-size: 1.0625rem;
     color: var(--text-secondary);
     line-height: 1.6;
+    font-weight: 400;
   }
   
   /* Process Flow Section */
   .process-flow {
-    padding: 80px 0;
+    padding: 100px 0;
     background: var(--bg-alt);
   }
   
   .process-flow__title {
     text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 3.25rem;
+    font-weight: 800;
     color: var(--text-primary);
-    margin-bottom: 60px;
+    margin-bottom: 80px;
+    letter-spacing: -0.02em;
   }
   
   .process-steps {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     position: relative;
   }
@@ -321,23 +333,23 @@
   .process-step {
     flex: 1;
     text-align: center;
-    padding: 0 20px;
+    padding: 0 25px;
     position: relative;
   }
   
   .process-step__number {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     background: white;
-    border: 3px solid var(--color-primary);
+    border: 4px solid var(--color-primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.75rem;
-    font-weight: 700;
+    font-size: 2rem;
+    font-weight: 800;
     color: var(--color-primary);
-    margin: 0 auto 20px;
+    margin: 0 auto 25px;
     position: relative;
     z-index: 2;
     transition: all var(--transition-fast);
@@ -350,55 +362,58 @@
   }
   
   .process-step__title {
-    font-size: 1.125rem;
-    font-weight: 600;
+    font-size: 1.375rem;
+    font-weight: 700;
     color: var(--text-primary);
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    letter-spacing: -0.01em;
   }
   
   .process-step__description {
-    font-size: 0.875rem;
+    font-size: 1rem;
     color: var(--text-secondary);
-    line-height: 1.5;
+    line-height: 1.6;
+    font-weight: 400;
   }
   
   .process-step__arrow {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--color-primary);
-    margin: 0 -10px;
-    opacity: 0.5;
+    margin: 0 -15px;
+    opacity: 0.6;
   }
   
   /* Why Choose Section */
   .why-choose {
-    padding: 80px 0;
+    padding: 100px 0;
     background: white;
   }
   
   .why-choose__title {
     text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 3.25rem;
+    font-weight: 800;
     color: var(--text-primary);
-    margin-bottom: 60px;
+    margin-bottom: 80px;
+    letter-spacing: -0.02em;
   }
   
   .advantages-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 40px;
+    max-width: 1400px;
     margin: 0 auto;
   }
   
      .advantage-card {
      background: white;
-     padding: 40px 30px;
-     border-radius: 16px;
+     padding: 50px 35px;
+     border-radius: 20px;
      border: 1px solid var(--border-color);
      transition: all var(--transition-medium);
      text-align: center;
-     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
      position: relative;
      overflow: hidden;
    }
@@ -409,7 +424,7 @@
      top: 0;
      left: 0;
      right: 0;
-     height: 4px;
+     height: 5px;
      background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
      transform: scaleX(0);
      transition: transform var(--transition-fast);
@@ -421,54 +436,76 @@
    }
   
   .advantage-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-6px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
     border-color: var(--color-primary);
   }
   
      .advantage-card__icon {
-     width: 56px;
-     height: 56px;
-     margin: 0 auto 20px;
+     width: 65px;
+     height: 65px;
+     margin: 0 auto 25px;
      display: flex;
      align-items: center;
      justify-content: center;
      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-     border-radius: 12px;
+     border-radius: 15px;
      transition: all var(--transition-fast);
    }
    
    .advantage-card__icon img {
-     width: 28px;
-     height: 28px;
+     width: 32px;
+     height: 32px;
      filter: brightness(0) invert(1);
    }
    
    .advantage-card:hover .advantage-card__icon {
      transform: scale(1.1) rotate(5deg);
-     box-shadow: 0 8px 20px rgba(44, 82, 130, 0.3);
+     box-shadow: 0 10px 25px rgba(44, 82, 130, 0.35);
    }
   
   .advantage-card__title {
-    font-size: 1.25rem;
-    font-weight: 600;
+    font-size: 1.375rem;
+    font-weight: 700;
     color: var(--text-primary);
-    margin-bottom: 12px;
+    margin-bottom: 15px;
+    letter-spacing: -0.01em;
   }
   
   .advantage-card__description {
-    font-size: 0.95rem;
+    font-size: 1.0625rem;
     color: var(--text-secondary);
     line-height: 1.6;
+    font-weight: 400;
   }
   
   
   
   /* Responsive Design */
+  @media (max-width: 1200px) {
+    .design-intro__title {
+      font-size: 3rem;
+    }
+    
+    .service-title {
+      font-size: 2.5rem;
+    }
+    
+    .service-subtitle {
+      font-size: 1.75rem;
+    }
+    
+    .core-technologies__title,
+    .process-flow__title,
+    .why-choose__title {
+      font-size: 2.75rem;
+    }
+  }
+  
   @media (max-width: 1024px) {
     .service-grid {
       grid-template-columns: 1fr;
-      gap: 50px;
+      gap: 60px;
     }
   
     .service-grid--reverse {
@@ -476,58 +513,136 @@
     }
   
          .service-image__img {
-       height: 350px;
+       height: 400px;
      }
   
     .process-steps {
       flex-direction: column;
-      gap: 40px;
+      gap: 50px;
     }
   
     .process-step__arrow {
       transform: rotate(90deg);
-      margin: 20px 0;
+      margin: 25px 0;
+    }
+    
+    .advantages-grid {
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     }
   }
   
   @media (max-width: 768px) {
-  
+    .design-intro {
+      padding: 80px 0;
+    }
+    
     .design-intro__title {
-      font-size: 2rem;
+      font-size: 2.5rem;
+    }
+    
+    .design-intro__description {
+      font-size: 1.125rem;
+    }
+    
+    .service-section {
+      padding: 80px 0;
     }
   
     .service-title {
-      font-size: 1.75rem;
+      font-size: 2.25rem;
     }
   
     .service-subtitle {
       font-size: 1.5rem;
     }
+    
+    .service-description {
+      font-size: 1.25rem;
+    }
+    
+    .service-text {
+      font-size: 1rem;
+    }
+    
+    .service-capabilities h3 {
+      font-size: 1.375rem;
+    }
+    
+    .service-list li {
+      font-size: 1rem;
+    }
   
     .technology-grid {
       grid-template-columns: 1fr;
     }
-  
-         .advantages-grid {
-       grid-template-columns: 1fr;
-     }
+    
+    .technology-card {
+      padding: 40px 25px;
+    }
+    
+    .technology-card__title {
+      font-size: 1.375rem;
+    }
+    
+    .advantages-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .advantage-card {
+      padding: 40px 25px;
+    }
+    
+    .advantage-card__title {
+      font-size: 1.25rem;
+    }
+    
+    .core-technologies__title,
+    .process-flow__title,
+    .why-choose__title {
+      font-size: 2.25rem;
+    }
   }
   
   @media (max-width: 480px) {
-  
+    .design-intro__title {
+      font-size: 2rem;
+    }
+    
     .service-section {
       padding: 60px 0;
+    }
+    
+    .service-title {
+      font-size: 1.875rem;
+    }
+    
+    .service-subtitle {
+      font-size: 1.375rem;
+    }
+    
+    .service-content::before {
+      left: -30px;
+      width: 4px;
     }
   
     .core-technologies__title,
     .process-flow__title,
     .why-choose__title {
-      font-size: 1.75rem;
+      font-size: 1.875rem;
     }
   
     .process-step__number {
-      width: 60px;
-      height: 60px;
-      font-size: 1.5rem;
+      width: 70px;
+      height: 70px;
+      font-size: 1.75rem;
+    }
+    
+    .process-step__title {
+      font-size: 1.25rem;
+    }
+    
+    .technology-card,
+    .advantage-card {
+      padding: 30px 20px;
     }
   }

@@ -77,18 +77,20 @@
 }
 
 .product-hero__title {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 16px;
-  line-height: 1.2;
+  font-size: 56px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.1;
   color: #2d3748;
+  letter-spacing: -0.02em;
 }
 
 .product-hero__subtitle {
-  font-size: 20px;
-  line-height: 1.6;
+  font-size: 22px;
+  line-height: 1.5;
   color: #718096;
   margin: 0;
+  font-weight: 400;
 }
 
 @media (max-width: 768px) {
@@ -103,7 +105,7 @@
   }
   
   .product-hero__title {
-    font-size: 32px;
+    font-size: 36px;
   }
   
   .product-hero__subtitle {

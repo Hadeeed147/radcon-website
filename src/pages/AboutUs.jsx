@@ -47,18 +47,18 @@ const AboutUs = () => {
     }
   ];
 
-  // Data for VisionSection component
+  // Data for VisionSection component - Updated with more relevant technology images
   const visionImages = [
-    { src: '/images/vision-1.jpg', alt: 'Innovation in technology', className: 'vision-image--large' },
-    { src: '/images/vision-2.jpg', alt: 'Technical expertise', className: 'vision-image--small' },
-    { src: '/images/vision-3.jpg', alt: 'Quality solutions', className: 'vision-image--small' }
+    { src: '/images/embedded-systems-image.webp', alt: 'Advanced embedded systems and technology innovation', className: 'vision-image--large' },
+    { src: '/images/rf-microwave-image.webp', alt: 'RF and microwave technology expertise', className: 'vision-image--small' },
+    { src: '/images/power-systems-image.webp', alt: 'Power systems and engineering excellence', className: 'vision-image--small' }
   ];
 
-  // Data for MissionSection component
+  // Data for MissionSection component - Updated with more relevant technology images
   const missionImages = [
-    { src: '/images/mission-1.jpg', alt: 'Strategic planning', className: 'mission-image--large' },
-    { src: '/images/mission-2.jpg', alt: 'Technology development', className: 'mission-image--medium' },
-    { src: '/images/mission-3.jpg', alt: 'Team collaboration', className: 'mission-image--small' },
+    { src: '/images/pcb-design-image.webp', alt: 'Precision PCB design and manufacturing', className: 'mission-image--large' },
+    { src: '/images/engineering-services-image.webp', alt: 'Engineering services and technical consultation', className: 'mission-image--medium' },
+    { src: '/images/diagnostic-services-image.webp', alt: 'Diagnostic services and system optimization', className: 'mission-image--small' },
   ];
 
   // Data for ManagementSystem component

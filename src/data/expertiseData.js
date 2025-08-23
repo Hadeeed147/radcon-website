@@ -199,6 +199,36 @@ Our development process emphasizes collaboration, agility, and quality. We work 
         text: 'View Portfolio',
         href: '/portfolio'
       }
+    },
+    faq: {
+      title: 'Web Development FAQ',
+      subtitle: 'Common questions about our web application development services',
+      items: [
+        {
+          question: 'What technologies do you use for web development?',
+          answer: 'We use modern technologies including React, Angular, Vue.js for frontend, Node.js, .NET Core, Python Django for backend, and cloud platforms like AWS, Azure, and Google Cloud. Our stack is chosen based on your specific requirements and scalability needs.'
+        },
+        {
+          question: 'How long does it take to develop a custom web application?',
+          answer: 'Development time varies based on complexity, typically ranging from 8-16 weeks for medium-sized applications. We follow agile methodology with regular sprints and can deliver MVP versions faster for early feedback.'
+        },
+        {
+          question: 'Do you provide ongoing maintenance and support?',
+          answer: 'Yes, we offer comprehensive maintenance packages including bug fixes, security updates, performance optimization, and feature enhancements. We also provide 24/7 monitoring and support for critical applications.'
+        },
+        {
+          question: 'Can you integrate with our existing systems?',
+          answer: 'Absolutely. We specialize in integrating new web applications with existing ERP, CRM, and other business systems. We use APIs, webhooks, and custom connectors to ensure seamless data flow.'
+        },
+        {
+          question: 'What about security and compliance?',
+          answer: 'Security is built into every layer of our applications. We implement OAuth 2.0, JWT tokens, encryption, and follow OWASP guidelines. We also ensure compliance with GDPR, HIPAA, and other relevant standards.'
+        },
+        {
+          question: 'Do you provide hosting and deployment services?',
+          answer: 'Yes, we offer complete hosting solutions with cloud deployment, SSL certificates, CDN integration, and automated CI/CD pipelines. We can also work with your existing infrastructure.'
+        }
+      ]
     }
   },
 
@@ -398,6 +428,36 @@ Our mobile solutions integrate seamlessly with existing enterprise systems, clou
     description: 'Let\'s create a mobile experience that your users will love and your business will benefit from.',
     primaryButton: { text: 'Start Your Project', href: '/contact' },
     secondaryButton: { text: 'View Portfolio', href: '/portfolio' }
+  },
+  faq: {
+    title: 'Mobile App Development FAQ',
+    subtitle: 'Common questions about our mobile application development services',
+    items: [
+      {
+        question: 'Do you develop for both iOS and Android?',
+        answer: 'Yes, we develop native apps for both platforms using Swift for iOS and Kotlin/Java for Android. We also offer cross-platform solutions using React Native and Flutter for cost-effective development.'
+      },
+      {
+        question: 'How long does mobile app development take?',
+        answer: 'Development time depends on complexity and features. Simple apps take 6-10 weeks, while complex applications with advanced features can take 12-20 weeks. We deliver MVP versions faster for testing.'
+      },
+      {
+        question: 'Can you help with app store submission?',
+        answer: 'Absolutely. We handle the entire app store submission process including metadata preparation, screenshots, compliance checks, and ongoing updates. We ensure your app meets all store guidelines.'
+      },
+      {
+        question: 'Do you provide app maintenance and updates?',
+        answer: 'Yes, we offer comprehensive maintenance packages including bug fixes, feature updates, OS compatibility updates, and performance optimization. We also provide analytics and crash reporting.'
+      },
+      {
+        question: 'Can you integrate with backend systems?',
+        answer: 'We specialize in integrating mobile apps with existing backend systems, APIs, and cloud services. We support REST, GraphQL, WebSocket, and custom protocols for real-time communication.'
+      },
+      {
+        question: 'What about offline functionality?',
+        answer: 'We implement offline-first architecture with local data storage, sync capabilities, and graceful degradation. Apps work seamlessly even without internet connectivity.'
+      }
+    ]
   }
 },
 
@@ -591,6 +651,36 @@ We implement best practices in database security, performance optimization, and 
     description: 'Let our experts design and implement a database system that powers your business growth.',
     primaryButton: { text: 'Get Started', href: '/contact' },
     secondaryButton: { text: 'Learn More', href: '/expertise' }
+  },
+  faq: {
+    title: 'Database Design FAQ',
+    subtitle: 'Common questions about our database design and development services',
+    items: [
+      {
+        question: 'What types of databases do you work with?',
+        answer: 'We work with both relational (PostgreSQL, MySQL, Oracle, SQL Server) and NoSQL databases (MongoDB, Cassandra, Redis). We choose the best solution based on your data structure, performance requirements, and scalability needs.'
+      },
+      {
+        question: 'How do you ensure database security?',
+        answer: 'We implement comprehensive security measures including encryption at rest and in transit, access controls, audit trails, and regular security assessments. We also ensure compliance with industry standards and regulations.'
+      },
+      {
+        question: 'Can you migrate existing databases?',
+        answer: 'Yes, we specialize in database migration with zero downtime strategies. We analyze your current system, plan the migration, and execute it with data integrity checks and rollback procedures.'
+      },
+      {
+        question: 'Do you provide 24/7 database monitoring?',
+        answer: 'We offer round-the-clock monitoring with automated alerts, performance tracking, and proactive maintenance. Our monitoring systems detect issues before they impact your operations.'
+      },
+      {
+        question: 'How do you optimize database performance?',
+        answer: 'We use query optimization, indexing strategies, partitioning, and caching techniques. We also perform regular performance audits and tuning to maintain optimal database performance.'
+      },
+      {
+        question: 'What about backup and disaster recovery?',
+        answer: 'We implement comprehensive backup strategies with automated backups, point-in-time recovery, and disaster recovery plans. We ensure your data is protected and recoverable in any scenario.'
+      }
+    ]
   }
 },
 
@@ -769,6 +859,36 @@ From concept to production, we deliver power solutions that combine efficiency, 
     description: 'Our power systems experts can design the perfect solution for your application.',
     primaryButton: { text: 'Discuss Your Requirements', href: '/contact' },
     secondaryButton: { text: 'View Capabilities', href: '/expertise' }
+  },
+  faq: {
+    title: 'Power Systems FAQ',
+    subtitle: 'Common questions about our power systems design and development services',
+    items: [
+      {
+        question: 'What types of power supplies do you design?',
+        answer: 'We design switch mode power supplies (SMPS), linear regulators, high voltage systems up to 30kV, and custom power solutions for industrial, medical, and aerospace applications. We work with both isolated and non-isolated topologies.'
+      },
+      {
+        question: 'What efficiency levels can you achieve?',
+        answer: 'Our designs typically achieve >95% efficiency using modern topologies and components. We optimize for your specific requirements including standby power, load regulation, and thermal management.'
+      },
+      {
+        question: 'Do you handle EMI/EMC compliance?',
+        answer: 'Yes, we design for EMI/EMC compliance from the start. We implement proper filtering, shielding, and layout techniques to meet industrial, medical, and aerospace standards.'
+      },
+      {
+        question: 'Can you design for harsh environments?',
+        answer: 'We specialize in ruggedized designs for harsh environments including high temperature, vibration, humidity, and radiation. We use appropriate components and protective measures.'
+      },
+      {
+        question: 'What protection features do you include?',
+        answer: 'Our designs include overvoltage, undervoltage, overcurrent, reverse polarity, and short circuit protection. We also implement thermal protection and fault detection systems.'
+      },
+      {
+        question: 'Do you provide testing and certification support?',
+        answer: 'We provide comprehensive testing including efficiency, thermal, EMI, and reliability testing. We also support certification processes for safety and compliance standards.'
+      }
+    ]
   }
 },
 
@@ -947,6 +1067,36 @@ Our team combines theoretical knowledge with practical experience to deliver RF 
     description: 'Let our RF experts design a high-performance solution for your application.',
     primaryButton: { text: 'Contact Our Experts', href: '/contact' },
     secondaryButton: { text: 'Learn More', href: '/expertise' }
+  },
+  faq: {
+    title: 'RF & Microwave FAQ',
+    subtitle: 'Common questions about our RF and microwave design services',
+    items: [
+      {
+        question: 'What frequency ranges do you work with?',
+        answer: 'We design RF and microwave systems from VHF through X-band frequencies (up to 9GHz). Our expertise covers communication systems, radar components, and electronic warfare applications.'
+      },
+      {
+        question: 'What power levels can you handle?',
+        answer: 'We design power amplifiers from milliwatts to kilowatts using BJT, LDMOS, and GaN technologies. Our designs include both pulsed and continuous wave (CW) applications.'
+      },
+      {
+        question: 'Do you design custom antennas?',
+        answer: 'Yes, we design custom antennas for GSM, UMTS, 3G, 4G, GPS, and WiFi applications. We optimize for specific frequency bands, gain requirements, and environmental conditions.'
+      },
+      {
+        question: 'Can you handle complex modulation schemes?',
+        answer: 'We design transceivers for various modulation schemes including ASK, FMCW, DPSK, PPM, MSK, and PM. We optimize for spectral efficiency and interference rejection.'
+      },
+      {
+        question: 'Do you provide testing and tuning services?',
+        answer: 'We provide comprehensive testing using network analyzers, spectrum analyzers, and power meters. We also offer tuning services to optimize performance and meet specifications.'
+      },
+      {
+        question: 'What about EMI/EMC compliance?',
+        answer: 'We design for EMI/EMC compliance from the start, implementing proper shielding, filtering, and layout techniques to meet military and commercial standards.'
+      }
+    ]
   }
 },
 
@@ -1125,6 +1275,36 @@ Our designs incorporate thermal management, high-Tg materials for high-voltage a
     description: 'Our PCB experts can help you create reliable, high-performance circuit boards.',
     primaryButton: { text: 'Start Your Design', href: '/contact' },
     secondaryButton: { text: 'View Capabilities', href: '/expertise' }
+  },
+  faq: {
+    title: 'PCB Design FAQ',
+    subtitle: 'Common questions about our PCB design and manufacturing services',
+    items: [
+      {
+        question: 'What types of PCBs do you design?',
+        answer: 'We design multi-layer boards up to 24 layers, HDI boards, rigid-flex PCBs, RF boards, and high-speed digital designs. We work with various materials including FR4, RT/duroid, Arlon, and Rogers.'
+      },
+      {
+        question: 'Do you handle high-speed design requirements?',
+        answer: 'Yes, we specialize in high-speed designs including DDR3/DDR4, PCIe, USB 3.0, and FPGA routing. We implement proper impedance control, length matching, and signal integrity analysis.'
+      },
+      {
+        question: 'What about RF PCB design?',
+        answer: 'We design RF PCBs with controlled impedance for 4G, WiFi, Bluetooth, and radar applications. We use specialized materials and layout techniques for optimal RF performance.'
+      },
+      {
+        question: 'Do you provide manufacturing support?',
+        answer: 'We generate complete manufacturing files including Gerber files, drill files, and assembly documentation. We also provide DFM/DFA optimization and work with trusted manufacturers.'
+      },
+      {
+        question: 'What testing do you perform?',
+        answer: 'We perform signal integrity analysis, thermal analysis, and design rule checks. We also support prototype testing and validation to ensure design meets specifications.'
+      },
+      {
+        question: 'Do you handle thermal management?',
+        answer: 'Yes, we implement thermal vias, metal core PCBs, and heat sink integration. We perform thermal analysis to ensure reliable operation under all conditions.'
+      }
+    ]
   }
 },
 
@@ -1309,6 +1489,36 @@ Our embedded solutions integrate seamlessly with various interfaces and protocol
     description: 'Let our experts design an intelligent embedded system for your application.',
     primaryButton: { text: 'Get Started', href: '/contact' },
     secondaryButton: { text: 'Learn More', href: '/expertise' }
+  },
+  faq: {
+    title: 'Embedded Systems FAQ',
+    subtitle: 'Common questions about our embedded systems development services',
+    items: [
+      {
+        question: 'What platforms do you work with?',
+        answer: 'We work with ARM, AVR, PIC microcontrollers, FPGAs, DSPs, and SoCs. We also develop Linux/Android BSP and real-time operating systems (RTOS) for various applications.'
+      },
+      {
+        question: 'Do you handle real-time requirements?',
+        answer: 'Yes, we develop real-time systems using FreeRTOS, VxWorks, and QNX. We ensure deterministic response times and meet strict timing requirements for critical applications.'
+      },
+      {
+        question: 'Can you integrate multiple interfaces?',
+        answer: 'We integrate various interfaces including 3G/4G, GPS, USB, WiFi, Ethernet, Bluetooth, CAN, and RS232/422/485. We ensure seamless communication between different protocols.'
+      },
+      {
+        question: 'Do you provide software-defined radio solutions?',
+        answer: 'Yes, we develop SDR platforms using GNURadio and custom waveform generation. We create flexible radio systems that can adapt to different communication standards.'
+      },
+      {
+        question: 'What about IoT and edge computing?',
+        answer: 'We develop IoT solutions with cloud integration and edge computing capabilities. Our systems can process data locally and communicate with cloud services efficiently.'
+      },
+      {
+        question: 'Do you handle system upgrades and modernization?',
+        answer: 'We specialize in modernizing obsolete systems with latest technologies. We ensure backward compatibility while improving performance and functionality.'
+      }
+    ]
   }
 },
 
@@ -1487,6 +1697,36 @@ With advanced diagnostic equipment and experienced engineers, we can quickly ide
     description: 'Our diagnostic experts can help identify and resolve your electronic system issues.',
     primaryButton: { text: 'Request Diagnosis', href: '/contact' },
     secondaryButton: { text: 'Learn More', href: '/expertise' }
+  },
+  faq: {
+    title: 'Diagnostic Services FAQ',
+    subtitle: 'Common questions about our diagnostic and repair services',
+    items: [
+      {
+        question: 'What types of systems do you diagnose?',
+        answer: 'We diagnose electronic systems, PCBs, RF microwave systems, embedded systems, and power electronics. We work with both commercial and military equipment.'
+      },
+      {
+        question: 'How do you identify system failures?',
+        answer: 'We use advanced diagnostic equipment including oscilloscopes, spectrum analyzers, thermal imagers, and specialized test equipment. We follow systematic troubleshooting procedures.'
+      },
+      {
+        question: 'Do you provide component-level repair?',
+        answer: 'Yes, we perform component-level repair of complex electronic assemblies. We can replace faulty components and modify circuits to improve reliability.'
+      },
+      {
+        question: 'Can you improve system reliability?',
+        answer: 'We analyze failure patterns and implement design improvements to enhance reliability. We focus on reducing MTBF and preventing recurring issues.'
+      },
+      {
+        question: 'Do you handle obsolete component replacement?',
+        answer: 'Yes, we provide obsolescence solutions by finding suitable replacements or designing alternative circuits. We ensure compatibility and performance.'
+      },
+      {
+        question: 'What documentation do you provide?',
+        answer: 'We provide detailed failure analysis reports, repair documentation, and recommendations for preventive maintenance. We also update technical documentation.'
+      }
+    ]
   }
 },
 
@@ -1665,6 +1905,36 @@ Quality is maintained throughout the engineering process with detailed design, p
     description: 'Our electromechanical team can design and manufacture the perfect solution.',
     primaryButton: { text: 'Discuss Your Project', href: '/contact' },
     secondaryButton: { text: 'View Capabilities', href: '/expertise' }
+  },
+  faq: {
+    title: 'Electromechanical Solutions FAQ',
+    subtitle: 'Common questions about our electromechanical design and manufacturing services',
+    items: [
+      {
+        question: 'What manufacturing processes do you use?',
+        answer: 'We use CNC machining, sheet metal fabrication, 3D printing (FDM, SLA, SLS), injection molding, and welding. We choose the best process based on your requirements and volume.'
+      },
+      {
+        question: 'What tolerances can you achieve?',
+        answer: 'We achieve tight tolerances of ±0.1mm for precision machining. We use advanced CNC equipment and quality control processes to ensure accuracy.'
+      },
+      {
+        question: 'Do you handle thermal management design?',
+        answer: 'Yes, we perform thermal analysis and design cooling solutions including heat sinks, thermal interfaces, and ventilation systems. We ensure optimal thermal performance.'
+      },
+      {
+        question: 'What materials do you work with?',
+        answer: 'We work with metals (aluminum, steel, titanium), plastics, composites, and specialized materials. We select materials based on strength, weight, and environmental requirements.'
+      },
+      {
+        question: 'Do you provide surface treatments?',
+        answer: 'Yes, we provide surface treatments including chromating, plating, anodizing, and painting to MIL specifications. We ensure durability and corrosion resistance.'
+      },
+      {
+        question: 'Can you design for harsh environments?',
+        answer: 'We design IP-rated enclosures and ruggedized solutions for harsh environments. We consider temperature, humidity, vibration, and other environmental factors.'
+      }
+    ]
   }
 },
 
@@ -1843,6 +2113,36 @@ Our CRM services integrate technical support, project management, and strategic 
     description: 'Let us show you how dedicated support can transform your technology experience.',
     primaryButton: { text: 'Contact Us', href: '/contact' },
     secondaryButton: { text: 'Learn More', href: '/expertise' }
+  },
+  faq: {
+    title: 'Customer Relationship Management FAQ',
+    subtitle: 'Common questions about our CRM and customer support services',
+    items: [
+      {
+        question: 'What CRM services do you provide?',
+        answer: 'We provide dedicated account management, 24/7 technical support, training programs, documentation, feedback management, and strategic consultation throughout the customer lifecycle.'
+      },
+      {
+        question: 'How do you ensure customer satisfaction?',
+        answer: 'We maintain proactive communication, provide defined service level agreements (SLAs), offer comprehensive training, and continuously improve based on customer feedback.'
+      },
+      {
+        question: 'What training programs do you offer?',
+        answer: 'We provide comprehensive training on system operation, maintenance, troubleshooting, and best practices. Training is customized to your team\'s needs and experience level.'
+      },
+      {
+        question: 'How do you handle technical support?',
+        answer: 'We offer 24/7 technical support with defined response times. We have structured escalation procedures for critical issues and provide remote and on-site support.'
+      },
+      {
+        question: 'Do you provide performance reporting?',
+        answer: 'Yes, we provide regular reports on service metrics, KPIs, and system performance. We track uptime, response times, and customer satisfaction scores.'
+      },
+      {
+        question: 'How do you manage long-term relationships?',
+        answer: 'We assign dedicated account managers who understand your business needs. We conduct regular reviews, provide strategic consultation, and identify opportunities for value creation.'
+      }
+    ]
   }
 },
 
@@ -2021,6 +2321,36 @@ With deep technical expertise and strategic partnerships, we keep your hardware 
     description: 'Our lifecycle support services ensure your systems deliver value for years to come.',
     primaryButton: { text: 'Get Support Plan', href: '/contact' },
     secondaryButton: { text: 'Learn More', href: '/expertise' }
+  },
+  faq: {
+    title: 'Hardware Lifecycle Support FAQ',
+    subtitle: 'Common questions about our hardware lifecycle management services',
+    items: [
+      {
+        question: 'What lifecycle support services do you provide?',
+        answer: 'We provide preventive maintenance, corrective maintenance, obsolescence management, system upgrades, spare parts management, and technology refresh planning.'
+      },
+      {
+        question: 'How do you extend hardware life?',
+        answer: 'We implement preventive maintenance schedules, perform regular inspections, optimize operating conditions, and provide component upgrades to extend system life.'
+      },
+      {
+        question: 'How do you handle obsolete components?',
+        answer: 'We proactively identify obsolescence risks, find suitable replacements, design alternative solutions, and plan technology refresh strategies to minimize disruption.'
+      },
+      {
+        question: 'What maintenance schedules do you offer?',
+        answer: 'We offer flexible maintenance schedules including monthly, quarterly, and annual plans. We customize schedules based on your operational requirements and budget.'
+      },
+      {
+        question: 'Do you provide spare parts management?',
+        answer: 'Yes, we manage strategic spare parts inventory, source components, and maintain critical spares to minimize downtime and ensure rapid repair capabilities.'
+      },
+      {
+        question: 'How do you plan technology refresh?',
+        answer: 'We assess current systems, identify upgrade opportunities, plan migration strategies, and coordinate replacements to minimize operational impact.'
+      }
+    ]
   }
 },
 
@@ -2193,6 +2523,36 @@ We focus on creating work environments that attract top talent, foster innovatio
     description: 'Let us help you attract, develop, and retain the technical talent you need.',
     primaryButton: { text: 'Get HR Support', href: '/contact' },
     secondaryButton: { text: 'Learn More', href: '/expertise' }
+  },
+  faq: {
+    title: 'HR Services FAQ',
+    subtitle: 'Common questions about our HR and talent management services',
+    items: [
+      {
+        question: 'What HR services do you provide?',
+        answer: 'We provide technical recruitment, talent management, training and development, performance management, team building, HR compliance, compensation planning, and culture development.'
+      },
+      {
+        question: 'How do you find technical talent?',
+        answer: 'We use specialized recruitment strategies, industry networks, technical assessments, and targeted sourcing to find qualified engineering and technical professionals.'
+      },
+      {
+        question: 'What training programs do you offer?',
+        answer: 'We provide technical skills training, soft skills development, leadership training, and customized programs to enhance team capabilities and performance.'
+      },
+      {
+        question: 'How do you help with retention?',
+        answer: 'We develop engagement strategies, career development plans, competitive compensation structures, and positive work cultures to improve employee retention.'
+      },
+      {
+        question: 'Do you handle HR compliance?',
+        answer: 'Yes, we ensure compliance with labor laws, regulations, and industry standards. We help maintain proper documentation and implement best practices.'
+      },
+      {
+        question: 'How do you build high-performance teams?',
+        answer: 'We assess team dynamics, identify improvement opportunities, implement team building programs, and develop collaboration strategies to enhance productivity.'
+      }
+    ]
   }
 },
 
@@ -2371,6 +2731,36 @@ We combine deep technical knowledge with practical experience to deliver solutio
     description: 'Our engineering team is ready to tackle your most challenging projects.',
     primaryButton: { text: 'Discuss Your Project', href: '/contact' },
     secondaryButton: { text: 'View Services', href: '/expertise' }
+  },
+  faq: {
+    title: 'Engineering Services FAQ',
+    subtitle: 'Common questions about our engineering consultation and technical services',
+    items: [
+      {
+        question: 'What engineering services do you provide?',
+        answer: 'We provide system design, technical consultation, project management, feasibility studies, rapid prototyping, systems integration, design review, and technical support.'
+      },
+      {
+        question: 'How do you approach complex engineering challenges?',
+        answer: 'We follow systematic engineering processes including requirements analysis, concept development, detailed design, validation, and implementation support. We leverage multidisciplinary expertise.'
+      },
+      {
+        question: 'Do you provide feasibility studies?',
+        answer: 'Yes, we conduct comprehensive feasibility studies to assess technical and commercial viability. We analyze risks, costs, timelines, and provide recommendations.'
+      },
+      {
+        question: 'How do you ensure design quality?',
+        answer: 'We perform independent design reviews, use industry best practices, implement quality assurance processes, and validate designs through analysis and testing.'
+      },
+      {
+        question: 'Do you handle systems integration?',
+        answer: 'Yes, we specialize in complex multi-system integration. We ensure compatibility, optimize interfaces, and provide comprehensive testing and validation.'
+      },
+      {
+        question: 'What about project management?',
+        answer: 'We provide end-to-end project management including planning, execution, monitoring, and delivery. We use proven methodologies and maintain clear communication.'
+      }
+    ]
   }
 }
 };
