@@ -23,8 +23,8 @@ const Hero = () => {
       mobileImage: '/images/hero/slide2-mobile.jpg',
       heading: 'Precision Engineering Excellence',
       subheading: 'From concept to deployment, we provide comprehensive hardware and software solutions with unmatched reliability and performance.',
-      ctaText: 'View Our Products',
-      ctaLink: '/products',
+      ctaText: 'Explore RF Solutions',
+      ctaLink: '/products/product-rf-amplifiers',
       overlayPosition: 'center'
     },
     {

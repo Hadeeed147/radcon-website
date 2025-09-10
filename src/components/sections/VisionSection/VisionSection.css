@@ -37,6 +37,7 @@
   .vision-content__text {
     padding-right: 2rem;
     animation: slideInLeft 1s ease-out;
+    text-align: left;
   }
   
   @keyframes slideInLeft {
@@ -72,17 +73,13 @@
   }
   
   .vision-section__title {
-    font-size: 3rem;
-    font-weight: 900;
-    line-height: 1.2;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.3;
     color: var(--text-primary, #2d3748);
-    margin: 0 0 2rem 0;
-    letter-spacing: -0.02em;
-    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 0 1.5rem 0;
+    letter-spacing: -0.01em;
+    text-align: left;
     max-width: 100%;
   }
   

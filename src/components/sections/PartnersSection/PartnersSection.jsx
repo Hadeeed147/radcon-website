@@ -4,14 +4,16 @@ import PropTypes from 'prop-types';
 import './PartnersSection.css';
 
 const PartnersSection = ({ subtitle, title, description, logos = [], speed = 25, pauseOnHover = true }) => {
-  // Sample company logos data (you can replace these with actual partner logos)
+  // Technology partner placeholders with CSS-based logos
   const defaultLogos = [
-    { src: '/images/partner-logo-1.svg', alt: 'Company 1' },
-    { src: '/images/partner-logo-2.svg', alt: 'Company 2' },
-    { src: '/images/partner-logo-3.svg', alt: 'Company 3' },
-    { src: '/images/partner-logo-4.svg', alt: 'Company 4' },
-    { src: '/images/partner-logo-5.svg', alt: 'Company 5' },
-    { src: '/images/partner-logo-6.svg', alt: 'Company 6' },
+    { name: 'TechCore Systems', type: 'rf-tech', alt: 'RF Technology Partner' },
+    { name: 'Advanced Microwave', type: 'microwave', alt: 'Microwave Solutions Partner' },
+    { name: 'Defense Innovations', type: 'defense', alt: 'Defense Technology Partner' },
+    { name: 'Embedded Solutions', type: 'embedded', alt: 'Embedded Systems Partner' },
+    { name: 'Power Systems Pro', type: 'power', alt: 'Power Systems Partner' },
+    { name: 'NavTech Global', type: 'navigation', alt: 'Navigation Systems Partner' },
+    { name: 'OptroTech Ltd', type: 'optical', alt: 'Optical Technology Partner' },
+    { name: 'CommSys Networks', type: 'communications', alt: 'Communications Partner' },
   ];
 
   const partnerLogos = logos.length > 0 ? logos : defaultLogos;
@@ -39,21 +41,19 @@ const PartnersSection = ({ subtitle, title, description, logos = [], speed = 25,
                 {/* First set of logos */}
                 {partnerLogos.map((logo, index) => (
                   <div key={`first-${index}`} className="partners-marquee__item">
-                    <img 
-                      src={logo.src} 
-                      alt={logo.alt}
-                      className="partners-logo"
-                    />
+                    <div className={`partners-logo partners-logo--${logo.type || 'default'}`}>
+                      <div className="partners-logo__icon"></div>
+                      <div className="partners-logo__text">{logo.name || logo.alt}</div>
+                    </div>
                   </div>
                 ))}
                 {/* Duplicate set for seamless loop */}
                 {partnerLogos.map((logo, index) => (
                   <div key={`second-${index}`} className="partners-marquee__item">
-                    <img 
-                      src={logo.src} 
-                      alt={logo.alt}
-                      className="partners-logo"
-                    />
+                    <div className={`partners-logo partners-logo--${logo.type || 'default'}`}>
+                      <div className="partners-logo__icon"></div>
+                      <div className="partners-logo__text">{logo.name || logo.alt}</div>
+                    </div>
                   </div>
                 ))}
               </div>

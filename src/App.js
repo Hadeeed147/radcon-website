@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Navigation from './components/Navigation/Navigation';
 import Footer from './components/Footer/Footer';
-import Hero from './components/Hero/Hero';
+import Homepage from './pages/Homepage.jsx';
 import AboutUs from './pages/AboutUs.jsx';
 import ContactUs from './pages/ContactUs.jsx';
 import MediaCentre from './pages/MediaCentre.jsx';
@@ -60,7 +60,7 @@ function App() {
         <Navigation />
         <ErrorBoundary>
           <Routes>
-            <Route path="/" element={<Hero />} />
+            <Route path="/" element={<Homepage />} />
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/media-centre" element={<MediaCentre />} />

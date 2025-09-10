@@ -6,7 +6,7 @@ import WhyChooseUs from '../components/sections/WhyChooseUs/WhyChooseUs';
 import VisionSection from '../components/sections/VisionSection/VisionSection';
 import MissionSection from '../components/sections/MissionSection/MissionSection';
 import ManagementSystem from '../components/sections/ManagementSystem/ManagementSystem';
-import PartnersSection from '../components/sections/PartnersSection/PartnersSection';
+import TechnologyPartnersNew from '../components/sections/TechnologyPartnersNew/TechnologyPartnersNew';
 import CTASection from '../components/sections/CTASection/CTASection';
 
 const AboutUs = () => {
@@ -108,21 +108,7 @@ const AboutUs = () => {
         items={managementSystemData}
       />
 
-      <PartnersSection
-        subtitle="Strategic Partnerships"
-        title="Collaborating with Industry Leaders Worldwide"
-        description="At RADCON, we believe in the power of strategic partnerships to deliver exceptional value to our clients. We collaborate with leading technology providers, industry pioneers, and innovative organizations worldwide to expand our capabilities and ensure our clients receive the most comprehensive, cutting-edge solutions available in the market. These partnerships enable us to stay at the forefront of technological advancement while providing unparalleled service quality."
-        logos={[
-          { src: '/images/partner-logo-1.svg', alt: 'Technology Partner 1' },
-          { src: '/images/partner-logo-2.svg', alt: 'Industry Leader 2' },
-          { src: '/images/partner-logo-3.svg', alt: 'Strategic Partner 3' },
-          { src: '/images/partner-logo-4.svg', alt: 'Global Partner 4' },
-          { src: '/images/partner-logo-5.svg', alt: 'Innovation Partner 5' },
-          { src: '/images/partner-logo-6.svg', alt: 'Solutions Partner 6' },
-        ]}
-        speed={15}
-        pauseOnHover={true}
-      />
+      <TechnologyPartnersNew />
 
       <CTASection
         title="Ready to Transform Your Technology Infrastructure?"

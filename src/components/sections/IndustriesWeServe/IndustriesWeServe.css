@@ -1,0 +1,337 @@
+/* IndustriesWeServe.css */
+.industries-serve {
+  background: linear-gradient(135deg, var(--bg-alt) 0%, var(--bg-alt-2) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.industries-serve::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%233182ce" fill-opacity="0.02"><polygon points="30,0 45,15 45,45 30,60 15,45 15,15"/></g></svg>') repeat;
+  animation: float 30s linear infinite;
+}
+
+.industries-serve__header {
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+  z-index: 1;
+}
+
+.industries-serve__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+}
+
+.industries-serve__highlight {
+  color: var(--color-primary);
+  position: relative;
+}
+
+.industries-serve__subtitle {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  margin: 0;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.industries-serve__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.industry-card {
+  background: var(--bg-primary);
+  padding: 2.5rem 2rem;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-medium);
+  border: 1px solid var(--border-color);
+  transition: all var(--transition-medium);
+  position: relative;
+  overflow: hidden;
+}
+
+.industry-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.6s ease;
+}
+
+.industry-card:hover::before {
+  transform: scaleX(1);
+}
+
+.industry-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--hover-shadow);
+  border-color: var(--color-primary);
+}
+
+.industry-card__icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 1.5rem auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.industry-card__icon-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-medium);
+  position: relative;
+}
+
+/* Defense Shield Icon - Military/Defense themed */
+.industry-card__icon--defense-shield .industry-card__icon-inner {
+  background: linear-gradient(135deg, #1a365d 0%, var(--color-primary) 100%);
+  clip-path: polygon(50% 0%, 85% 25%, 85% 75%, 50% 100%, 15% 75%, 15% 25%);
+  position: relative;
+}
+
+.industry-card__icon--defense-shield .industry-card__icon-inner::before {
+  content: '';
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.industry-card__icon--defense-shield .industry-card__icon-inner::after {
+  content: '★';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Aircraft Icon - Aviation/Aerospace themed */
+.industry-card__icon--aircraft .industry-card__icon-inner {
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  border-radius: var(--radius-lg);
+  position: relative;
+}
+
+.industry-card__icon--aircraft .industry-card__icon-inner::before {
+  content: '';
+  position: absolute;
+  top: 45%;
+  left: 15%;
+  right: 25%;
+  height: 6px;
+  background: white;
+  border-radius: 3px;
+  transform: translateY(-50%);
+}
+
+.industry-card__icon--aircraft .industry-card__icon-inner::after {
+  content: '';
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 20px solid white;
+}
+
+/* Government Icon - Strategic organizations themed */
+.industry-card__icon--government .industry-card__icon-inner {
+  background: linear-gradient(135deg, #7c3aed 0%, #5b21b6 100%);
+  border-radius: var(--radius-lg);
+  position: relative;
+}
+
+.industry-card__icon--government .industry-card__icon-inner::before {
+  content: '';
+  position: absolute;
+  bottom: 25%;
+  left: 20%;
+  right: 20%;
+  top: 40%;
+  background: white;
+  border-radius: 2px 2px 0 0;
+}
+
+.industry-card__icon--government .industry-card__icon-inner::after {
+  content: '';
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid white;
+}
+
+/* Security Badge Icon - Law enforcement themed */
+.industry-card__icon--security-badge .industry-card__icon-inner {
+  background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+  border-radius: 50%;
+  position: relative;
+}
+
+.industry-card__icon--security-badge .industry-card__icon-inner::before {
+  content: '';
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  right: 25%;
+  bottom: 40%;
+  background: white;
+  border-radius: 50% 50% 0 0;
+}
+
+.industry-card__icon--security-badge .industry-card__icon-inner::after {
+  content: '';
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 15px solid white;
+  filter: drop-shadow(0 -2px 0 #dc2626);
+}
+
+.industry-card__content {
+  text-align: center;
+}
+
+.industry-card__title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 1rem 0;
+  line-height: 1.3;
+}
+
+.industry-card__description {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.industry-card:hover .industry-card__icon-inner {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.industries-serve__cta {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .industries-serve__grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .industries-serve__title {
+    font-size: 2.25rem;
+  }
+  
+  .industry-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .industry-card__icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .industries-serve__header {
+    margin-bottom: 3rem;
+  }
+  
+  .industries-serve__title {
+    font-size: 2rem;
+  }
+  
+  .industries-serve__subtitle {
+    font-size: 1rem;
+  }
+  
+  .industries-serve__grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .industry-card {
+    padding: 1.75rem 1.25rem;
+  }
+  
+  .industry-card__icon {
+    width: 55px;
+    height: 55px;
+    margin-bottom: 1rem;
+  }
+  
+  .industry-card__title {
+    font-size: 1.125rem;
+  }
+  
+  .industry-card__description {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .industries-serve__title {
+    font-size: 1.75rem;
+  }
+  
+  .industry-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .industry-card__icon {
+    width: 50px;
+    height: 50px;
+  }
+}

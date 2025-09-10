@@ -2,12 +2,36 @@
 import React from 'react';
 import PageHero from '../components/sections/PageHero/PageHero';
 import CTASection from '../components/sections/CTASection/CTASection';
+import ProcessFlow from '../components/sections/ProcessFlow/ProcessFlow';
 import './DesignHouse.css';
 
 const DesignHouse = () => {
   const breadcrumbs = [
     { label: 'HOME', href: '/' },
     { label: 'DESIGN HOUSE' }
+  ];
+
+  const processSteps = [
+    {
+      number: 1,
+      title: 'Concept & Consultation',
+      description: 'Initial requirements gathering, feasibility analysis, and technical consultation'
+    },
+    {
+      number: 2,
+      title: 'Design & Prototyping',
+      description: 'Detailed design, simulation, rapid prototyping, and iterative refinement'
+    },
+    {
+      number: 3,
+      title: 'Testing & Validation',
+      description: 'Comprehensive testing, compliance verification, and performance validation'
+    },
+    {
+      number: 4,
+      title: 'Production & Delivery',
+      description: 'Manufacturing, quality control, packaging, and timely delivery'
+    }
   ];
 
   return (
@@ -234,46 +258,7 @@ const DesignHouse = () => {
       </section>
 
       {/* Process Flow Section */}
-      <section className="process-flow">
-        <div className="container">
-          <h2 className="process-flow__title">
-            Our Design & Development <span className="highlight-green">Process</span>
-          </h2>
-          <div className="process-steps">
-            <div className="process-step">
-              <div className="process-step__number">01</div>
-              <h3 className="process-step__title">Concept & Consultation</h3>
-              <p className="process-step__description">
-                Initial requirements gathering, feasibility analysis, and technical consultation
-              </p>
-            </div>
-            <div className="process-step__arrow">→</div>
-            <div className="process-step">
-              <div className="process-step__number">02</div>
-              <h3 className="process-step__title">Design & Prototyping</h3>
-              <p className="process-step__description">
-                Detailed design, simulation, rapid prototyping, and iterative refinement
-              </p>
-            </div>
-            <div className="process-step__arrow">→</div>
-            <div className="process-step">
-              <div className="process-step__number">03</div>
-              <h3 className="process-step__title">Testing & Validation</h3>
-              <p className="process-step__description">
-                Comprehensive testing, compliance verification, and performance validation
-              </p>
-            </div>
-            <div className="process-step__arrow">→</div>
-            <div className="process-step">
-              <div className="process-step__number">04</div>
-              <h3 className="process-step__title">Production & Delivery</h3>
-              <p className="process-step__description">
-                Manufacturing, quality control, packaging, and timely delivery
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ProcessFlow steps={processSteps} />
 
       {/* Why Choose RADCON Section */}
       <section className="why-choose">

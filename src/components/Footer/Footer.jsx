@@ -19,8 +19,7 @@ const Footer = () => {
   ];
 
   const connectLinks = [
-    { name: 'Contact Us', href: '/contact' },
-    { name: 'Careers', href: '/careers' }
+    { name: 'Contact Us', href: '/contact' }
   ];
 
   const legalLinks = [
@@ -83,16 +82,16 @@ const Footer = () => {
               <div className="footer__contact-item">
                 <span className="footer__contact-icon">📍</span>
                 <div className="footer__contact-text">
-                  <p>Office No. 123, Tech Plaza</p>
-                  <p>Islamabad, Pakistan 44000</p>
+                  <p>Plot no 1, Sheikh chowk, KRL road</p>
+                  <p>Rawalpindi, Pakistan</p>
                 </div>
               </div>
               
               <div className="footer__contact-item">
                 <span className="footer__contact-icon">@</span>
                 <div className="footer__contact-text">
-                  <a href="mailto:info@radcon.com.pk" className="footer__contact-link">
-                    info@radcon.com.pk
+                  <a href="mailto:aamir@radcontechs.com" className="footer__contact-link">
+                    aamir@radcontechs.com
                   </a>
                 </div>
               </div>
@@ -100,8 +99,8 @@ const Footer = () => {
               <div className="footer__contact-item">
                 <span className="footer__contact-icon">☎</span>
                 <div className="footer__contact-text">
-                  <a href="tel:+92123456789" className="footer__contact-link">
-                    +92 (123) 456-7890
+                  <a href="tel:+923335686224" className="footer__contact-link">
+                    +92 333 5686224
                   </a>
                 </div>
               </div>

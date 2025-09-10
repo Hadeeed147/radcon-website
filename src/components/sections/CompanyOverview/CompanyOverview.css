@@ -1,0 +1,120 @@
+/* CompanyOverview.css */
+.company-overview {
+  background: var(--bg-primary);
+  padding: 80px 0;
+}
+
+.company-overview__grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.company-overview__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-primary);
+  margin: 0;
+  text-align: left;
+}
+
+.company-overview__highlight {
+  color: var(--color-primary);
+}
+
+.company-overview__description {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin: 0 0 30px 0;
+  max-width: none;
+  text-align: left;
+}
+
+.company-overview__cta {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.company-overview__right {
+  text-align: left;
+}
+
+.company-overview .btn {
+  min-height: 56px;
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.company-overview .btn__icon {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.company-overview .btn:hover .btn__icon {
+  transform: translateX(3px);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .company-overview__grid {
+    gap: 40px;
+  }
+  
+  .company-overview__title {
+    font-size: 2.25rem;
+  }
+  
+  .company-overview__description {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .company-overview {
+    padding: 60px 0;
+  }
+  
+  .company-overview__grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+  
+  .company-overview__title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .company-overview__description {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+  
+  .company-overview__cta {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .company-overview {
+    padding: 40px 0;
+  }
+  
+  .company-overview__title {
+    font-size: 1.75rem;
+  }
+  
+  .company-overview__grid {
+    gap: 20px;
+  }
+}
