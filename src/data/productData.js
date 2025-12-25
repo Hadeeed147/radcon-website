@@ -1544,19 +1544,19 @@ export const productPages = {
       }
     },
   
-    // 8. AVIATION INDUSTRY
+    // 8. AVIATION INDUSTRY - AVIONICS REPAIR SERVICES
     'product-aviation': {
       slug: 'product-aviation',
       category: 'Aviation Industry',
       template: 'product',
       meta: {
-        title: 'Aviation Systems | RADCON Technologies',
-        description: 'Specialized avionics, power systems, and aircraft components for military helicopters including Puma, Bell-412, MI-17, AH-1F, and AW-139 platforms.'
+        title: 'Avionics Repair Services | RADCON Technologies',
+        description: 'Comprehensive helicopter and fixed wing avionics repair services. Expert repair for MI-17, Bell 412, Puma, Cobra, Fennec, Ecureuil helicopters and King Air, Cessna aircraft. Ground support equipment repair and maintenance.'
       },
       hero: {
-        title: 'Military Aviation Solutions',
-        subtitle: 'Specialized Aircraft Systems & Components',
-        category: 'Aviation Systems',
+        title: 'Comprehensive Helicopter & Fixed Wing Avionics Repair Services',
+        subtitle: 'Your Trusted Partner in Aviation Avionics Repair with Multi-Platform Expertise & Guaranteed Repair',
+        category: 'Aviation Repair Services',
         backgroundImage: '/images/products/aviation-hero.jpg',
         breadcrumbs: [
           { label: 'Home', href: '/' },
@@ -1565,202 +1565,208 @@ export const productPages = {
         ]
       },
       showcase: {
-        image: '/images/products/mfd-display.jpg',
-        title: 'Military Aircraft Capabilities',
+        image: '/images/products/aviation/mi-17.webp',
+        title: 'Multi-Platform Avionics Repair Excellence',
         highlights: [
-          'Multi-function displays (MFD)',
-          'Power supply systems',
-          'Navigation equipment',
-          'Communication systems',
-          'Ground support equipment'
+          'Guaranteed Repair to operational standards',
+          'Multi-platform expertise (helicopters & fixed wing)',
+          'Indigenous in-country repair resources',
+          'ISO 9001 & international aviation standards compliance',
+          '4+ years proven track record'
         ],
         specifications: {
-          'Frequency Range': 'Puma, Bell-412, MI-17, AH-1F, AW-139',
-          'Output Power': '41+ certified parts',
-          'Gain': '28V/115V compatible',
-          'Efficiency': 'Military standards'
+          'Helicopter Platforms': '6 models',
+          'Fixed Wing Platforms': '3 models',
+          'Avionics Systems': '5+ categories',
+          'Ground Support': '4+ equipment types'
         },
-        primaryButton: { text: 'Aviation Inquiry', href: '/contact' },
-        secondaryButton: { text: 'Capability List', href: '/downloads/aviation-capabilities.pdf' }
+        primaryButton: { text: 'Request Repair Quote', href: '/contact' },
+        secondaryButton: { text: 'Download Capability List', href: '/downloads/aviation-capabilities.pdf' }
       },
       specifications: [
         {
-          title: 'Multi-Function Displays',
+          title: 'Helicopter Platforms',
           specs: [
-            { label: 'MFD-5 4/15', value: 'Puma SMV9519353SPS', note: 'Display system' },
-            { label: 'MDF-255FF', value: 'Puma SM597-2212-501', note: 'Multi-function display' },
-            { label: 'MFD KMD 550', value: 'Multi-platform', note: 'Navigation display' },
-            { label: 'Display Unit', value: 'MI-17A813-0409', note: 'Multi-function display' },
-            { label: 'NAV Indicator', value: 'Ecrl/Fennec', note: 'Pictorial navigation' },
-            { label: 'HIS Indicator', value: 'AH-1F6605-01-160-4442', note: 'Horizontal situation' }
+            { label: 'MI-17', value: 'All variants', note: 'Full avionics suite - navigation, communication, mission systems, cockpit electronics' },
+            { label: 'Bell 412', value: 'All variants', note: 'Complete avionics repair including navigation and communication' },
+            { label: 'Puma', value: 'SA 330/AS 332', note: 'Full suite avionics components repair' },
+            { label: 'Cobra (AH-1)', value: 'All variants', note: 'Combat and mission-critical avionics repair' },
+            { label: 'Fennec', value: 'AS 550/555', note: 'Light helicopter avionics systems' },
+            { label: 'Ecureuil', value: 'AS 350/355', note: 'Navigation and communication systems' }
           ]
         },
         {
-          title: 'Power & Control Systems',
+          title: 'Fixed Wing Aircraft',
           specs: [
-            { label: 'Unit Power Supply', value: 'Puma L740150', note: 'Aircraft power' },
-            { label: 'Emergency Power', value: 'B-300501-1228-04', note: 'Backup power system' },
-            { label: 'DC Control Box', value: 'Puma L330A62-0142-05', note: 'Control assembly' },
-            { label: 'ARCU Control Box', value: 'Puma SM330K61-0121-00', note: 'Control unit' },
-            { label: 'Master Control Box', value: 'Multi-platform', note: 'System control' },
-            { label: 'Static Inverter', value: 'Puma SM 28V/115V', note: 'Power conversion' }
-          ]
-        },
-        {
-          title: 'Navigation & Communication',
-          specs: [
-            { label: 'GPS Converter', value: 'Bell-412934000-14A', note: 'GPS synchro converter' },
-            { label: 'KSN-765 Navigator', value: 'Puma L066-01213-1101', note: 'Safety navigator' },
-            { label: 'Transponder', value: 'MI-17KT 76C', note: 'Aircraft transponder' },
-            { label: 'ERT-160 Transceiver', value: 'Puma SM310', note: 'Communication system' },
-            { label: 'KRA-405B Receiver', value: 'Multi-platform S3100-404', note: 'Transceiver system' },
-            { label: 'KNS-81 Transceiver', value: 'Multi-platform', note: 'Comm/Nav system' }
+            { label: 'King Air B350', value: 'All variants', note: 'High-end avionics and flight systems repair' },
+            { label: 'Cessna 208 Caravan', value: 'All variants', note: 'Turboprop avionics systems' },
+            { label: 'Cessna 206', value: 'All variants', note: 'Piston aircraft avionics' }
           ]
         }
       ],
-             applications: [
-         {
-           icon: 'aerospace',
-           title: 'Puma Helicopters',
-           description: 'Comprehensive Puma SM/L platform support',
-           examples: ['MFD systems', 'Power supplies', 'Control boxes', 'Navigation equipment']
-         },
-         {
-           icon: 'aerospace',
-           title: 'Bell-412',
-           description: 'Bell-412 helicopter systems',
-           examples: ['GPS converters', 'ITT actuators', 'Avionics integration']
-         },
-         {
-           icon: 'aerospace',
-           title: 'MI-17 Helicopters',
-           description: 'MI-17 platform components',
-           examples: ['Multi-function displays', 'Transponders', 'Avionics systems']
-         },
-         {
-           icon: 'defense',
-           title: 'Combat Aircraft',
-           description: 'AH-1F Cobra and combat platforms',
-           examples: ['Radar altimeters', 'HIS indicators', 'Combat systems']
-         }
-       ],
+      applications: [
+        {
+          icon: 'aerospace',
+          title: 'Avionics Systems',
+          description: 'Comprehensive repair of aircraft avionics components',
+          examples: ['Altimeters', 'Weather Radars', 'Communication Equipment (HF/VHF/UHF)', 'Flight Management Systems (FMS)', 'Display Units']
+        },
+        {
+          icon: 'energy',
+          title: 'Ground Power Units',
+          description: 'GPU repair and maintenance services',
+          examples: ['Ground Power Units', 'Power conditioning', 'Mobile GPU systems']
+        },
+        {
+          icon: 'industry',
+          title: 'Ground Support Equipment',
+          description: 'Complete ground support equipment repair',
+          examples: ['Towing Tractors', 'Aircraft tugs', 'Ground handling equipment']
+        },
+        {
+          icon: 'research',
+          title: 'Test & Battery Equipment',
+          description: 'Legacy and modern test equipment repair',
+          examples: ['Battery Chargers (including legacy systems)', 'All types of Test Equipment', 'Calibration services']
+        }
+      ],
       features: [
         {
-          icon: 'computer-desktop',
-          title: 'Multi-Function Displays',
-          description: 'Advanced display systems for military aircraft',
-          highlights: ['MFD-5 4/15', 'MDF-255FF', 'KMD 550', 'Navigation displays']
+          icon: 'shield-check',
+          title: 'Guaranteed Repair',
+          description: 'All components repaired to operational standards, backed by Radcon\'s service guarantee',
+          highlights: ['Operational standards', 'Service guarantee', 'Quality assurance']
         },
         {
-          icon: 'bolt',
-          title: 'Power Systems',
-          description: 'Comprehensive power solutions',
-          highlights: ['Unit power supplies', 'Emergency power', 'Static inverters', 'Battery systems']
+          icon: 'heart',
+          title: 'Care & Responsibility',
+          description: 'Safe handling of all items; no damage during repair process',
+          highlights: ['Safe handling', 'Zero damage policy', 'Careful processes']
         },
         {
-          icon: 'map',
-          title: 'Navigation Equipment',
-          description: 'Precision navigation systems',
-          highlights: ['GPS converters', 'KSN-765 navigator', 'Safety navigation', 'HIS indicators']
+          icon: 'globe-alt',
+          title: 'Multi-Platform Expertise',
+          description: 'Helicopters (MI 17, Bell 412, Puma, Cobra, Fennec, Ecureuil) and fixed wing (King Air B350, Cessna 208, Cessna 206)',
+          highlights: ['6 helicopter platforms', '3 fixed wing platforms', 'Cross-platform knowledge']
         },
         {
-          icon: 'signal',
-          title: 'Communication Systems',
-          description: 'Military communication equipment',
-          highlights: ['ERT-160 transceivers', 'KRA-405B receivers', 'KNS-81 systems', 'AIFF transceivers']
+          icon: 'document-check',
+          title: 'Compliance & Quality',
+          description: 'Strict adherence to international aviation maintenance and ISO 9001 standards',
+          highlights: ['ISO 9001', 'Aviation standards', 'Regulatory compliance']
         },
         {
-          icon: 'wrench-screwdriver',
-          title: 'Ground Support',
-          description: 'Ground support and testing equipment',
-          highlights: ['Battery chargers', 'Air data testers', 'Scorby testers', 'Balancer analyzers']
+          icon: 'chart-bar',
+          title: 'Proven Track Record',
+          description: 'Four years of successful repair and return to service history',
+          highlights: ['4+ years experience', 'Successful repairs', 'Return to service']
         },
         {
-          icon: 'cpu-chip',
-          title: 'PCB Engineering',
-          description: 'Reverse and forward engineering capabilities',
-          highlights: ['PCB design', 'Component analysis', 'System integration', 'Custom solutions']
+          icon: 'flag',
+          title: 'Indigenous Capability',
+          description: 'In-country repair resources saving high-value exchequer',
+          highlights: ['Local expertise', 'Cost savings', 'Reduced downtime']
         }
       ],
       advantages: [
         {
-          title: 'Platform Expertise',
-          description: 'Deep knowledge of Puma, Bell-412, MI-17, AH-1F, and AW-139 platforms'
+          title: 'One-Stop Solution',
+          description: 'Complete repair solution for both rotary and fixed wing avionics under one roof'
         },
         {
-          title: 'Comprehensive Support',
-          description: '41+ certified components across multiple aircraft systems'
+          title: 'Airborne & Ground Expertise',
+          description: 'Expertise across both airborne avionics systems and ground support equipment'
         },
         {
-          title: 'Military Standards',
-          description: 'Compliance with military aviation standards and specifications'
+          title: 'Minimized Downtime',
+          description: 'Commitment to minimizing aircraft downtime and ensuring operational safety'
         },
         {
-          title: 'Lifecycle Support',
-          description: 'Complete support from design to maintenance and upgrades'
+          title: 'International Network',
+          description: 'Strong international network for specialized support when required'
         }
       ],
       certifications: [
-        'Military Aviation Standards',
-        'Platform-Specific Certifications',
-        'Quality Assurance Systems',
-        'Safety Standards Compliance',
-        'Technical Airworthiness'
+        'ISO 9001:2015 Certified',
+        'International Aviation Standards',
+        'Quality Management System',
+        'Aviation Maintenance Standards',
+        'Component Repair Certification'
       ],
       warranty: {
-        years: '2',
-        description: 'Military-grade warranty with technical support'
+        years: '1',
+        description: 'Comprehensive repair warranty with guaranteed return to operational standards'
       },
       gallery: [
         {
-          url: '/images/products/radar-altimeter.jpg',
-          caption: 'Military radar altimeter system'
+          url: '/images/products/aviation/mi-17.webp',
+          caption: 'MI-17 Helicopter - Full Avionics Support'
+        },
+        {
+          url: '/images/products/aviation/bell-412.webp',
+          caption: 'Bell 412 - Navigation & Communication Systems'
+        },
+        {
+          url: '/images/products/aviation/puma.webp',
+          caption: 'Puma Helicopter - Comprehensive Avionics Repair'
+        },
+        {
+          url: '/images/products/aviation/king-air-b350.webp',
+          caption: 'King Air B350 - Fixed Wing Excellence'
+        },
+        {
+          url: '/images/products/aviation/gpu-equipment.webp',
+          caption: 'Ground Power Unit Repair Services'
         }
       ],
-             relatedProducts: [
-         {
-           slug: 'product-power-supplies',
-           title: 'Aircraft Power Systems',
-           category: 'Power Systems',
-           description: 'Military aircraft power solutions',
-           href: '/products/product-power-supplies'
-         },
-         {
-           slug: 'product-communication',
-           title: 'Communication Systems',
-           category: 'Communication',
-           description: 'Military communication equipment',
-           href: '/products/product-communication'
-         }
-       ],
-       faq: [
-         {
-           question: 'What military helicopter platforms do you support?',
-           answer: 'We provide comprehensive support for Puma, Bell-412, MI-17, AH-1F, and AW-139 platforms with 41+ certified components across multiple aircraft systems.'
-         },
-         {
-           question: 'Are your aviation components certified for military use?',
-           answer: 'Yes, all our aviation components meet military aviation standards and specifications, ensuring compliance with safety and technical airworthiness requirements.'
-         },
-         {
-           question: 'Do you provide lifecycle support for aircraft components?',
-           answer: 'We offer complete lifecycle support from design to maintenance and upgrades, including technical support, spare parts, and system integration services.'
-         },
-         {
-           question: 'Can you customize components for specific aircraft requirements?',
-           answer: 'Yes, we specialize in platform-specific customization and can modify components to meet exact aircraft specifications and operational requirements.'
-         },
-         {
-           question: 'What types of avionics systems do you manufacture?',
-           answer: 'We manufacture multi-function displays, power supply systems, navigation equipment, communication systems, and ground support equipment for military aircraft.'
-         }
-       ],
+      relatedProducts: [
+        {
+          slug: 'product-power-supplies',
+          title: 'Aircraft Power Systems',
+          category: 'Power Systems',
+          description: 'Military aircraft power solutions',
+          href: '/products/product-power-supplies'
+        },
+        {
+          slug: 'product-communication',
+          title: 'Communication Systems',
+          category: 'Communication',
+          description: 'Military communication equipment',
+          href: '/products/product-communication'
+        }
+      ],
+      faq: [
+        {
+          question: 'What helicopter platforms do you support for avionics repair?',
+          answer: 'We provide comprehensive avionics repair services for MI-17 (all variants), Bell 412, Puma (SA 330/AS 332), Cobra (AH-1), Fennec (AS 550/555), and Ecureuil (AS 350/355) helicopters. Our services cover full avionics suites including navigation, communication, mission systems, and cockpit electronics.'
+        },
+        {
+          question: 'Do you repair fixed wing aircraft avionics?',
+          answer: 'Yes, we provide avionics repair services for fixed wing aircraft including King Air B350, Cessna 208 Caravan, and Cessna 206. Our services cover high-end avionics, flight systems, turboprop avionics, and piston aircraft avionics systems.'
+        },
+        {
+          question: 'What avionics components can you repair?',
+          answer: 'We repair a wide range of avionics components including altimeters, weather radars, communication equipment (HF/VHF/UHF), Flight Management Systems (FMS), display units, navigation systems, and mission-critical electronics for both helicopters and fixed wing aircraft.'
+        },
+        {
+          question: 'Do you provide ground support equipment repair?',
+          answer: 'Yes, we offer comprehensive ground support equipment repair services including Ground Power Units (GPU), towing tractors, aircraft tugs, battery chargers (including legacy systems), test equipment, and calibration services.'
+        },
+        {
+          question: 'What certifications and standards do you follow?',
+          answer: 'We are ISO 9001:2015 certified and strictly adhere to international aviation maintenance standards. Our quality management system ensures all repairs meet operational standards and regulatory compliance requirements.'
+        },
+        {
+          question: 'What is the typical turnaround time for avionics repairs?',
+          answer: 'Turnaround time varies based on component complexity and parts availability. We prioritize minimizing aircraft downtime and work efficiently to return components to operational status. Contact us for specific estimates based on your repair requirements.'
+        }
+      ],
       cta: {
-        title: 'Trusted Military Aviation Partner',
-        description: 'Proven capabilities across multiple military helicopter platforms with 41+ certified components',
-        primaryButton: { text: 'Contact Aviation Team', href: '/contact' },
+        title: 'Reduce Downtime with Indigenous Avionics Repair',
+        description: 'Partner with Radcon for comprehensive helicopter and fixed wing avionics repair services. Trusted by aviation operators across the region.',
+        primaryButton: { text: 'Request Repair Quote', href: '/contact' },
         secondaryButton: { text: 'Download Capability List', href: '/downloads/aviation-capabilities.pdf' },
-        tertiaryButton: { text: 'Request Platform Support', href: '/support' }
+        tertiaryButton: { text: 'Schedule Assessment', href: '/contact' }
       }
     },
   

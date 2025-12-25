@@ -53,6 +53,10 @@ const FeaturesGrid = ({ features, columns = 3 }) => {
     'camera': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/camera.svg',
     'paint-brush': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/paint-brush.svg',
     'battery': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/battery-50.svg',
+    'flag': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/flag.svg',
+    'home': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/home.svg',
+    'building-office': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/building-office.svg',
+    'building-library': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/building-library.svg',
     'default': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/bolt.svg'
   };
 

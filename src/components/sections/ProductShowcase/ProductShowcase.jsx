@@ -2,47 +2,54 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './ProductShowcase.css';
 
-const ProductShowcase = ({ 
-  image, 
-  title, 
-  highlights, 
-  specifications, 
+const ProductShowcase = ({
+  image,
+  title,
+  highlights,
+  specifications,
   primaryButton
 }) => {
-  // Icon mapping for specifications
+  // Heroicons CDN mapping for specifications - professional monochrome icons
+  const iconMappings = {
+    'Frequency Coverage': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/signal.svg',
+    'Frequency Range': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/chart-bar.svg',
+    'Frequency': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/speaker-wave.svg',
+    'Output Power': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/bolt.svg',
+    'Power Output': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/bolt.svg',
+    'Protection Radius': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/shield-check.svg',
+    'Operating Temp': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/fire.svg',
+    'Gain': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/arrow-trending-up.svg',
+    'Efficiency': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/sparkles.svg',
+    'Voltage Range': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/bolt.svg',
+    'Regulation': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/cog-6-tooth.svg',
+    'Processors': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/cpu-chip.svg',
+    'Memory': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/circle-stack.svg',
+    'Interfaces': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/link.svg',
+    'OS Support': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/computer-desktop.svg',
+    'Channels': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/radio.svg',
+    'Range': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/map-pin.svg',
+    'Accuracy': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/cursor-arrow-rays.svg',
+    'Update Rate': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/arrow-path.svg',
+    'Display Size': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/tv.svg',
+    'Resolution': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/photo.svg',
+    'Brightness': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/sun.svg',
+    'MTBF': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/clock.svg',
+    'Wavelength': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/signal.svg',
+    'Sensitivity': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/signal.svg',
+    'Time to Fix': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/clock.svg',
+    'Processing': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/cpu-chip.svg',
+    'Frame Rate': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/film.svg',
+    'Latency': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/bolt.svg',
+    // Aviation specific
+    'Helicopter Platforms': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/paper-airplane.svg',
+    'Fixed Wing Platforms': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/paper-airplane.svg',
+    'Avionics Systems': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/cpu-chip.svg',
+    'Ground Support': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/wrench-screwdriver.svg',
+    'default': 'https://cdn.jsdelivr.net/npm/heroicons@2.0.18/24/outline/cog-6-tooth.svg'
+  };
+
   const getSpecIcon = (key) => {
-    const iconMap = {
-      'Frequency Coverage': '📡',
-      'Frequency Range': '📊',
-      'Frequency': '🔊',
-      'Output Power': '⚡',
-      'Power Output': '💪',
-      'Protection Radius': '🛡️',
-      'Operating Temp': '🌡️',
-      'Gain': '📈',
-      'Efficiency': '✨',
-      'Voltage Range': '🔌',
-      'Regulation': '⚙️',
-      'Processors': '💻',
-      'Memory': '💾',
-      'Interfaces': '🔗',
-      'OS Support': '🖥️',
-      'Channels': '📻',
-      'Range': '📍',
-      'Accuracy': '🎯',
-      'Update Rate': '🔄',
-      'Display Size': '📺',
-      'Resolution': '🖼️',
-      'Brightness': '☀️',
-      'MTBF': '⏰',
-      'Wavelength': '🌊',
-      'Sensitivity': '📶',
-      'Time to Fix': '⏱️',
-      'Processing': '⚡',
-      'Frame Rate': '🎬',
-      'Latency': '⚡'
-    };
-    return iconMap[key] || '📌';
+    return iconMappings[key] || iconMappings['default'];
   };
 
   return (
@@ -84,12 +91,14 @@ const ProductShowcase = ({
                 <h3 className="product-showcase__section-title">Quick Specifications</h3>
                 <div className="product-showcase__specs-grid">
                   {Object.entries(specifications).slice(0, 4).map(([key, value], index) => (
-                    <div 
-                      key={key} 
+                    <div
+                      key={key}
                       className="product-showcase__spec-item"
                       style={{ animationDelay: `${index * 0.15}s` }}
                     >
-                      <div className="product-showcase__spec-icon">{getSpecIcon(key)}</div>
+                      <div className="product-showcase__spec-icon">
+                        <img src={getSpecIcon(key)} alt="" aria-hidden="true" />
+                      </div>
                       <div className="product-showcase__spec-content">
                         <span className="product-showcase__spec-label">{key}</span>
                         <span className="product-showcase__spec-value">{value}</span>

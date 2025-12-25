@@ -154,8 +154,10 @@ const Navigation = () => {
           {
             title: "Aviation Industry",
             solutions: [
-              "Multi-Function Displays (MFD) for Helicopters",
-              "Radar Altimeters"
+              "Helicopter Avionics Repair",
+              "Fixed Wing Avionics Repair",
+              "Avionics Component Repair",
+              "Ground Support Equipment Repair"
             ]
           },
           {
