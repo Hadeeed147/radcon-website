@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# RADCON Technologies — Corporate Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The official website for **RADCON Technologies**, showcasing the company's defense and technology solutions, including RF/microwave systems, embedded solutions, power systems, and life-saving equipment for defense and commercial applications.
+
+Live site: [radcontechs.com](https://radcontechs.com)
+
+---
+
+## Overview
+
+This is a single-page application built with **React 19** and **React Router 7**, bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It presents the company's expertise, product catalog, industries served, and corporate information through a fully responsive, animated, and SEO-optimized interface.
+
+## Tech Stack
+
+- **React 19** — UI library
+- **React Router DOM 7** — client-side routing
+- **Create React App (react-scripts 5)** — build tooling and dev server
+- **Plain CSS** — component-scoped stylesheets with shared CSS variables
+- **prop-types** — runtime prop validation
+- **web-vitals** — performance metrics
+- **Testing Library / Jest** — testing
+
+## Project Structure
+
+```
+radcon-website/
+├── public/                 # Static assets, index.html, manifest, robots.txt
+└── src/
+    ├── App.js              # App shell, routing, and per-route body classes
+    ├── index.js            # React entry point
+    ├── components/         # Reusable UI (Navigation, Footer, Hero, sections/…)
+    ├── pages/              # Top-level routed pages
+    ├── templates/          # Reusable page templates (Product, Service)
+    ├── data/               # Static content data (products, expertise)
+    ├── styles/             # Shared variables and global styles
+    └── utils/              # Animation and helper utilities
+```
+
+## Routes
+
+| Path                                | Page                              |
+| ----------------------------------- | --------------------------------- |
+| `/`                                 | Homepage                          |
+| `/about-us`                         | About Us                          |
+| `/contact`                          | Contact Us                        |
+| `/media-centre`                     | Media Centre                      |
+| `/design-house`                     | Design House                      |
+| `/expertise`                        | Expertise landing                 |
+| `/expertise/:category/:service`     | Individual expertise / service    |
+| `/products/:slug`                   | Individual product                |
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (LTS recommended)
+- npm (ships with Node.js)
+
+### Installation
+
+```bash
+git clone https://github.com/Hadeeed147/radcon-website.git
+cd radcon-website
+npm install
+```
+
+### Development
+
+```bash
+npm start
+```
+
+Runs the app in development mode at [http://localhost:3000](http://localhost:3000). The page reloads on changes and lint errors appear in the console.
 
 ## Available Scripts
 
-In the project directory, you can run:
+| Command         | Description                                                      |
+| --------------- | ---------------------------------------------------------------- |
+| `npm start`     | Run the app in development mode.                                 |
+| `npm run build` | Build an optimized production bundle to the `build/` folder.     |
+| `npm test`      | Run the test runner in interactive watch mode.                   |
+| `npm run eject` | Eject from Create React App (one-way operation — use with care). |
 
-### `npm start`
+## Production Build
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+npm run build
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This produces a minified, hash-named bundle in the `build/` directory, ready to be served by any static host.
 
-### `npm test`
+> **Note:** This site is live and in production. Coordinate before deploying changes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## License
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Proprietary — © RADCON Technologies. All rights reserved.
